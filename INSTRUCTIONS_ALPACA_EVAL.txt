@@ -1,0 +1,30 @@
+# AlpacaEval 2.0 Evaluation Instructions
+
+This benchmark evaluates Length-Controlled (LC) win rates against a GPT-4 Turbo baseline across 805 prompts.
+
+## Step 1: Generate Answers
+Use the launcher script to generate answers for all 7 models. This script uses 2 GPUs per model and skips the slow vLLM startup phase.
+
+```bash
+# Submit all models to Slurm
+bash jobs/submit_all_alpaca_evals.sh
+```
+
+## Step 2: Set API Key for Judge
+Export your OpenAI API Key for the GPT-4o-mini annotator:
+
+```bash
+export OPENAI_API_KEY="your_api_key_here"
+```
+
+## Step 3: View Results
+The results will be saved in `alpaca_eval_data/results/[MODEL_NAME]/leaderboard.csv`. 
+
+If you want to re-run the judgment for a specific model without re-generating answers:
+
+```bash
+cd alpaca_eval_data/results/[MODEL_NAME]
+alpaca_eval --model_outputs model_outputs.json --annotators_config weighted_alpaca_eval_gpt-4o-mini-2024-07-18
+```
+
+The key metric to look for is `length_controlled_winrate`.

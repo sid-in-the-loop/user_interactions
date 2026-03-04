@@ -1,3 +1,4 @@
 test-time-alignment/
 .claude/
-data/
+data/datasets/
+datasets/
