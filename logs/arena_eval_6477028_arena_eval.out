@@ -1,0 +1,10 @@
+════════════════════════════════════════
+ARENA HARD EVALUATION: fkl_relaxed_1e-4_fp32
+PATH: /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_relaxed_1e-4_fp32/final
+GPUs: 1
+DIRECTORY CHECK:
+  [ERROR] Path not found on this node!
+════════════════════════════════════════
+Loaded 750 questions from data/arena-hard-v2.0/question.jsonl
+Resolved Model Path: /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_relaxed_1e-4_fp32/final
+Initializing vLLM (eager, no graph compile) tensor_parallel_size=1, max_num_seqs=512...

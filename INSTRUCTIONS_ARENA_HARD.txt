@@ -1,0 +1,72 @@
+# Arena-Hard-v2.0 Evaluation Instructions
+
+This benchmark evaluates pairwise preference against a GPT-3.5 baseline across 500 "Hard Prompts" and 250 "Creative Writing" prompts.
+
+## Step 1: Generate Answers (Multi-GPU vLLM)
+Use the `gen_answer_vllm.py` script to generate answers for all 750 prompts using 2 GPUs (Tensor Parallelism). 
+
+Run this for each of your models:
+
+```bash
+cd arena-hard-auto
+
+# 1. Base Model
+python gen_answer_vllm.py --model_name base --model_path Qwen/Qwen3-4B
+
+# 2. Baseline SFT
+python gen_answer_vllm.py --model_name baseline_sft_fp32 --model_path /data/group_data/cx_group/ssmurali/offpolicy/fkl/baseline_sft_fp32/final
+
+# 3. FKL Relaxed (1e-4)
+python gen_answer_vllm.py --model_name fkl_relaxed_1e-4_fp32 --model_path /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_relaxed_1e-4_fp32/final
+
+# 4. FKL Mid (5e-4)
+python gen_answer_vllm.py --model_name fkl_mid_5e-4_fp32 --model_path /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_mid_5e-4_fp32/final
+
+# 5. FKL Aggressive (5e-6)
+python gen_answer_vllm.py --model_name fkl_aggressive_5e-6_fp32 --model_path /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_aggressive_5e-6_fp32/final
+
+# 6. FKL Very Aggressive (1e-5)
+python gen_answer_vllm.py --model_name fkl_very_agg_1e-5_fp32 --model_path /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_very_agg_1e-5_fp32/final
+
+# 7. FKL Relaxed 8bit
+python gen_answer_vllm.py --model_name fkl_relaxed_8bit_cmp --model_path /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_relaxed_8bit_cmp/final
+```
+
+## Step 2: Set API Key for Judge
+Export your OpenAI API Key for the GPT-4o-mini judge:
+
+```bash
+export OPENAI_API_KEY="your_api_key_here"
+```
+
+## Step 3: Run Judgments
+Update the `config/arena-hard-v2.0.yaml` to include your model list:
+
+```yaml
+# arena-hard-auto/config/arena-hard-v2.0.yaml
+judge_model: gpt-4o-mini
+temperature: 0.0
+max_tokens: 16000
+bench_name: arena-hard-v2.0
+model_list:
+  - base
+  - baseline_sft_fp32
+  - fkl_relaxed_1e-4_fp32
+  - fkl_mid_5e-4_fp32
+  - fkl_aggressive_5e-6_fp32
+  - fkl_very_agg_1e-5_fp32
+  - fkl_relaxed_8bit_cmp
+```
+
+Then run the judgment script:
+
+```bash
+python gen_judgment.py
+```
+
+## Step 4: Show Results
+Generate the final win-rate leaderboard:
+
+```bash
+python show_result.py --judge-names gpt-4o-mini
+```
