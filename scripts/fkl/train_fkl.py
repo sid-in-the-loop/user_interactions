@@ -84,6 +84,12 @@ class FKLDataset(Dataset):
         skipped = 0
 
         for item in tqdm(data, desc="Tokenizing", disable=not is_main(rank)):
+            # Normalize y_star: JSONL may have string or {"role","content"}
+            y_star = item["y_star"]
+            if isinstance(y_star, str):
+                y_star = {"role": "assistant", "content": y_star}
+            messages_full = list(item["x"]) + [y_star]
+
             # Prompt: x only (no y, no o — student sees nothing about GPT-4's response)
             prompt_text = tokenizer.apply_chat_template(
                 item["x"],
@@ -92,7 +98,7 @@ class FKLDataset(Dataset):
             )
             # Full sequence: x + y*
             full_text = tokenizer.apply_chat_template(
-                list(item["x"]) + [item["y_star"]],
+                messages_full,
                 tokenize=False,
                 add_generation_prompt=False,
             )
@@ -164,7 +170,7 @@ def masked_fkl_loss(
     input_ids:      torch.Tensor,
     attention_mask: torch.Tensor,
     labels:         torch.Tensor,
-    mask_tau:       float = 0.001,
+    mask_tau:       float = 0.0,
 ):
     """
     Single forward pass masked SFT loss.
@@ -361,7 +367,7 @@ def main():
     parser.add_argument("--epochs",      type=int,   default=2)
     parser.add_argument("--lr",          type=float, default=2e-6)
     parser.add_argument("--max_length",  type=int,   default=2048)
-    parser.add_argument("--mask_tau",    type=float, default=0.001)
+    parser.add_argument("--mask_tau",    type=float, default=0.0)
     parser.add_argument("--save_steps",  type=int,   default=500)
 
     # WandB

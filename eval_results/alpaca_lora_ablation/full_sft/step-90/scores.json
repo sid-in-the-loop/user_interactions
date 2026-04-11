@@ -1,0 +1,10 @@
+{
+  "run": "full_sft",
+  "step": 90,
+  "step_name": "step-90",
+  "win_rate": 62.6,
+  "lc_win_rate": 41.83,
+  "wins": 390,
+  "losses": 233,
+  "ties": 182
+}

@@ -1,0 +1,17 @@
+════════════════════════════════════════
+  CONDITION : prefix30
+  INPUT     : datasets/wildfeedback/filter_raw.jsonl
+  OUTPUT    : datasets/wildfeedback/ystar_prefix30_qwen3_8b_full_wf.jsonl
+  MODEL     : Qwen/Qwen3-8B
+  SERVER    : tmp/qwen3_8b_server_url.txt
+════════════════════════════════════════
+Waiting for server URL file: tmp/qwen3_8b_server_url.txt
+Server URL: http://babel-y9-16:8100
+Loaded 13697 samples from datasets/wildfeedback/filter_raw.jsonl
+Loading tokenizer: Qwen/Qwen3-8B
+Building 'prefix30' prompts...
+Generating via http://babel-y9-16:8100 (concurrency=256)...
+Done in 9148.2s → 1.5 samples/sec
+Skipped 3530 samples (output too short)
+Saved 10167 samples → datasets/wildfeedback/ystar_prefix30_qwen3_8b_full_wf.jsonl
+Done → datasets/wildfeedback/ystar_prefix30_qwen3_8b_full_wf.jsonl

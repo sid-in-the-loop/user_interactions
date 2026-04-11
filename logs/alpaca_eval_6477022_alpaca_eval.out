@@ -1,6 +1,0 @@
-════════════════════════════════════════
-ALPACA EVAL 2.0: fkl_relaxed_1e-4_fp32
-PATH: /data/group_data/cx_group/ssmurali/offpolicy/fkl/fkl_relaxed_1e-4_fp32/final
-════════════════════════════════════════
-Loaded 805 prompts from arena-hard-auto/arena-hard-auto/alpaca_eval_data/alpaca_eval_prompts.jsonl
-Initializing vLLM for fkl_relaxed_1e-4_fp32 (TP=1, Forced Eager)...

@@ -15,7 +15,8 @@ set -e
 
 # Setup environment
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate off-policy-feedback
+conda activate opf
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:${LD_LIBRARY_PATH:-}
 
 # Force offline mode for model/tokenizer loading
 export HF_DATASETS_OFFLINE=1

@@ -1,0 +1,10 @@
+{
+  "run": "prefix30_jsd",
+  "step": 90,
+  "step_name": "step-90",
+  "win_rate": 61.42,
+  "lc_win_rate": 40.61,
+  "wins": 371,
+  "losses": 233,
+  "ties": 201
+}

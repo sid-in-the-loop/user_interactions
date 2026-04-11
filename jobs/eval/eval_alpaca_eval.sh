@@ -18,7 +18,8 @@ set -e
 
 # Setup environment
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate off-policy-feedback
+conda activate opf
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:${LD_LIBRARY_PATH:-}
 
 # Stability Flags for NCCL
 export NCCL_P2P_DISABLE=1
@@ -46,7 +47,7 @@ echo "PATH: $MODEL_PATH"
 echo "════════════════════════════════════════"
 
 # 1. Generate Answers
-python alpaca_eval_gen.py \
+python scripts/eval/alpaca_eval_gen.py \
     --model_name "$MODEL_NAME" \
     --model_path "$MODEL_PATH" \
     --input_file arena-hard-auto/arena-hard-auto/alpaca_eval_data/alpaca_eval_prompts.jsonl \

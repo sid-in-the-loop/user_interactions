@@ -1,0 +1,11 @@
+Win-rate summary  (judge: GPT-4o-mini, position-bias removed)
+N total = 477
+Metric: wins / (wins + losses), ties excluded
+
+Comparison             Wins  Losses   Ties    WR (%)             95% CI  Interpretation
+───────────────────────────────────────────────────────────────────────────────────────
+y_base vs y             115     238    124     32.6%       [27.9, 37.6]  OLMo base > GPT-4
+y* vs y                  43     320    114     11.8%        [8.9, 15.6]  OLMo+hint > GPT-4
+y* vs y_base             73     285    119     20.4%       [16.5, 24.9]  OLMo+hint > OLMo base
+
+───────────────────────────────────────────────────────────────────────────────────────

@@ -1,0 +1,19 @@
+# shard_dir|out_dir  (2-GPU FSDP shards -> merged HF for vLLM)
+# BASE=/data/group_data/cx_group/ssmurali/offpolicy/fkl
+
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_best_bs8_ga32_lr5e6/extended_final|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_best_bs8_ga32_lr5e6/extended_final_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_best_bs8_ga32_lr2e6/extended_final|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_best_bs8_ga32_lr2e6/extended_final_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr2e6/extended_final|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr2e6/extended_final_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-1|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-1_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-2|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-2_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-3|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-3_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-4|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-4_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr2e6_6ep/epoch-6|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr2e6_6ep/epoch-6_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr2e6_6ep/ext-epoch-6|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr2e6_6ep/ext-epoch-6_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr2e6_6ep/ext-epoch-12|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr2e6_6ep/ext-epoch-12_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr5e6_6ep/epoch-6|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr5e6_6ep/epoch-6_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr5e6_6ep/ext-epoch-6|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr5e6_6ep/ext-epoch-6_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr5e6_6ep/ext-epoch-12|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr5e6_6ep/ext-epoch-12_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_full_bs8_ga32_lr2e6_6ep/epoch-6|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_full_bs8_ga32_lr2e6_6ep/epoch-6_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_full_bs8_ga32_lr2e6_6ep/ext-epoch-6|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_full_bs8_ga32_lr2e6_6ep/ext-epoch-6_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_full_bs8_ga32_lr2e6_6ep/ext-epoch-12|/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_full_bs8_ga32_lr2e6_6ep/ext-epoch-12_hf

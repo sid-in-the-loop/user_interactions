@@ -1,0 +1,231 @@
+================================================================================
+  HOW-TO: Unified Scripts Quick Reference
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+1. TRAINING  —  jobs/train/submit_train.sh
+────────────────────────────────────────────────────────────────────────────────
+
+Usage:
+  sbatch jobs/train/submit_train.sh <objective> <prefix> <dataset> [model] [extra_args...]
+
+Arguments:
+  objective   sft | fkl | jsd
+  prefix      p30 | full          (y_star_prefix30 vs y_star_full)
+  dataset     wfbest | wffull     (filtered_BEST.jsonl vs full_wf.jsonl)
+  model       optional, default: Qwen/Qwen3-8B
+
+Examples:
+  sbatch jobs/train/submit_train.sh fkl p30 wfbest
+  sbatch jobs/train/submit_train.sh jsd full wffull Qwen/Qwen3-4B
+  sbatch jobs/train/submit_train.sh sft full wfbest Qwen/Qwen3-8B --epochs 5 --lr 1e-5
+
+Checkpoints saved to:  checkpoints/<model>_<obj>_<prefix>_<dataset>/
+
+How prefix maps to training data:
+  p30   → trains on y_star_prefix30  (model saw first 30% of y as a hint)
+  full  → trains on y_star_full      (model saw all of y as a hint)
+
+  The input file already contains all three y_star fields (prefix30/noprefix/full).
+  The --y_star_field arg selects which one to use as the training target.
+
+Full pipeline (generate then train):
+
+  IMPORTANT: the model you train must be the same model that generated y*.
+  FKL/JSD is self-distillation — the training target is the model's own improved output.
+
+  Step 1 — Generate y* with the model you plan to train:
+    sbatch jobs/eval/submit_gen.sh Qwen/Qwen3-8B
+    # produces: datasets/wildfeedback/ystar_prefix_qwen3-8b.jsonl
+    # fields:   y_star_prefix30, y_star_noprefix, y_star_full
+
+  Step 2 — Train FKL LoRA on prefix30 y* with the same model:
+    sbatch jobs/train/submit_train.sh fkl p30 wfbest Qwen/Qwen3-8B
+
+  Step 3 — Train FKL LoRA on full y* (for comparison):
+    sbatch jobs/train/submit_train.sh fkl full wfbest Qwen/Qwen3-8B
+
+  All three objectives on prefix30, Qwen3-8B:
+    sbatch jobs/train/submit_train.sh sft p30 wfbest Qwen/Qwen3-8B
+    sbatch jobs/train/submit_train.sh fkl p30 wfbest Qwen/Qwen3-8B
+    sbatch jobs/train/submit_train.sh jsd p30 wfbest Qwen/Qwen3-8B
+
+  Same for OLMo (generate first, then train with same model):
+    sbatch jobs/eval/submit_gen.sh allenai/OLMo-3-7B-Instruct-SFT
+    sbatch jobs/train/submit_train.sh fkl p30 wfbest allenai/OLMo-3-7B-Instruct-SFT
+
+
+────────────────────────────────────────────────────────────────────────────────
+2. Y* GENERATION  —  jobs/eval/submit_gen.sh
+────────────────────────────────────────────────────────────────────────────────
+
+Wraps: scripts/fkl/generate_ystar_prefix.py
+Generates y* under 3 prefix conditions: prefix30 / noprefix / full.
+
+Usage:
+  sbatch jobs/eval/submit_gen.sh <model> [input] [output.jsonl] [extra_args...]
+
+Defaults:
+  input   datasets/wildfeedback/filtered_BEST.jsonl
+  output  datasets/wildfeedback/ystar_prefix_<model_basename>.jsonl
+
+Examples:
+  sbatch jobs/eval/submit_gen.sh Qwen/Qwen3-8B
+  sbatch jobs/eval/submit_gen.sh Qwen/Qwen3-4B datasets/wildfeedback/filtered_BEST.jsonl
+  sbatch jobs/eval/submit_gen.sh Qwen/Qwen3-8B datasets/wildfeedback/filtered_BEST.jsonl \
+      datasets/wildfeedback/ystar_prefix_qwen3_8b.jsonl --max_tokens 2048
+
+Client mode (vLLM server already running):
+  sbatch jobs/eval/submit_gen.sh Qwen/Qwen3-8B \
+      datasets/wildfeedback/filtered_BEST.jsonl \
+      datasets/wildfeedback/ystar_out.jsonl \
+      --server_url_file tmp/server_url.txt
+
+
+────────────────────────────────────────────────────────────────────────────────
+3. WIN RATE EVAL  —  jobs/eval/submit_winrate.sh
+────────────────────────────────────────────────────────────────────────────────
+
+Wraps: scripts/eval/winrate_eval.py
+All args are forwarded verbatim. Requires OPENAI_API_KEY or GOOGLE_API_KEY.
+
+Usage:
+  OPENAI_API_KEY=... sbatch jobs/eval/submit_winrate.sh --input <file> [opts...]
+  GOOGLE_API_KEY=...  sbatch jobs/eval/submit_winrate.sh --input <file> --judge gemini [opts...]
+
+Modes:
+
+  a) Single-file (y vs y_star [vs y_base]):
+     sbatch jobs/eval/submit_winrate.sh \
+         --input datasets/wildfeedback/ystar_prefix_qwen3_8b.jsonl \
+         --output-dir data/winrate_results/qwen3_8b \
+         --subsample 500
+
+  b) Pair mode (two separate files):
+     sbatch jobs/eval/submit_winrate.sh \
+         --file-a datasets/wildfeedback/ystar_prefix_qwen3_8b.jsonl --field-a y_star_prefix30 \
+         --file-b datasets/wildfeedback/ystar_prefix_qwen3_4b.jsonl --field-b y_star_prefix30 \
+         --label-a qwen3_8b --label-b qwen3_4b \
+         --output-dir data/winrate_results/8b_vs_4b
+
+  c) Multi-comparison (replaces winrate_prefix_eval.py):
+     sbatch jobs/eval/submit_winrate.sh \
+         --input datasets/wildfeedback/ystar_prefix_qwen3_8b.jsonl \
+         --output-dir data/winrate_results/prefix_ablation \
+         --comparisons \
+             prefix30:y_star_prefix30:y:y \
+             noprefix:y_star_noprefix:y:y \
+             full:y_star_full:y:y \
+             prefix30:y_star_prefix30:noprefix:y_star_noprefix \
+             prefix30:y_star_prefix30:full:y_star_full \
+             noprefix:y_star_noprefix:full:y_star_full
+
+  --comparisons format:  label_a:field_a:label_b:field_b  (one per space-separated token)
+
+
+────────────────────────────────────────────────────────────────────────────────
+4. GENERATE RESPONSES  —  scripts/fkl/generate_responses.py
+────────────────────────────────────────────────────────────────────────────────
+
+Generates y_star (hindsight) or y_base (baseline) responses via vLLM.
+
+Usage:
+  python scripts/fkl/generate_responses.py \
+      --target ystar|ybase \
+      --input <file> \
+      --output_dir <dir> \
+      --model Qwen/Qwen3-8B \
+      [--mode A|B|both] \
+      [--prompt_style hindsight|feedback]
+
+  --prompt_style hindsight  (default) x+y+o as chat messages (original GPT-4 in context)
+  --prompt_style feedback            x+o as text template, no y in context
+                                     (same format as generate_ystar_fkl.py)
+
+Examples:
+  # Hindsight ystar (nonthinking), default style
+  python scripts/fkl/generate_responses.py \
+      --target ystar --mode A \
+      --input datasets/wildfeedback/tuples.jsonl \
+      --output_dir datasets/wildfeedback/qwen3_8b \
+      --model Qwen/Qwen3-8B
+
+  # Feedback-style ystar (no y in context), thinking + nonthinking
+  python scripts/fkl/generate_responses.py \
+      --target ystar --mode both --prompt_style feedback \
+      --input datasets/wildfeedback/tuples.jsonl \
+      --output_dir datasets/wildfeedback/qwen3_8b_feedback \
+      --model Qwen/Qwen3-8B
+
+Output files:
+  <output_dir>/ystar_nonthinking.jsonl  (mode A)
+  <output_dir>/ystar_thinking.jsonl     (mode B)
+  <output_dir>/ybase_nonthinking.jsonl  (--target ybase, mode A)
+  <output_dir>/ybase_thinking.jsonl     (--target ybase, mode B)
+
+
+────────────────────────────────────────────────────────────────────────────────
+5. PREFIX Y* GENERATION  —  scripts/fkl/generate_ystar_prefix.py
+────────────────────────────────────────────────────────────────────────────────
+
+Generates y* under prefix30 / noprefix / full conditions.
+
+Direct vLLM mode (loads model locally):
+  python scripts/fkl/generate_ystar_prefix.py \
+      --input datasets/wildfeedback/filtered_BEST.jsonl \
+      --output datasets/wildfeedback/ystar_prefix_qwen3_8b.jsonl \
+      --model Qwen/Qwen3-8B
+
+Client mode (connects to a running vLLM server):
+  python scripts/fkl/generate_ystar_prefix.py \
+      --input  datasets/wildfeedback/filtered_BEST.jsonl \
+      --output datasets/wildfeedback/ystar_prefix_qwen3_8b.jsonl \
+      --model  Qwen/Qwen3-8B \
+      --server_url_file tmp/qwen3_8b_server_url.txt \
+      --max_concurrent 256
+
+  # Or with a direct URL (skip polling):
+      --server_url http://localhost:8000
+
+Output JSONL fields: conversation_id, turn_index, x, y, o,
+                     y_star_prefix30, y_star_noprefix, y_star_full, prefix_used
+
+
+────────────────────────────────────────────────────────────────────────────────
+6. ALPACA EVAL (CHECKPOINT EVAL)  —  jobs/eval/eval_ckpts_gemini.sh
+────────────────────────────────────────────────────────────────────────────────
+
+Evaluates 4 evenly-spaced checkpoints with Gemini 2.5 Flash judge.
+
+  GOOGLE_API_KEY=... sbatch --export=ALL \
+      jobs/eval/eval_ckpts_gemini.sh checkpoints/qwen3_8b_fkl_p30_wfbest
+
+Results saved to: eval_results/alpaca_gemini/<run_name>/
+
+
+────────────────────────────────────────────────────────────────────────────────
+7. PLOTTING
+────────────────────────────────────────────────────────────────────────────────
+
+Training curves (WF runs, Gemini judge):
+  python scripts/eval/plot_training_curves.py \
+      --results eval_results/alpaca_gemini \
+      --metric lc_win_rate \
+      --out plots/alpaca_gemini_lc_win_rate.pdf
+
+  python scripts/eval/plot_training_curves.py \
+      --results eval_results/alpaca_gemini \
+      --metric win_rate \
+      --out plots/alpaca_gemini_win_rate.pdf
+
+LoRA ablation curves (prefix30 vs full, SFT/FKL/JSD):
+  python scripts/eval/plot_lora_ablation_curves.py \
+      --results eval_results/alpaca_lora_ablation \
+      --out_lc  plots/lora_ablation_lc_win_rate.pdf \
+      --out_wr  plots/lora_ablation_win_rate.pdf
+
+Scores stored as:  eval_results/<suite>/<run_name>/<step>/scores.json
+  Fields: step, lc_win_rate, win_rate
+  Use step=999999 to represent the final merged checkpoint.
+
+================================================================================

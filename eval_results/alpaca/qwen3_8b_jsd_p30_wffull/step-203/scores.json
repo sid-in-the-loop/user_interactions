@@ -1,0 +1,10 @@
+{
+  "run": "qwen3_8b_jsd_p30_wffull",
+  "step": 203,
+  "step_name": "step-203",
+  "win_rate": 97.54,
+  "lc_win_rate": 83.63,
+  "wins": 754,
+  "losses": 19,
+  "ties": 32
+}

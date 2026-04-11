@@ -1,0 +1,10 @@
+{
+  "run": "qwen3_8b_sft_p30_wfbest",
+  "step": 15,
+  "step_name": "step-15",
+  "win_rate": 98.05,
+  "lc_win_rate": 85.0,
+  "wins": 754,
+  "losses": 15,
+  "ties": 36
+}

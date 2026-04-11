@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+base_qwen3_4b_think,64.78951114950875,1.5798608816561512,community,2538,515,287,2,804,64.17910447761194,56.92918903734775,0.33698017026164917

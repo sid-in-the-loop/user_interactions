@@ -1,0 +1,10 @@
+{
+  "run": "qwen3_8b_fkl_p30_wffull",
+  "step": 87,
+  "step_name": "step-87",
+  "win_rate": 97.4,
+  "lc_win_rate": 77.63,
+  "wins": 749,
+  "losses": 20,
+  "ties": 36
+}

@@ -1,0 +1,5 @@
+Win rate summary (position-bias removed: win only if wins both A/B and B/A)
+
+Comparison          | Wins   | Losses | Ties   | Net Winrate
+--------------------|--------|--------|--------|-------------
+y_gpt4 vs ybase_8b   |     40 |    321 |    131 | -57.1%

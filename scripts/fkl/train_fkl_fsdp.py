@@ -30,11 +30,20 @@ from torch.distributed.fsdp import (
     ShardingStrategy,
 )
 from torch.distributed.fsdp import FullStateDictConfig, StateDictType
+try:
+    from torch.distributed.fsdp import ShardedStateDictConfig
+except ImportError:
+    from torch.distributed.fsdp.api import ShardedStateDictConfig
 from torch.distributed.fsdp.wrap import transformer_auto_wrap_policy
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.optim import AdamW
 from torch.utils.data import DataLoader, Dataset, DistributedSampler
-from transformers import AutoModelForCausalLM, AutoTokenizer, get_cosine_schedule_with_warmup
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    get_cosine_schedule_with_warmup,
+    get_constant_schedule_with_warmup,
+)
 from tqdm import tqdm
 
 try:
@@ -97,6 +106,12 @@ class FKLDataset(Dataset):
         items   = []
         skipped = 0
         for item in tqdm(raw, desc="Tokenizing", disable=not is_main(rank)):
+            # Normalize y_star: JSONL may have string or {"role","content"}
+            y_star = item["y_star"]
+            if isinstance(y_star, str):
+                y_star = {"role": "assistant", "content": y_star}
+            messages_full = list(item["x"]) + [y_star]
+
             # Prompt: x only
             prompt_text = self.tokenizer.apply_chat_template(
                 item["x"],
@@ -105,7 +120,7 @@ class FKLDataset(Dataset):
             )
             # Full sequence: x + y*
             full_text = self.tokenizer.apply_chat_template(
-                list(item["x"]) + [item["y_star"]],
+                messages_full,
                 tokenize=False,
                 add_generation_prompt=False,
             )
@@ -137,7 +152,7 @@ class FKLDataset(Dataset):
             })
 
         if is_main(rank):
-            print(f"[Dataset] {len(items)} usable, {skipped} skipped (y* truncated)")
+            print(f"[Dataset] {len(items)} usable, {skipped} skipped (y* truncated)", flush=True)
         return items
 
     def __len__(self):
@@ -217,14 +232,34 @@ def masked_fkl_loss(
 # Checkpoint saving — FSDP requires special handling
 # ─────────────────────────────────────────────────────────────
 
-def save_checkpoint(model, tokenizer, path: str, rank: int, base_model_name: str):
+def save_checkpoint_sharded(model, tokenizer, path: str, rank: int):
     """
-    FSDP full state dict save:
-      - All ranks participate in gathering the full state dict
-      - Only rank 0 writes to disk
-      - offload_to_cpu=True keeps GPU memory free during gather
+    Save sharded checkpoint: each rank writes its own shard. No all-gather, so safe
+    to call every 10 steps without NCCL timeout. Use for step-N checkpoints.
+    Resume by loading with FSDP and StateDictType.SHARDED_STATE_DICT.
     """
-    dist.barrier()  # sync all ranks before saving
+    dist.barrier()
+    os.makedirs(path, exist_ok=True)
+    save_policy = ShardedStateDictConfig(offload_to_cpu=True)
+    with FSDP.state_dict_type(model, StateDictType.SHARDED_STATE_DICT, save_policy):
+        state_dict = model.state_dict()
+    shard_path = os.path.join(path, f"rank_{rank}.pt")
+    torch.save(state_dict, shard_path)
+    if is_main(rank):
+        tokenizer.save_pretrained(path)
+        # Write a small meta file so we know world_size when loading
+        with open(os.path.join(path, "meta.json"), "w") as f:
+            json.dump({"world_size": dist.get_world_size()}, f)
+        print(f"\n[Saved sharded] {path}")
+    dist.barrier()
+
+
+def save_checkpoint_full(model, tokenizer, path: str, rank: int, base_model_name: str, fp32: bool = False):
+    """
+    FSDP full state dict save (all-gather). Use only for final checkpoint so you
+    get a single loadable HuggingFace model. Avoid for frequent step saves.
+    """
+    dist.barrier()
 
     save_policy = FullStateDictConfig(offload_to_cpu=True, rank0_only=True)
     with FSDP.state_dict_type(model, StateDictType.FULL_STATE_DICT, save_policy):
@@ -232,18 +267,18 @@ def save_checkpoint(model, tokenizer, path: str, rank: int, base_model_name: str
 
     if is_main(rank):
         os.makedirs(path, exist_ok=True)
-        # Load a fresh model shell and inject the gathered state dict
+        torch_dtype = torch.float32 if fp32 else torch.bfloat16
         save_model = AutoModelForCausalLM.from_pretrained(
             base_model_name,
-            torch_dtype=torch.bfloat16,
+            torch_dtype=torch_dtype,
         )
         save_model.load_state_dict(state_dict)
         save_model.save_pretrained(path)
         tokenizer.save_pretrained(path)
-        print(f"\n[Saved] {path}")
+        print(f"\n[Saved full] {path}")
         del save_model
 
-    dist.barrier()  # wait for rank 0 to finish writing
+    dist.barrier()
 
 
 # ─────────────────────────────────────────────────────────────
@@ -272,14 +307,18 @@ def train(model, tokenizer, dataset, args, rank, local_rank, world_size):
         optimizer = AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
 
     total_steps  = (len(loader) * args.epochs) // args.grad_accum
-    warmup_steps = int(0.05 * total_steps)
-    scheduler    = get_cosine_schedule_with_warmup(optimizer, warmup_steps, total_steps)
+    warmup_steps = max(1, int(args.warmup_ratio * total_steps))
+    if args.lr_scheduler == "constant":
+        scheduler = get_constant_schedule_with_warmup(optimizer, num_warmup_steps=warmup_steps)
+    else:
+        scheduler = get_cosine_schedule_with_warmup(optimizer, warmup_steps, total_steps)
 
     if is_main(rank) and HAS_WANDB and not args.no_wandb:
         wandb.init(project=args.wandb_project, name=args.run_name, config=vars(args))
 
     if is_main(rank):
-        print(f"Steps/epoch: {len(loader)}  |  Total steps: {total_steps}")
+        print(f"Steps/epoch: {len(loader)}  |  Total steps: {total_steps}  |  Warmup steps: {warmup_steps}")
+        print(f"LR scheduler: {args.lr_scheduler}  |  LR: {args.lr}")
         print(f"Effective batch: {args.batch_size} × {world_size} GPUs × {args.grad_accum} accum = "
               f"{args.batch_size * world_size * args.grad_accum}")
 
@@ -326,20 +365,34 @@ def train(model, tokenizer, dataset, args, rank, local_rank, world_size):
                     if mask_density < 0.1:
                         print(f"\n[WARN] mask_density={mask_density:.3f} — check --mask_tau")
 
-                # Checkpoint every N steps — all ranks must call save_checkpoint together
+                # Step checkpoints: sharded save (no all-gather) so frequent saves don't hit NCCL timeout
                 if global_step % args.save_steps == 0:
-                    save_checkpoint(
+                    save_checkpoint_sharded(
                         model, tokenizer,
                         os.path.join(args.output_dir, f"step-{global_step}"),
-                        rank, args.model,
+                        rank,
                     )
                     model.train()  # restore train mode after save
 
-    # Final save
-    save_checkpoint(
+        # End of epoch: sharded checkpoint (every epoch, or every save_epoch_every)
+        ep = epoch + 1
+        save_this_epoch = args.save_epoch_every <= 1 or (
+            ep % args.save_epoch_every == 0
+        ) or (ep == args.epochs and (ep % args.save_epoch_every != 0))
+        if save_this_epoch:
+            sub = f"{args.sharded_epoch_prefix}epoch-{ep}" if args.sharded_epoch_prefix else f"epoch-{ep}"
+            save_checkpoint_sharded(
+                model, tokenizer,
+                os.path.join(args.output_dir, sub),
+                rank,
+            )
+        model.train()
+
+    # Final save: full state dict so you get a single loadable HuggingFace model
+    save_checkpoint_full(
         model, tokenizer,
         os.path.join(args.output_dir, "final"),
-        rank, args.model,
+        rank, args.model, args.fp32,
     )
     if is_main(rank):
         print("Training complete.")
@@ -362,11 +415,29 @@ def main():
     parser.add_argument("--batch_size",  type=int,   default=32)
     parser.add_argument("--grad_accum",  type=int,   default=1)
     parser.add_argument("--epochs",      type=int,   default=2)
-    parser.add_argument("--lr",          type=float, default=2e-6)
+    parser.add_argument("--lr",            type=float, default=2e-6)
+    parser.add_argument("--lr_scheduler",  type=str,   default="constant", choices=["cosine", "constant"],
+                        help="constant = warmup then flat LR; cosine = warmup then cosine decay")
+    parser.add_argument("--warmup_ratio", type=float, default=0.02,
+                        help="Fraction of total steps for linear warmup (0→lr); used for both schedulers")
     parser.add_argument("--optimizer",   type=str,   default="adamw_8bit", choices=["adamw", "adamw_8bit"])
     parser.add_argument("--max_length",  type=int,   default=2048)
     parser.add_argument("--mask_tau",    type=float, default=0.001)
     parser.add_argument("--save_steps",  type=int,   default=500)
+    parser.add_argument(
+        "--save_epoch_every",
+        type=int,
+        default=1,
+        help="If >1, sharded epoch checkpoints only when epoch index (1..N) is a multiple of this, "
+        "and always on the last epoch if not already saved.",
+    )
+    parser.add_argument(
+        "--sharded_epoch_prefix",
+        type=str,
+        default="",
+        help="Prefix for sharded epoch dirs, e.g. 'ext-' -> ext-epoch-6. Empty = epoch-1, epoch-2, ...",
+    )
+    parser.add_argument("--fp32",        action="store_true", help="Use FP32 precision")
 
     parser.add_argument("--wandb_project", default="fkl-distill-fsdp")
     parser.add_argument("--run_name",      default=None)
@@ -392,10 +463,13 @@ def main():
 
     # Load model on CPU first — FSDP will shard it across GPUs
     if is_main(rank):
-        print("Loading model on CPU (FSDP will shard to GPUs)...")
+        print(f"Loading model on CPU (FSDP will shard to GPUs) in {'FP32' if args.fp32 else 'BF16'}...")
+    
+    torch_dtype = torch.float32 if args.fp32 else torch.bfloat16
+    
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
-        torch_dtype=torch.bfloat16,
+        torch_dtype=torch_dtype,
         attn_implementation="sdpa",  # sdpa is more stable with FSDP than flash_attn
     )
 
@@ -425,14 +499,19 @@ def main():
     else:
         wrap_policy = partial(size_based_auto_wrap_policy, min_num_params=1_000_000)
 
-    model = FSDP(
-        model,
-        auto_wrap_policy=wrap_policy,
-        mixed_precision=MixedPrecision(
+    if args.fp32:
+        mixed_precision_policy = None
+    else:
+        mixed_precision_policy = MixedPrecision(
             param_dtype=torch.bfloat16,
             reduce_dtype=torch.bfloat16,
             buffer_dtype=torch.bfloat16,
-        ),
+        )
+
+    model = FSDP(
+        model,
+        auto_wrap_policy=wrap_policy,
+        mixed_precision=mixed_precision_policy,
         sharding_strategy=ShardingStrategy.FULL_SHARD,   # ZeRO-3: shards params+grads+optimizer
         device_id=torch.cuda.current_device(),
         sync_module_states=True,                         # Sync weights from rank 0 to all GPUs

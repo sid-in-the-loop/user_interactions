@@ -1,0 +1,5 @@
+Win rate summary (position-bias removed: win only if wins both A/B and B/A)
+
+Comparison          | Wins   | Losses | Ties   | Win Rate (ties excl.)
+--------------------|--------|--------|--------|----------------------
+prefix30 vs full     |    287 |    197 |    516 | 59.3%

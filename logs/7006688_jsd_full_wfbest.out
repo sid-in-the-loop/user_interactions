@@ -1,0 +1,13 @@
+Objective    : jsd  (pure_kl)
+y* field     : y_star_full  (condition=full)
+Model        : Qwen/Qwen3-8B
+LoRA r/alpha : 64/128
+Output       : checkpoints/qwen3_8b_jsd_full_wfbest
+[Dataset] condition=full  student_max=2048  teacher_max=4096
+[Dataset] 5214 usable, 91 skipped
+[Info] flash_attn not found, using sdpa
+trainable params: 174,587,904 || all params: 8,365,323,264 || trainable%: 2.0870
+Steps/epoch     : 2607
+Total opt steps : 40
+Effective batch : 128
+Saving every    : 5 steps  (8 checkpoints)

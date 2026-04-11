@@ -1,0 +1,17 @@
+════════════════════════════════════════
+  CONDITION : prefix30
+  INPUT     : datasets/wildfeedback/filtered_BEST.jsonl
+  OUTPUT    : datasets/wildfeedback/ystar_prefix30_olmo_7b.jsonl
+  MODEL     : allenai/OLMo-3-7B-Instruct-SFT
+  SERVER    : tmp/olmo_7b_server_url.txt
+════════════════════════════════════════
+Waiting for server URL file: tmp/olmo_7b_server_url.txt
+Server URL: http://babel-z5-28:8200
+Loaded 5405 samples from datasets/wildfeedback/filtered_BEST.jsonl
+Loading tokenizer: allenai/OLMo-3-7B-Instruct-SFT
+Building 'prefix30' prompts...
+Generating via http://babel-z5-28:8200 (concurrency=256)...
+Done in 4337.4s → 1.2 samples/sec
+Skipped 13 samples (output too short)
+Saved 5392 samples → datasets/wildfeedback/ystar_prefix30_olmo_7b.jsonl
+Done → datasets/wildfeedback/ystar_prefix30_olmo_7b.jsonl

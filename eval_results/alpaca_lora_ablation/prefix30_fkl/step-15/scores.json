@@ -1,0 +1,10 @@
+{
+  "run": "prefix30_fkl",
+  "step": 15,
+  "step_name": "step-15",
+  "win_rate": 61.65,
+  "lc_win_rate": 40.54,
+  "wins": 373,
+  "losses": 232,
+  "ties": 200
+}

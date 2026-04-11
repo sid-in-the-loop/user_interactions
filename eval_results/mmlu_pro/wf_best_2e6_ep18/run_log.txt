@@ -1,0 +1,18 @@
+Loading TIGER-Lab/MMLU-Pro …
+Subjects (14): ['biology', 'business', 'chemistry', 'computer science', 'economics', 'engineering', 'health', 'history', 'law', 'math', 'other', 'philosophy', 'physics', 'psychology']
+vLLM load: /data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wf_thinking_best_bs8_ga32_lr2e6_6ep/ext-epoch-12_hf
+biology: acc=0.7448 (534/717)
+business: acc=0.6565 (518/789)
+chemistry: acc=0.6281 (711/1132)
+computer science: acc=0.6024 (247/410)
+economics: acc=0.6742 (569/844)
+engineering: acc=0.4799 (465/969)
+health: acc=0.5746 (470/818)
+history: acc=0.4409 (168/381)
+law: acc=0.2643 (291/1101)
+math: acc=0.7683 (1038/1351)
+other: acc=0.4643 (429/924)
+philosophy: acc=0.4790 (239/499)
+physics: acc=0.6159 (800/1299)
+psychology: acc=0.6241 (498/798)
+OVERALL accuracy: 0.5799 (6977/12032) elapsed_s=9587

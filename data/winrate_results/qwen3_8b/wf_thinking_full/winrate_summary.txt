@@ -1,0 +1,5 @@
+Win rate summary (position-bias removed: win only if wins both A/B and B/A)
+
+Comparison          | Wins   | Losses | Ties   | Net Winrate
+--------------------|--------|--------|--------|-------------
+y* vs y              |    263 |    132 |    105 | +26.2%

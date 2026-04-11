@@ -1,0 +1,18 @@
+# shard_dir | out_dir
+# 8B thinking_best (2ep base run)
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6/epoch-1 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6/epoch-1_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6/epoch-2 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6/epoch-2_hf
+# 8B thinking_best ext (8 more epochs)
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-2 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-2_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-4 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-4_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-6 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-6_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-8 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_best_lr5e6_ext/epoch-8_hf
+# 8B thinking_full
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_full_lr5e6/epoch-1 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_full_lr5e6/epoch-1_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_full_lr5e6/epoch-2 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_thinking_full_lr5e6/epoch-2_hf
+# 8B nonthinking_best
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_best_lr5e6/epoch-1 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_best_lr5e6/epoch-1_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_best_lr5e6/epoch-2 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_best_lr5e6/epoch-2_hf
+# 8B nonthinking_full
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_full_lr5e6/epoch-1 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_full_lr5e6/epoch-1_hf
+/data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_full_lr5e6/epoch-2 | /data/group_data/cx_group/ssmurali/offpolicy/fkl/qwen3_8b/sft_wf_nonthinking_full_lr5e6/epoch-2_hf

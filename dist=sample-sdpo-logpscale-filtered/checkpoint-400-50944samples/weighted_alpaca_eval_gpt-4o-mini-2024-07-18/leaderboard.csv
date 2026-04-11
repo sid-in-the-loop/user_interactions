@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+checkpoint-400-50944samples,93.88212664344083,0.8025029118643976,community,4968,755,49,1,805,93.85093167701864,82.2348953543521,0.07399212253606617

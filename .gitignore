@@ -2,3 +2,6 @@ test-time-alignment/
 .claude/
 data/datasets/
 datasets/
+
+checkpoints/
+wandb/

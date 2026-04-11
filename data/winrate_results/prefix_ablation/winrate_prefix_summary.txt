@@ -1,0 +1,8 @@
+Win rate summary  (n=5354, judge=gpt-4o-mini)
+Position bias removed via averaged scoring (AB + BA calls).
+Win rate = wins / (wins + losses)  [ties excluded].
+
+Comparison                Win   Loss    Tie  WinRate
+-------------------------------------------------------
+prefix30 vs y            2781    967   1606    74.2%
+noprefix  vs y           1154   2826   1374    29.0%

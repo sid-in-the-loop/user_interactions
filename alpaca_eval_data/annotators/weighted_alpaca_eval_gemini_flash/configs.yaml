@@ -1,0 +1,16 @@
+weighted_alpaca_eval_gemini_flash:
+  prompt_template: "alpaca_eval_clf_gpt4_turbo/alpaca_eval_clf.txt"
+  fn_completions: "openai_completions"
+  completions_kwargs:
+    model_name: "gemini-2.5-flash"
+    max_tokens: 1
+    temperature: 0.0
+    openai_api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+    extra_body:
+      thinking:
+        type: "disabled"
+  fn_completion_parser: "regex_parser"
+  completion_parser_kwargs:
+    regex: "([mM])"
+    default_value: "M"
+  batch_size: 4

@@ -1,19 +1,26 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Evaluate multiple training checkpoints for the HelpSteer2 (general prompts) experiment.
-# Compares each checkpoint against the base model using Claude Haiku as judge.
-# Requires: export ANTHROPIC_API_KEY=...
+# Evaluate multiple training checkpoints via pairwise judging.
+# Works for any task — set JUDGE_MODEL and SYSTEM_PROMPT for your experiment.
 #
 # Usage:
-#   RUN_DIR=/path/to/sdpo-runs/run-id \
-#   DATA_PATH=/path/to/helpsteer_data/validation.jsonl \
-#   ./scripts/eval_checkpoints.sh [--dry-run]
+#   RUN_DIR=/path/to/runs/run-id \
+#   DATA_PATH=/path/to/validation.jsonl \
+#   ./jobs/eval/eval_checkpoints.sh [--dry-run]
+#
+# HelpSteer2 (default — Claude Haiku judge, no system prompt):
+#   RUN_DIR=... DATA_PATH=... ./jobs/eval/eval_checkpoints.sh
+#
+# TL;DR (local Qwen judge + system prompt):
+#   JUDGE_MODEL=Qwen/Qwen3-8B \
+#   SYSTEM_PROMPT="Write summary of the text that is 1-2 sentences long. Always begin with 'TL;DR:' and output only the summary." \
+#   TASK_TAG=tldr \
+#   RUN_DIR=... DATA_PATH=... ./jobs/eval/eval_checkpoints.sh
 #
 # Common overrides:
-#   CKPTS="3 6 9 12 15" STYLE="concise_casual_beginner" ./scripts/eval_checkpoints.sh
-#   BASELINE="Qwen/Qwen3-8B" JUDGE_MODEL="claude-haiku-4-5-20251001" ./scripts/eval_checkpoints.sh
-#   WORLD_SIZE=4 ACCELERATE_CONFIG=./multigpu_accelerate_config.yaml ./scripts/eval_checkpoints.sh
+#   CKPTS="3 6 9 12 15" STYLE="concise_casual_beginner" BASELINE="Qwen/Qwen3-8B"
+#   WORLD_SIZE=4 ACCELERATE_CONFIG=./multigpu_accelerate_config.yaml
 
 DRY_RUN=false
 if [[ "${1:-}" == "--dry-run" ]]; then
@@ -55,10 +62,9 @@ fi
 # =============================================================================
 STYLE="${STYLE:-concise_casual_beginner}"
 BASELINE="${BASELINE:-Qwen/Qwen3-8B}"
-JUDGE_MODEL="${JUDGE_MODEL:-claude-haiku-4-5-20251001}"  # Claude Haiku judge
-
-# Empty system prompt for the general prompts experiment
+JUDGE_MODEL="${JUDGE_MODEL:-claude-haiku-4-5-20251001}"
 SYSTEM_PROMPT="${SYSTEM_PROMPT:-}"
+TASK_TAG="${TASK_TAG:-helpsteer}"
 
 CKPTS="${CKPTS:-3 6 9 12 15}"
 EVAL_N="${EVAL_N:-256}"
@@ -79,7 +85,7 @@ ACCELERATE_CONFIG="${ACCELERATE_CONFIG:-}"
 # Output + caches
 # =============================================================================
 BASE_WORK="${BASE_WORK:-${SCRATCH:-${TMPDIR:-/tmp}}}"
-RUN_ID="${RUN_ID:-eval-helpsteer-$(date +%Y%m%d-%H%M%S)}"
+RUN_ID="${RUN_ID:-eval-${TASK_TAG}-$(date +%Y%m%d-%H%M%S)}"
 
 OUT_DIR="${OUT_DIR:-$BASE_WORK/sdpo-eval/$RUN_ID}"
 CACHE_DIR="${CACHE_DIR:-$BASE_WORK/sdpo-eval-cache/$RUN_ID}"
@@ -125,7 +131,7 @@ declare -a SUMMARY_LINES=()
 
 for CKPT in $CKPTS; do
   CANDIDATE="$RUN_DIR/checkpoint-$CKPT"
-  RUN_NAME="helpsteer_${STYLE}_base_vs_ckpt${CKPT}"
+  RUN_NAME="${TASK_TAG}_${STYLE}_base_vs_ckpt${CKPT}"
 
   echo "[$(date '+%F %T')] Starting CKPT=$CKPT  CANDIDATE=$CANDIDATE"
 
@@ -186,7 +192,7 @@ echo ""
 echo "STYLE:    $STYLE"
 echo "BASELINE: $BASELINE"
 echo "JUDGE:    $JUDGE_MODEL"
-echo "================ HELPSTEER EVAL SUMMARY ================"
+echo "================ ${TASK_TAG^^} EVAL SUMMARY ================"
 echo -e "ckpt\twinrate\tse_analytic\tse_boot\tN_eff\twins_a\twins_b\tties\tcoverage"
 for L in "${SUMMARY_LINES[@]}"; do
   echo -e "$L"

@@ -22,7 +22,8 @@ set -e
 
 # Setup environment
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate off-policy-feedback
+conda activate opf
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:${LD_LIBRARY_PATH:-}
 
 # ── NCCL & Stability Flags ───────────────────────────────────
 # These prevent the "stuck after NCCL init" hang on Slurm nodes
@@ -67,10 +68,16 @@ if [ -n "$OPENAI_API_KEY" ]; then
     echo "Starting Judgments..."
     # Update config for this specific run
     cat > config/arena-hard-v2.0.yaml <<EOF
-judge_model: gpt-4o-mini
+judge_model: gpt-4o-mini-2024-07-18
+bench_name: arena-hard-v2.0
+reference:
+  - gpt-4.1
 temperature: 0.0
 max_tokens: 16000
-bench_name: arena-hard-v2.0
+regex_patterns:
+  - \[\[([AB<>=]+)\]\]
+  - \[([AB<>=]+)\]
+prompt_template: "<|User Prompt|>\n{QUESTION}\n\n<|The Start of Assistant A's Answer|>\n{ANSWER_A}\n<|The End of Assistant A's Answer|>\n\n<|The Start of Assistant B's Answer|>\n{ANSWER_B}\n<|The End of Assistant B's Answer|>"
 model_list:
   - $MODEL_NAME
 EOF

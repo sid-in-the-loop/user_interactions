@@ -1,0 +1,36 @@
+Loading TIGER-Lab/MMLU-Pro …
+Subjects (14): ['biology', 'business', 'chemistry', 'computer science', 'economics', 'engineering', 'health', 'history', 'law', 'math', 'other', 'philosophy', 'physics', 'psychology']
+vLLM load: /data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr2e6/final
+biology: acc=0.7531 (540/717)
+business: acc=0.6477 (511/789)
+chemistry: acc=0.6281 (711/1132)
+computer science: acc=0.5927 (243/410)
+economics: acc=0.6706 (566/844)
+engineering: acc=0.4675 (453/969)
+health: acc=0.5697 (466/818)
+history: acc=0.4514 (172/381)
+law: acc=0.2616 (288/1101)
+math: acc=0.7668 (1036/1351)
+other: acc=0.4621 (427/924)
+philosophy: acc=0.4489 (224/499)
+physics: acc=0.6135 (797/1299)
+psychology: acc=0.6153 (491/798)
+OVERALL accuracy: 0.5755 (6925/12032) elapsed_s=6491
+Loading TIGER-Lab/MMLU-Pro …
+Subjects (14): ['biology', 'business', 'chemistry', 'computer science', 'economics', 'engineering', 'health', 'history', 'law', 'math', 'other', 'philosophy', 'physics', 'psychology']
+vLLM load: /data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr2e6/final
+biology: acc=0.7448 (534/717)
+business: acc=0.6451 (509/789)
+chemistry: acc=0.6113 (692/1132)
+computer science: acc=0.6073 (249/410)
+economics: acc=0.6777 (572/844)
+engineering: acc=0.4665 (452/969)
+health: acc=0.5709 (467/818)
+history: acc=0.4488 (171/381)
+law: acc=0.2507 (276/1101)
+math: acc=0.7691 (1039/1351)
+other: acc=0.4610 (426/924)
+philosophy: acc=0.4749 (237/499)
+physics: acc=0.6159 (800/1299)
+psychology: acc=0.6190 (494/798)
+OVERALL accuracy: 0.5750 (6918/12032) elapsed_s=9447

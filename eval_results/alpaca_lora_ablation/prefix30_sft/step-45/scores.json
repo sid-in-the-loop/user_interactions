@@ -1,0 +1,10 @@
+{
+  "run": "prefix30_sft",
+  "step": 45,
+  "step_name": "step-45",
+  "win_rate": 62.23,
+  "lc_win_rate": 40.18,
+  "wins": 374,
+  "losses": 227,
+  "ties": 204
+}

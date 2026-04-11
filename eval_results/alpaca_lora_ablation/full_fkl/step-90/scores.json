@@ -1,0 +1,10 @@
+{
+  "run": "full_fkl",
+  "step": 90,
+  "step_name": "step-90",
+  "win_rate": 61.92,
+  "lc_win_rate": 39.62,
+  "wins": 361,
+  "losses": 222,
+  "ties": 222
+}

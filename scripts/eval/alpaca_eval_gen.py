@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Generate model answers for AlpacaEval 2.0 using vLLM across 2 GPUs.
-Fixed: 
-  - Patches vLLM 0.16+ bug for absolute local paths.
-  - Optimized for AlpacaEval 2.0 requirements (instruction/output keys).
+Generate model answers for AlpacaEval 2.0 using vLLM.
+
+--mode nonthinking  (default) : disable thinking, direct answer
+--mode thinking               : enable thinking, strip <think> blocks before saving
+                                (evaluates final answer quality after reasoning)
 """
 
 import os
@@ -17,10 +18,18 @@ os.environ["HF_HUB_OFFLINE"] = "1"
 
 import argparse
 import json
+import re
 from typing import List, Dict, Any
 
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
+
+
+def strip_think_blocks(text: str) -> str:
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
+    if "<think>" in text:
+        text = text.split("<think>")[0]
+    return text.strip()
 
 
 def load_jsonl(path: str) -> List[Dict[str, Any]]:
@@ -40,13 +49,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_name", required=True)
     parser.add_argument("--model_path", required=True)
-    parser.add_argument("--input_file", default="alpaca_eval_data/alpaca_eval_prompts.jsonl")
+    parser.add_argument("--input_file", default="arena-hard-auto/arena-hard-auto/alpaca_eval_data/alpaca_eval_prompts.jsonl")
     parser.add_argument("--output_file", required=True)
     parser.add_argument("--max_new_tokens", type=int, default=2048)
-    parser.add_argument("--temperature", type=float, default=0.7) # AlpacaEval standard
+    parser.add_argument("--temperature", type=float, default=0.7)  # AlpacaEval standard
     parser.add_argument("--gpu_util", type=float, default=0.90)
-    parser.add_argument("--max_model_len", type=int, default=8192)
+    parser.add_argument("--max_model_len", type=int, default=16384)  # 16k for thinking mode headroom
     parser.add_argument("--tensor_parallel_size", type=int, default=1, help="Number of GPUs to use.")
+    parser.add_argument("--mode", choices=["nonthinking", "thinking"], default="nonthinking",
+                        help="nonthinking: disable <think> blocks. thinking: enable reasoning but strip think blocks before saving.")
     args = parser.parse_args()
 
     questions = load_jsonl(args.input_file)
@@ -80,24 +91,31 @@ def main():
         max_tokens=args.max_new_tokens,
     )
 
+    enable_thinking = (args.mode == "thinking")
+    print(f"Mode: {args.mode} (enable_thinking={enable_thinking})")
+
     print("Formatting prompts...")
     prompts: List[str] = []
     for q in questions:
         messages = [{"role": "user", "content": q["instruction"]}]
         prompt_text = tokenizer.apply_chat_template(
             messages, tokenize=False, add_generation_prompt=True,
+            enable_thinking=enable_thinking,
         )
         prompts.append(prompt_text)
 
     print(f"Generating {len(prompts)} answers...")
     outputs = llm.generate(prompts, sampling_params, use_tqdm=True)
-    
+
     results: List[Dict[str, Any]] = []
     for q, output in zip(questions, outputs):
+        text = output.outputs[0].text
+        if enable_thinking:
+            text = strip_think_blocks(text)
         results.append({
             "instruction": q["instruction"],
             "dataset": q["dataset"],
-            "output": output.outputs[0].text.strip(),
+            "output": text.strip(),
             "generator": args.model_name
         })
 

@@ -1,0 +1,21 @@
+Loading TIGER-Lab/MMLU-Pro …
+Subjects (14): ['biology', 'business', 'chemistry', 'computer science', 'economics', 'engineering', 'health', 'history', 'law', 'math', 'other', 'philosophy', 'physics', 'psychology']
+vLLM load: /data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-2
+Loading TIGER-Lab/MMLU-Pro …
+Subjects (14): ['biology', 'business', 'chemistry', 'computer science', 'economics', 'engineering', 'health', 'history', 'law', 'math', 'other', 'philosophy', 'physics', 'psychology']
+vLLM load: /data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_full_bs8_ga32_lr5e6_6ep/epoch-2_hf
+biology: acc=0.7490 (537/717)
+business: acc=0.6616 (522/789)
+chemistry: acc=0.6122 (693/1132)
+computer science: acc=0.6073 (249/410)
+economics: acc=0.6742 (569/844)
+engineering: acc=0.4757 (461/969)
+health: acc=0.5562 (455/818)
+history: acc=0.4304 (164/381)
+law: acc=0.2616 (288/1101)
+math: acc=0.7713 (1042/1351)
+other: acc=0.4556 (421/924)
+philosophy: acc=0.4810 (240/499)
+physics: acc=0.6212 (807/1299)
+psychology: acc=0.6216 (496/798)
+OVERALL accuracy: 0.5771 (6944/12032) elapsed_s=10686

@@ -1,0 +1,10 @@
+{
+  "run": "base",
+  "step": 0,
+  "step_name": "base",
+  "win_rate": 97.38,
+  "lc_win_rate": 79.4,
+  "wins": 742,
+  "losses": 20,
+  "ties": 43
+}

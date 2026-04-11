@@ -1,0 +1,5 @@
+Win rate summary (position-bias removed: win only if wins both A/B and B/A)
+
+Comparison          | Wins   | Losses | Ties   | Win Rate (ties excl.)
+--------------------|--------|--------|--------|----------------------
+noprefix vs y        |    196 |    496 |    308 | 28.3%

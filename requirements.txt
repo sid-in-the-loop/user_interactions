@@ -10,3 +10,7 @@ wandb
 
 # User simulator / judge (Claude)
 anthropic
+
+# Probe set classification (build_probe_set.py)
+openai
+tqdm

@@ -1,0 +1,90 @@
+{
+  "per_subject": [
+    {
+      "subject": "biology",
+      "accuracy": 0.7503486750348675,
+      "correct": 538,
+      "total": 717
+    },
+    {
+      "subject": "business",
+      "accuracy": 0.6565272496831432,
+      "correct": 518,
+      "total": 789
+    },
+    {
+      "subject": "chemistry",
+      "accuracy": 0.6095406360424028,
+      "correct": 690,
+      "total": 1132
+    },
+    {
+      "subject": "computer science",
+      "accuracy": 0.6024390243902439,
+      "correct": 247,
+      "total": 410
+    },
+    {
+      "subject": "economics",
+      "accuracy": 0.6765402843601895,
+      "correct": 571,
+      "total": 844
+    },
+    {
+      "subject": "engineering",
+      "accuracy": 0.4674922600619195,
+      "correct": 453,
+      "total": 969
+    },
+    {
+      "subject": "health",
+      "accuracy": 0.5635696821515892,
+      "correct": 461,
+      "total": 818
+    },
+    {
+      "subject": "history",
+      "accuracy": 0.4304461942257218,
+      "correct": 164,
+      "total": 381
+    },
+    {
+      "subject": "law",
+      "accuracy": 0.24341507720254316,
+      "correct": 268,
+      "total": 1101
+    },
+    {
+      "subject": "math",
+      "accuracy": 0.7542561065877128,
+      "correct": 1019,
+      "total": 1351
+    },
+    {
+      "subject": "other",
+      "accuracy": 0.46320346320346323,
+      "correct": 428,
+      "total": 924
+    },
+    {
+      "subject": "philosophy",
+      "accuracy": 0.45691382765531063,
+      "correct": 228,
+      "total": 499
+    },
+    {
+      "subject": "physics",
+      "accuracy": 0.6297151655119323,
+      "correct": 818,
+      "total": 1299
+    },
+    {
+      "subject": "psychology",
+      "accuracy": 0.6190476190476191,
+      "correct": 494,
+      "total": 798
+    }
+  ],
+  "overall_accuracy": 0.5732214095744681,
+  "model_path": "/data/group_data/cx_group/ssmurali/offpolicy/fkl/sft_wc_thinking_best_bs8_ga32_lr2e6/extended_final_hf"
+}

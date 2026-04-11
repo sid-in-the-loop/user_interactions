@@ -1,0 +1,11 @@
+Win rate summary  (n=5354, judge=gpt-4o-mini-2024-07-18)
+Win rate = wins / (wins + losses)  [ties excluded].
+
+Comparison                      Win   Loss    Tie   WinRate
+------------------------------------------------------------
+prefix30 vs y                  3405    973    976     77.8%
+noprefix vs y                  1669   2690    995     38.3%
+full vs y                      3546    827    981     81.1%
+prefix30 vs noprefix           3779    597    978     86.4%
+prefix30 vs full               1917   1784   1653     51.8%
+noprefix vs full                672   3783    899     15.1%

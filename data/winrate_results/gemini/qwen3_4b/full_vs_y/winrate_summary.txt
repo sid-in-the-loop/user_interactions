@@ -1,0 +1,5 @@
+Win rate summary (position-bias removed: win only if wins both A/B and B/A)
+
+Comparison          | Wins   | Losses | Ties   | Win Rate (ties excl.)
+--------------------|--------|--------|--------|----------------------
+full vs y            |    343 |    159 |    498 | 68.3%

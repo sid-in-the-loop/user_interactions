@@ -1,0 +1,10 @@
+{
+  "run": "full_jsd",
+  "step": 90,
+  "step_name": "step-90",
+  "win_rate": 61.49,
+  "lc_win_rate": 42.54,
+  "wins": 380,
+  "losses": 238,
+  "ties": 187
+}
