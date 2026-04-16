@@ -1,0 +1,251 @@
+================================================================================
+  EVALUATION SUITE — Complete Instructions
+  For: ssredharan | DeltaAI Cluster
+================================================================================
+
+TABLE OF CONTENTS
+-----------------
+1.  Overview
+2.  Prerequisites & Data Setup
+3.  Phase 1: Generation (GPU required)
+4.  Phase 2: Judging (no GPU)
+5.  Phase 3: Aggregation & Plotting (no GPU)
+6.  Push Checkpoints to HuggingFace
+7.  Quick Reference
+
+================================================================================
+1. OVERVIEW
+================================================================================
+
+Three-phase pipeline:
+  Phase 1 (GPU):  vLLM generates model outputs for all benchmarks
+  Phase 2 (API):  GPT-4o-mini judges outputs (or programmatic eval)
+  Phase 3 (CPU):  Aggregate scores, plot training curves
+
+7 Benchmarks:
+  alpaca_eval      805 prompts    Pairwise vs GPT-4 Turbo     GPT-4o-mini judge
+  arena_hard       750 prompts    Pairwise vs baseline         GPT-4o-mini judge
+  mt_bench         80×2 turns     Single-answer 1-10 rating    GPT-4o-mini judge
+  aime             60 problems    AIME 2025+2026               Programmatic (free)
+  reasoning_gym    600 problems   3 tasks × 200                Programmatic (free)
+  wildfeedback_held 500 samples   Pairwise with oracle feedback GPT-4o-mini judge
+  writingbench     1000 queries   Rubric-based scoring          GPT-4.1-mini judge
+
+12 Methods (each ~31 checkpoints):
+  sft, fkl, jsd, dpo, jsd_is1, jsd_is2, jsd_is3, jsd_is4,
+  zg_jsd, rkl, rlad, distillm2
+
+Output structure:
+  eval_results/<method>/step-N/<benchmark>/outputs.json   (Phase 1)
+  eval_results/<method>/step-N/<benchmark>/scores.json    (Phase 2)
+  eval_results/aggregate.csv                              (Phase 3)
+
+
+================================================================================
+2. PREREQUISITES & DATA SETUP
+================================================================================
+
+Conda environment:
+  module load python/miniforge3_pytorch/2.10.0
+  conda activate skywork
+
+Packages needed:
+  pip install reasoning-gym   # for reasoning gym eval
+
+Generate benchmark data (run once):
+  bash scripts/eval/setup_benchmarks.sh
+
+  This creates:
+    data/benchmark_data/arena_hard/question.jsonl       (750 prompts)
+    data/benchmark_data/mt_bench/question.jsonl          (80 questions)
+    data/benchmark_data/math/aime25.jsonl                (30 problems)
+    data/benchmark_data/math/aime26.jsonl                (30 problems)
+    data/benchmark_data/reasoning_gym/problems.json      (600 problems)
+    data/benchmark_data/writingbench/benchmark_all.jsonl  (1000 queries)
+    data/benchmark_data/wildfeedback_held/held_out_ids.json (500 IDs)
+
+  Already exists:
+    alpaca_eval_data/gpt4_turbo_reference.json           (805 prompts)
+
+Checkpoints location:
+  /projects/bgtw/ssredharan/checkpoints/<method>_p30/step-N/
+
+
+================================================================================
+3. PHASE 1: GENERATION (GPU REQUIRED)
+================================================================================
+
+This loads Qwen3-8B with vLLM, hot-swaps LoRA adapters per checkpoint,
+and generates outputs for all benchmarks. Resumable — skips existing outputs.
+
+────────────────────────────────────────
+Option A: Interactive GPU session
+────────────────────────────────────────
+
+  # Get interactive node
+  srun --account=bgtw-dtai-gh --partition=ghx4-interactive \
+    --nodes=1 --ntasks=1 --cpus-per-task=16 \
+    --gpus-per-node=1 --mem=120g --time=02:00:00 --pty bash
+
+  # Inside the session:
+  module load python/miniforge3_pytorch/2.10.0
+  conda activate skywork
+  cd ~/user_interactions
+
+  # Run one method:
+  python scripts/eval/generate_all.py \
+    --method_dir /projects/bgtw/ssredharan/checkpoints/jsd_p30 \
+    --output_root eval_results/jsd_p30 \
+    --base_model Qwen/Qwen3-8B \
+    --benchmarks all \
+    --max_num_seqs 512 \
+    --max_model_len 16384
+
+  # Run specific benchmarks only:
+  python scripts/eval/generate_all.py \
+    --method_dir /projects/bgtw/ssredharan/checkpoints/jsd_p30 \
+    --output_root eval_results/jsd_p30 \
+    --base_model Qwen/Qwen3-8B \
+    --benchmarks alpaca_eval aime reasoning_gym \
+    --max_num_seqs 512 \
+    --max_model_len 16384
+
+────────────────────────────────────────
+Option B: Batch job (one per method)
+────────────────────────────────────────
+
+  # Submit one method:
+  sbatch --job-name=gen_jsd jobs/deltaai/gen_benchmarks.sh jsd_p30
+
+  # Submit all 12 methods in parallel:
+  for method in sft_p30 fkl_p30 jsd_p30 dpo_p30 \
+                jsd_is1_p30 jsd_is2_p30 jsd_is3_p30 jsd_is4_p30 \
+                zg_jsd_p30 rkl_p30 rlad_p30 distillm2_p30; do
+    sbatch --job-name=gen_${method} jobs/deltaai/gen_benchmarks.sh $method
+  done
+
+  # Check progress:
+  squeue -u ssredharan
+  ls eval_results/jsd_p30/step-10/*/outputs.json 2>/dev/null | wc -l
+
+────────────────────────────────────────
+Time estimates (per method, 31 checkpoints):
+────────────────────────────────────────
+  With --max_num_seqs 512:  ~8 min per checkpoint
+  Total per method:         ~4-5 hours
+  All 12 in parallel:       ~4-5 hours wallclock
+
+
+================================================================================
+4. PHASE 2: JUDGING (NO GPU NEEDED)
+================================================================================
+
+Run from login node. Walks all eval_results/ and judges any outputs.json
+that doesn't have a corresponding scores.json.
+
+────────────────────────────────────────
+Programmatic evals (free, run first):
+────────────────────────────────────────
+
+  python scripts/eval/judge_all.py \
+    --results_root eval_results \
+    --benchmarks aime reasoning_gym
+
+────────────────────────────────────────
+API-based evals (costs money):
+────────────────────────────────────────
+
+  # All API benchmarks at once:
+  OPENAI_API_KEY=<key> python scripts/eval/judge_all.py \
+    --results_root eval_results
+
+  # One method only:
+  OPENAI_API_KEY=<key> python scripts/eval/judge_all.py \
+    --results_root eval_results/jsd_p30
+
+  # Specific benchmarks:
+  OPENAI_API_KEY=<key> python scripts/eval/judge_all.py \
+    --results_root eval_results \
+    --benchmarks alpaca_eval wildfeedback_held
+
+────────────────────────────────────────
+Cost estimates (GPT-4o-mini, max_tokens=3):
+────────────────────────────────────────
+  Per checkpoint, all API benchmarks:  ~$0.05
+  Per method (31 ckpts):               ~$1.50
+  All 12 methods:                      ~$18
+
+
+================================================================================
+5. PHASE 3: AGGREGATION & PLOTTING (NO GPU)
+================================================================================
+
+  python scripts/eval/aggregate_scores.py \
+    --results_root eval_results \
+    --output eval_results/aggregate.csv \
+    --plots_dir plots/benchmark_curves
+
+  Produces:
+    eval_results/aggregate.csv              All scores in one CSV
+    plots/benchmark_curves/<bench>_curves.pdf   Training curves per benchmark
+
+
+================================================================================
+6. PUSH CHECKPOINTS TO HUGGINGFACE
+================================================================================
+
+  No GPU needed. Run from login node.
+
+  # Dry run (see what would be pushed):
+  python scripts/eval/push_checkpoints_to_hf.py --dry_run
+
+  # Push all methods (private repos):
+  HF_TOKEN=<token> python scripts/eval/push_checkpoints_to_hf.py --private
+
+  # Push one method:
+  HF_TOKEN=<token> python scripts/eval/push_checkpoints_to_hf.py \
+    --methods jsd_p30 --private
+
+  Repo naming: ssmurali/user-interactions-<method>
+  Each repo contains: step-10/, step-20/, ..., final/
+
+
+================================================================================
+7. QUICK REFERENCE
+================================================================================
+
+  # Full pipeline for one method (interactive):
+  python scripts/eval/generate_all.py \
+    --method_dir /projects/bgtw/ssredharan/checkpoints/jsd_p30 \
+    --output_root eval_results/jsd_p30 \
+    --base_model Qwen/Qwen3-8B \
+    --benchmarks all --max_num_seqs 512 --max_model_len 16384
+
+  python scripts/eval/judge_all.py --results_root eval_results/jsd_p30 \
+    --benchmarks aime reasoning_gym
+
+  OPENAI_API_KEY=<key> python scripts/eval/judge_all.py \
+    --results_root eval_results/jsd_p30
+
+  python scripts/eval/aggregate_scores.py --results_root eval_results
+
+  # Full pipeline for all methods (batch):
+  for m in sft_p30 fkl_p30 jsd_p30 dpo_p30 jsd_is1_p30 jsd_is2_p30 \
+           jsd_is3_p30 jsd_is4_p30 zg_jsd_p30 rkl_p30 rlad_p30 distillm2_p30; do
+    sbatch --job-name=gen_$m jobs/deltaai/gen_benchmarks.sh $m
+  done
+
+  # Monitor:
+  squeue -u ssredharan
+  watch -n 30 'find eval_results -name outputs.json | wc -l'
+
+  # Check how many benchmarks are done per method:
+  for m in eval_results/*/; do
+    done=$(find $m -name outputs.json | wc -l)
+    total=$(find $m -type d -mindepth 1 -maxdepth 1 | wc -l)
+    echo "$m: $done outputs"
+  done
+
+================================================================================
+                          END OF INSTRUCTIONS
+================================================================================
