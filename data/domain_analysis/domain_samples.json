@@ -1,0 +1,178 @@
+{
+  "math": [
+    {
+      "instruction": "4 years ago david's brother was 3 times older than him. 6 years from now, david's age would be half of his brother's age. how old is david now?",
+      "domain": "math"
+    },
+    {
+      "instruction": "Can you adjust this so I buy the least amount of shares at $175 and the most at $150: 9 shares at $175 ($1575), 13 shares at $162 ($2106), and 8 shares at $150 ($1200)",
+      "domain": "math"
+    },
+    {
+      "instruction": "Do I need to average the decision labels over the iterations and then calculate the AUC or calculate the AUC in each iteration?",
+      "domain": "math"
+    },
+    {
+      "instruction": "are you sure about that 7th value ?? seems like you calculated incorrectly",
+      "domain": "math"
+    },
+    {
+      "instruction": "the formula is too long, can shorten it?",
+      "domain": "math"
+    }
+  ],
+  "writing": [
+    {
+      "instruction": "Dm Gm\n\u5f71\u8bed\u8f7b\u541f\uff0c\u65f6\u95f4\u7684\u56de\u54cd\uff0c\nA7 F\n\u5728\u4f60\u6df1\u5904\uff0c\u6211\u5bfb\u627e\u51fa\u795e\u5999\uff0c\nDm Gm\n\u591c\u5e55\u5f00\u59cb\u964d\u843d\uff0c\nA7 Gm Dm\n\u6211\u7d27\u63e1\u7740\u7ec6\u8bed\uff0c\u5f71\u7684\u62e5\u62b1\u3002Generate abc music sheet piano full & correct.",
+      "domain": "writing"
+    },
+    {
+      "instruction": "Write a story where heavy rain and flooding leads to his demise, and how Miss Henderson deals with it and carried on his legacy",
+      "domain": "writing"
+    },
+    {
+      "instruction": "Rewrite this, but include his choice to join the brotherhood.",
+      "domain": "writing"
+    },
+    {
+      "instruction": "add complex ideas and band 9 vocabularies",
+      "domain": "writing"
+    },
+    {
+      "instruction": "I want you to write a recommendation letter for me as a law professor",
+      "domain": "writing"
+    }
+  ],
+  "science": [
+    {
+      "instruction": "use straightforward elastic mechanics (compression/tension, flexure, shear to be based on A_shear = 0.5*A_gross) to get diameter of two PE4710 pontoon pipes under a floating dock. Live load is 5kpa. Dead load is 0.6kpa. dock is 13m long and 3m wide. assume pontoon pipes are 50% submerged UNDER DEAD LOAD",
+      "domain": "science"
+    },
+    {
+      "instruction": "For a distance of 2.5 km (2,500 meters), there would be an approximate drop of 2,065.6 cm due to the Earth\u2019s curvature. how far could see a person with an height of 1,60m the bottom?",
+      "domain": "science"
+    },
+    {
+      "instruction": "They don't believe in evolution. The believe that man was created by an intelligent designer 6,000 years ago. Can you reevaluate you previous response to account for this?",
+      "domain": "science"
+    },
+    {
+      "instruction": "\u6309\u7167\u5b66\u672f\u8bba\u6587\u5199\u4f5c\u6807\u51c6\u6da6\u8272\uff1aIn the future, the HIAF will be able to operate with experimental requirements of up to 10,000 ions per pulse, and with such high beam densities, a high performance data acquisition system is essential.",
+      "domain": "science"
+    },
+    {
+      "instruction": "Assuming you have a nuclear reactor in a game which is composed of a 6x9 grid of items, the items being the following:\n\n00: Uranium fuel cell, EU 5/10/15/20/25 , Heat 4/12/24/40/60\n01: Dual uranium fuel cell, EU 20/30/40/50/60, Heat 24/48/80/120/168\n02: Quad uranium fuel cell, 60/80/100/120/140, Heat 96/160/240/336/448\n03: Heat vent, Capacity 1000, Self cooling 6\n04: Advanced heat vent, Capacity 1000, Self cooling 12\n05: Reactor heat vent, Capacity 1000, self cooling 5, hull cooling 5\n06: Component heat vent, component cooling 4\n07: Overclocked heat vent, self cooling 20, reactor cooling 36\n08: heat exchanger, capacity 2500, hull exchange 4, component exchange 12\n09: advanced heat exchanger, capacity 10000, hull exchange 8, component exchange 24\n10: reactor heat exchanger, capacity 5000, hull exchange 72\n11: component heat exchanger, capacity 5000, component exchange 36\n\nUranium fuel cells generate EU and heat, if there are adjacent uranium cells, it will use the next numbers in the series (separated by /) for both EU and heat.\nHeat vents get rid of heat, the total amount of heat vented/removed must be below the total amount of heat generated. Self cooling refers to the amount of heat removed from itself. Hull cooling refers to the amount of heat removed from the reactor hull. Heat that is not absorbed from the uranium cells is sent to the hull.\nHeat exchangers exchange heat from components and the hull.\n\nPlease generate the setup that generates the most amount of EU while being heat neutral or negative. Show me the setup as a 6x9 grid with the correspondant component numbers\n\nAn example would be\n\n00, 00, 00, 00, 00, 00, 00, 00, 00\n00, 03, 03, 03, 03, 03, 03, 03, 03\n00, 03, 02, 02, 02, 02, 02, 02, 02\n00, 03, 02, 05, 05, 02, 05, 05, 05\n00, 03, 02, 05, 02, 02, 02, 05, 05\n00, 03, 02, 05, 05, 02, 05, 05, 05\n\nHowever that setup would generate more heat than is dissipated and would explode.",
+      "domain": "science"
+    }
+  ],
+  "code": [
+    {
+      "instruction": "I haven't made any helper and I don't plan on using a helper class, since they are sort of a code smell, is there another alternative?",
+      "domain": "code"
+    },
+    {
+      "instruction": "ok, now make a helper method to let me click on an specific part of the screen and give me back this abs_x and abs_y",
+      "domain": "code"
+    },
+    {
+      "instruction": "\u044f \u0431\u044b \u0445\u043e\u0442\u0435\u043b \u043c\u0435\u043d\u044c\u0448\u0435 if",
+      "domain": "code"
+    },
+    {
+      "instruction": "how do i enlarge the application window?",
+      "domain": "code"
+    },
+    {
+      "instruction": "no, make only one if that check both conditions at once, ignoring the continue",
+      "domain": "code"
+    }
+  ],
+  "reasoning": [
+    {
+      "instruction": "How many state borders did I say he crossed when he walked north?",
+      "domain": "reasoning"
+    },
+    {
+      "instruction": "there is no pawn of yours that can take the knight. are you sure you are following our game?",
+      "domain": "reasoning"
+    },
+    {
+      "instruction": "If You ate the state that ate alaska, then remove wyoming which ate california, which allied russia and china ate allied states, which then allied with winsconsin, who ate washingon who ate new york, then colorado ate all allied states again, how many states remain?",
+      "domain": "reasoning"
+    },
+    {
+      "instruction": "What could be a reason for someone to rank these options in exactly this order?",
+      "domain": "reasoning"
+    },
+    {
+      "instruction": "\"Birds (B) are Dinosaurs (A), but Dinosaurs (A) are not Birds (B)\"\n\nIs this a good example of B = A, A=!B?",
+      "domain": "reasoning"
+    }
+  ],
+  "other": [
+    {
+      "instruction": "no both of those lack the further details",
+      "domain": "other"
+    },
+    {
+      "instruction": "I appreciate your answers, but I need some online free tool that not only recognize the image, but also write a content about it",
+      "domain": "other"
+    },
+    {
+      "instruction": "\"For instance, the partnership between HBL and the Aga Khan Development Network (AKDN) is a remarkable example of an alliance for global impact. The shared vision and goals of these organizations compelled them to join forces. They recognized that by combining their expertise, knowledge, and networks, they could achieve meaningful change on a global scale. While each institution brings unique strengths to the partnership, the collaboration amplifies their collective impact.\n\nThe partnership between HBL and AKDN has yielded significant results in improving access to healthcare, education, and financial services in marginalized communities. Their joint initiatives have introduced innovative digital tools, expanded financial service access, and supported small and medium-sized enterprises, leading to economic progress and job creation. Through their efforts, they have made a substantial difference in the lives of individuals and communities, exemplifying the power of collaboration in driving social change.\n\nThis collaboration also underscores the importance of banks in fostering environmental sustainability, gender equity, and inclusivity. Institutions like HBL prioritize reducing their carbon footprint, advocating for renewable energy practices, and managing waste responsibly. They also recognize the unique needs and contributions of women and strive to empower them through tailored financial services and support.\n\nLooking ahead, the banking sector will continue to embrace alliances and partnerships with organizations dedicated to social responsibility and sustainable development. By investing in innovative technology, infrastructure, and human capital, banks will be at the forefront of driving transformative solutions for a brighter future for all.\n\nIn conclusion, the banking sector\u2019s evolution has transformed it into a powerful force for global impact. Through innovative services and strategic partnerships, banks are promoting financial inclusion, sustainable develo",
+      "domain": "other"
+    },
+    {
+      "instruction": "Generate \u201cGeorge Washington;John Adams;Thomas Jefferson;James Madison\u201d.",
+      "domain": "other"
+    },
+    {
+      "instruction": "School starts at 9:15AM and pack up is at 3:15PM. There is a 1 hour break for lunch and recess at 12:30PM. There needs to be an hour for math, 45 minutes for Language Arts, and 30 minutes for Science. There needs to be a 2.5 hour testing session right after a 15-minute bathroom break. Can you give me a possible timeline of the school day?",
+      "domain": "other"
+    }
+  ],
+  "analysis": [
+    {
+      "instruction": "Describe the methods that Sainsbury uses to improve customer\nservice. You must show research on this. What are the advantages and\ndisadvantages of using each method used by Sainsbury? and provide evidence through different website links. This will probably include: customer feedback questionnaires, mystery\nshoppers, online comments and feedback requests (through online surveys\nand social media comments), comment cards inviting feedback and offering\nincentives, telephone surveys, complaints suggestions and complaints box,\nstaff surveys, quality circles (where staff meet) product knowledge tests or\ninternal skills audits.",
+      "domain": "analysis"
+    },
+    {
+      "instruction": "Redo that answer concisely.",
+      "domain": "analysis"
+    },
+    {
+      "instruction": "okay let's forego the summary all together, just use the data to dertermine whether to be cheerful or cautiously optimistic, likewise the conclusion can be at most three lines instead",
+      "domain": "analysis"
+    },
+    {
+      "instruction": "Summarize the guidelines for communication outlined in AFMAN 35-101 to facilitate SECDEF\u2019s Principles of Information mandate?",
+      "domain": "analysis"
+    },
+    {
+      "instruction": "Explain with analysis how each of the methods may not be effective in\nimproving customer service for Sainsbury(use example scenarios to back\nup your explanations).",
+      "domain": "analysis"
+    }
+  ],
+  "chat": [
+    {
+      "instruction": "keep in mind i am female",
+      "domain": "chat"
+    },
+    {
+      "instruction": "What are the most common achievements that are missing from my resume?",
+      "domain": "chat"
+    },
+    {
+      "instruction": "Oh, I am sorry, but to me it seems like you are wrong here. Either I am completely colorblind, or the wings of the film version are gold, not silver.",
+      "domain": "chat"
+    },
+    {
+      "instruction": "All of those jobs are *already* being replaced with AI.",
+      "domain": "chat"
+    },
+    {
+      "instruction": "No that's all wrong",
+      "domain": "chat"
+    }
+  ]
+}

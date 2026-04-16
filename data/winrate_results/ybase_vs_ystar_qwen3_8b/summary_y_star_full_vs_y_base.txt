@@ -1,0 +1,10 @@
+Comparison: y_star_full vs y_base
+Judge: Qwen/Qwen3-14B
+Examples: 500
+
+y_star_full wins:    44 (8.8%)
+y_base wins:   227 (45.4%)
+Ties:             229 (45.8%)
+
+Win rate (inc. ties):  8.8%
+Win rate (exc. ties):  16.2%

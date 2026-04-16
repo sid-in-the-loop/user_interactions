@@ -1,0 +1,15 @@
+Win rate summary (position-bias removed: win only if wins both A/B and B/A)
+
+Comparison          | Wins   | Losses | Ties   | Win Rate (ties excl.)
+--------------------|--------|--------|--------|----------------------
+p0 vs ybase          |    108 |    697 |    195 | 13.4%
+p10 vs ybase         |    146 |    611 |    243 | 19.3%
+p20 vs ybase         |    148 |    602 |    250 | 19.7%
+p30 vs ybase         |    140 |    589 |    271 | 19.2%
+p40 vs ybase         |    157 |    564 |    279 | 21.8%
+p50 vs ybase         |    171 |    549 |    280 | 23.8%
+p60 vs ybase         |    167 |    542 |    291 | 23.6%
+p70 vs ybase         |    160 |    545 |    295 | 22.7%
+p80 vs ybase         |    179 |    537 |    284 | 25.0%
+p90 vs ybase         |    181 |    511 |    308 | 26.2%
+p100 vs ybase        |    187 |    499 |    314 | 27.3%

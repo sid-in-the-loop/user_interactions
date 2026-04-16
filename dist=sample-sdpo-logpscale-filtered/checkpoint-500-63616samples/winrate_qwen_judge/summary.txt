@@ -1,0 +1,10 @@
+Checkpoint: checkpoint-500-63616samples
+Judge: Qwen/Qwen3-14B
+Examples: 805
+
+Model wins:        92 (11.4%)
+Reference wins:   221 (27.5%)
+Ties:             492 (61.1%)
+
+Win rate (inc. ties):  11.4%
+Win rate (exc. ties):  29.4%

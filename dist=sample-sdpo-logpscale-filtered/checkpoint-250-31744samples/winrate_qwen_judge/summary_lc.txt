@@ -1,0 +1,12 @@
+Checkpoint: checkpoint-250-31744samples
+Examples: 805
+
+Model wins:       206 (25.6%)
+Reference wins:    24 (3.0%)
+Ties:             575 (71.4%)
+
+Win rate (inc. ties):  25.6%
+Win rate (exc. ties):  89.6%
+LC win rate:           58.4%
+Avg model length:      3203
+Logistic coefs:        a=0.3380, b=0.2339

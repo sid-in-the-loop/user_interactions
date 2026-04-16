@@ -1,0 +1,7 @@
+Win rate summary (position-bias removed: win only if wins both A/B and B/A)
+
+Comparison          | Wins   | Losses | Ties   | Win Rate (ties excl.)
+--------------------|--------|--------|--------|----------------------
+prefix30 vs ybase    |     80 |    226 |    194 | 26.1%
+noprefix vs ybase    |     26 |    377 |     97 | 6.5%
+full vs ybase        |     74 |    252 |    174 | 22.7%

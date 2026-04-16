@@ -1,0 +1,34 @@
+{
+  "code": {
+    "count": 3215,
+    "pct": 32.92
+  },
+  "chat": {
+    "count": 1758,
+    "pct": 18.0
+  },
+  "other": {
+    "count": 1649,
+    "pct": 16.89
+  },
+  "writing": {
+    "count": 1580,
+    "pct": 16.18
+  },
+  "math": {
+    "count": 642,
+    "pct": 6.57
+  },
+  "science": {
+    "count": 541,
+    "pct": 5.54
+  },
+  "analysis": {
+    "count": 209,
+    "pct": 2.14
+  },
+  "reasoning": {
+    "count": 172,
+    "pct": 1.76
+  }
+}

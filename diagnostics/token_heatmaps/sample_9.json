@@ -1,0 +1,6553 @@
+{
+  "instruction": "Ok. Maybe 85 Will br more clear if llf I ask why there are derivations from the supine? Where its logic?",
+  "y_star": "The reason there are derivations from the supine in Latin\u2014and to clarify, often it\u2019s actually derivations from the past participle, which can be similar to the supine\u2014stems from the morphological structure of the language and its historical approach to word formation. Let\u2019s explore this with more detail to understand the logic:\n\n1. **Participles as Source**: The past participle in Latin often ended in **-tus**, **-ta**, or **-tum** for first conjugation verbs and served multiple roles, including being used as adjectives, nouns, and as part of the compound tenses in the passive voice. Because of its multifunctional use, it was a logical source for word derivations. In many Latin dictionaries, you might actually see the perfect passive participle listed instead of the supine because of its versatility in the language.\n\n2. **Concept of Completed Action**: The past participle conveys a sense of completed action, and this idea of completed action is a natural basis for forming new words that express states or results. For example, the noun *scriptus* (from *scribere*, \"to write\") is formed from the past participle and means \"the written thing\" or \"a writing.\" This kind of nominalization is a common grammatical process, even in modern languages, where verbs can be turned into nouns to express the result or object of an action.\n\n3. **Supine and Its Role**: While the supine is a verbal noun, primarily used in expressions of purpose (e.g., *ut scriberem* \"that I might write\"), it also shares a form with the past participle. This similarity in form\u2014and sometimes in meaning\u2014can lead to confusion. In many cases, the supine was not the direct source of derivations; the past participle was. However, the fact that the supine and the past participle often look alike made it easier for Latin writers and speakers to use them interchangeably in some contexts, which contributed to the sense that the supine was being used for derivation.\n\n4. **Historical Development and Simplification**: Over time, as Latin evolved into the Romance languages, the system of word formation became simpler. Many of the inflections and grammatical categories that Latin had, including the distinction between the supine and the past participle, were either lost or merged. In the Romance languages, the past participle often retains its role in forming adjectives, verbs, and nouns, while the supine is rarely used. So, the process of derivation from the supine may seem obscured today, but it was a logical and functional part of Latin\u2019s grammar.\n\n5. **Obfuscation Through Time**: The process of derivation from the supine may appear obscured or unclear in retrospect, especially when we compare it to the simpler systems of modern languages or even other ancient languages. The complexity of Latin\u2019s morphology, with its multiple verb forms and types of participles, can indeed make it hard for learners to keep track of which form is being used for which purpose. But this complexity was not arbitrary\u2014it was a natural extension of Latin\u2019s inflectional system, designed to express a wide range of grammatical meanings.\n\n6. **Why It Matters**: Understanding the logic behind these derivations helps us appreciate the richness of Latin as a language and its influence on the Romance languages. While the system may seem confusing, especially for speakers of languages with simpler morphology, it reflects a thoughtful and systematic approach to word formation, shaped by the language\u2019s historical development and communicative needs.\n\nIn summary, the use of the supine\u2014often mistaken for the past participle\u2014for derivations in Latin is rooted in the language\u2019s morphological structure and its historical role in expressing completed actions and nominalizations. While the process may seem obscured today due to the evolution of language, it was a clear and functional part of Latin\u2019s grammar. Understanding this can help bridge the gap between the complexity of Latin and the simpler systems found in many modern languages.",
+  "mean_divergence": 0.47602346313611804,
+  "pct_teacher_gt_student": 83.00733496332519,
+  "pct_student_gt_teacher": 15.770171149144256,
+  "tokens": [
+    {
+      "token_id": 785,
+      "token_text": "The",
+      "log_p_teacher": -39.5,
+      "log_p_student": -41.25,
+      "divergence": 1.75,
+      "position": 0
+    },
+    {
+      "token_id": 2874,
+      "token_text": " reason",
+      "log_p_teacher": -0.263671875,
+      "log_p_student": -4.5625,
+      "divergence": 4.298828125,
+      "position": 1
+    },
+    {
+      "token_id": 1052,
+      "token_text": " there",
+      "log_p_teacher": -0.058349609375,
+      "log_p_student": -2.828125,
+      "divergence": 2.769775390625,
+      "position": 2
+    },
+    {
+      "token_id": 525,
+      "token_text": " are",
+      "log_p_teacher": -2.1457672119140625e-06,
+      "log_p_student": -0.0045166015625,
+      "divergence": 0.004514455795288086,
+      "position": 3
+    },
+    {
+      "token_id": 18763,
+      "token_text": " deriv",
+      "log_p_teacher": -9.72747802734375e-05,
+      "log_p_student": -0.00970458984375,
+      "divergence": 0.009607315063476562,
+      "position": 4
+    },
+    {
+      "token_id": 804,
+      "token_text": "ations",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.0728836059570312e-06,
+      "divergence": 1.0728836059570312e-06,
+      "position": 5
+    },
+    {
+      "token_id": 504,
+      "token_text": " from",
+      "log_p_teacher": -6.008148193359375e-05,
+      "log_p_student": -0.0050048828125,
+      "divergence": 0.004944801330566406,
+      "position": 6
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.000644683837890625,
+      "log_p_student": -0.00592041015625,
+      "divergence": 0.005275726318359375,
+      "position": 7
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -4.601478576660156e-05,
+      "log_p_student": -0.00112152099609375,
+      "divergence": 0.0010755062103271484,
+      "position": 8
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -3.337860107421875e-06,
+      "divergence": 3.2186508178710938e-06,
+      "position": 9
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.115234375,
+      "log_p_student": -0.1552734375,
+      "divergence": 0.0400390625,
+      "position": 10
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -4.887580871582031e-06,
+      "log_p_student": -0.0072021484375,
+      "divergence": 0.007197260856628418,
+      "position": 11
+    },
+    {
+      "token_id": 16804,
+      "token_text": "\u2014and",
+      "log_p_teacher": -0.050537109375,
+      "log_p_student": -5.21875,
+      "divergence": 5.168212890625,
+      "position": 12
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.03955078125,
+      "log_p_student": -6.09375,
+      "divergence": 6.05419921875,
+      "position": 13
+    },
+    {
+      "token_id": 37163,
+      "token_text": " clarify",
+      "log_p_teacher": -3.814697265625e-05,
+      "log_p_student": -8.125,
+      "divergence": 8.124961853027344,
+      "position": 14
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -6.67572021484375e-06,
+      "log_p_student": -0.08740234375,
+      "divergence": 0.08739566802978516,
+      "position": 15
+    },
+    {
+      "token_id": 3545,
+      "token_text": " often",
+      "log_p_teacher": -0.040283203125,
+      "log_p_student": -5.96875,
+      "divergence": 5.928466796875,
+      "position": 16
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.00011444091796875,
+      "log_p_student": -1.4921875,
+      "divergence": 1.4920730590820312,
+      "position": 17
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -4.15625,
+      "log_p_student": -3.015625,
+      "divergence": -1.140625,
+      "position": 18
+    },
+    {
+      "token_id": 3520,
+      "token_text": " actually",
+      "log_p_teacher": -0.0003070831298828125,
+      "log_p_student": -2.390625,
+      "divergence": 2.390317916870117,
+      "position": 19
+    },
+    {
+      "token_id": 18763,
+      "token_text": " deriv",
+      "log_p_teacher": -0.00125885009765625,
+      "log_p_student": -4.78125,
+      "divergence": 4.779991149902344,
+      "position": 20
+    },
+    {
+      "token_id": 804,
+      "token_text": "ations",
+      "log_p_teacher": 0.0,
+      "log_p_student": -4.5299530029296875e-05,
+      "divergence": 4.5299530029296875e-05,
+      "position": 21
+    },
+    {
+      "token_id": 504,
+      "token_text": " from",
+      "log_p_teacher": -1.0251998901367188e-05,
+      "log_p_student": -0.0035858154296875,
+      "divergence": 0.003575563430786133,
+      "position": 22
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -1.7881393432617188e-05,
+      "log_p_student": -0.01141357421875,
+      "divergence": 0.011395692825317383,
+      "position": 23
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.0035247802734375,
+      "log_p_student": -0.9375,
+      "divergence": 0.9339752197265625,
+      "position": 24
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -4.0531158447265625e-05,
+      "log_p_student": -0.00927734375,
+      "divergence": 0.009236812591552734,
+      "position": 25
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": -8.344650268554688e-07,
+      "log_p_student": -3.981590270996094e-05,
+      "divergence": 3.898143768310547e-05,
+      "position": 26
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00567626953125,
+      "log_p_student": -0.859375,
+      "divergence": 0.85369873046875,
+      "position": 27
+    },
+    {
+      "token_id": 892,
+      "token_text": " which",
+      "log_p_teacher": -7.05718994140625e-05,
+      "log_p_student": -0.72265625,
+      "divergence": 0.7225856781005859,
+      "position": 28
+    },
+    {
+      "token_id": 646,
+      "token_text": " can",
+      "log_p_teacher": -0.0033721923828125,
+      "log_p_student": -1.1484375,
+      "divergence": 1.1450653076171875,
+      "position": 29
+    },
+    {
+      "token_id": 387,
+      "token_text": " be",
+      "log_p_teacher": -0.0107421875,
+      "log_p_student": -0.333984375,
+      "divergence": 0.3232421875,
+      "position": 30
+    },
+    {
+      "token_id": 4428,
+      "token_text": " similar",
+      "log_p_teacher": -0.0022430419921875,
+      "log_p_student": -2.515625,
+      "divergence": 2.5133819580078125,
+      "position": 31
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.0113525390625,
+      "log_p_student": -0.89453125,
+      "divergence": 0.8831787109375,
+      "position": 32
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -3.457069396972656e-05,
+      "log_p_student": -0.01263427734375,
+      "divergence": 0.012599706649780273,
+      "position": 33
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": 0.0,
+      "log_p_student": -0.0002803802490234375,
+      "divergence": 0.0002803802490234375,
+      "position": 34
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -4.76837158203125e-07,
+      "divergence": 2.384185791015625e-07,
+      "position": 35
+    },
+    {
+      "token_id": 2293,
+      "token_text": "\u2014",
+      "log_p_teacher": -0.007415771484375,
+      "log_p_student": -1.2265625,
+      "divergence": 1.219146728515625,
+      "position": 36
+    },
+    {
+      "token_id": 267,
+      "token_text": "st",
+      "log_p_teacher": -0.00023555755615234375,
+      "log_p_student": -1.0546875,
+      "divergence": 1.0544519424438477,
+      "position": 37
+    },
+    {
+      "token_id": 11852,
+      "token_text": "ems",
+      "log_p_teacher": 0.0,
+      "log_p_student": -9.5367431640625e-07,
+      "divergence": 9.5367431640625e-07,
+      "position": 38
+    },
+    {
+      "token_id": 504,
+      "token_text": " from",
+      "log_p_teacher": -2.6464462280273438e-05,
+      "log_p_student": -0.0014495849609375,
+      "divergence": 0.0014231204986572266,
+      "position": 39
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.00013828277587890625,
+      "log_p_student": -0.20703125,
+      "divergence": 0.2068929672241211,
+      "position": 40
+    },
+    {
+      "token_id": 26351,
+      "token_text": " morph",
+      "log_p_teacher": -0.000423431396484375,
+      "log_p_student": -3.25,
+      "divergence": 3.2495765686035156,
+      "position": 41
+    },
+    {
+      "token_id": 5729,
+      "token_text": "ological",
+      "log_p_teacher": 0.0,
+      "log_p_student": -0.0002803802490234375,
+      "divergence": 0.0002803802490234375,
+      "position": 42
+    },
+    {
+      "token_id": 5944,
+      "token_text": " structure",
+      "log_p_teacher": -0.00011157989501953125,
+      "log_p_student": -2.5625,
+      "divergence": 2.5623884201049805,
+      "position": 43
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -5.841255187988281e-05,
+      "log_p_student": -0.4765625,
+      "divergence": 0.4765040874481201,
+      "position": 44
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.000431060791015625,
+      "log_p_student": -1.1484375,
+      "divergence": 1.1480064392089844,
+      "position": 45
+    },
+    {
+      "token_id": 4128,
+      "token_text": " language",
+      "log_p_teacher": -9.632110595703125e-05,
+      "log_p_student": -0.515625,
+      "divergence": 0.515528678894043,
+      "position": 46
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -2.1696090698242188e-05,
+      "log_p_student": -0.1689453125,
+      "divergence": 0.16892361640930176,
+      "position": 47
+    },
+    {
+      "token_id": 1181,
+      "token_text": " its",
+      "log_p_teacher": -0.0001277923583984375,
+      "log_p_student": -0.326171875,
+      "divergence": 0.32604408264160156,
+      "position": 48
+    },
+    {
+      "token_id": 13656,
+      "token_text": " historical",
+      "log_p_teacher": -5.75,
+      "log_p_student": -0.58203125,
+      "divergence": -5.16796875,
+      "position": 49
+    },
+    {
+      "token_id": 5486,
+      "token_text": " approach",
+      "log_p_teacher": -0.08056640625,
+      "log_p_student": -13.875,
+      "divergence": 13.79443359375,
+      "position": 50
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -0.000591278076171875,
+      "divergence": 0.0005910396575927734,
+      "position": 51
+    },
+    {
+      "token_id": 3409,
+      "token_text": " word",
+      "log_p_teacher": -0.0019683837890625,
+      "log_p_student": -0.52734375,
+      "divergence": 0.5253753662109375,
+      "position": 52
+    },
+    {
+      "token_id": 18003,
+      "token_text": " formation",
+      "log_p_teacher": -3.218650817871094e-05,
+      "log_p_student": -0.01348876953125,
+      "divergence": 0.013456583023071289,
+      "position": 53
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.000720977783203125,
+      "log_p_student": -0.37890625,
+      "divergence": 0.3781852722167969,
+      "position": 54
+    },
+    {
+      "token_id": 6771,
+      "token_text": " Let",
+      "log_p_teacher": -0.040283203125,
+      "log_p_student": -0.6015625,
+      "divergence": 0.561279296875,
+      "position": 55
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -0.09375,
+      "log_p_student": -1.390625,
+      "divergence": 1.296875,
+      "position": 56
+    },
+    {
+      "token_id": 13186,
+      "token_text": " explore",
+      "log_p_teacher": -0.294921875,
+      "log_p_student": -2.265625,
+      "divergence": 1.970703125,
+      "position": 57
+    },
+    {
+      "token_id": 419,
+      "token_text": " this",
+      "log_p_teacher": -0.004364013671875,
+      "log_p_student": -0.54296875,
+      "divergence": 0.538604736328125,
+      "position": 58
+    },
+    {
+      "token_id": 448,
+      "token_text": " with",
+      "log_p_teacher": -0.279296875,
+      "log_p_student": -2.453125,
+      "divergence": 2.173828125,
+      "position": 59
+    },
+    {
+      "token_id": 803,
+      "token_text": " more",
+      "log_p_teacher": -0.007232666015625,
+      "log_p_student": -2.859375,
+      "divergence": 2.852142333984375,
+      "position": 60
+    },
+    {
+      "token_id": 7716,
+      "token_text": " detail",
+      "log_p_teacher": -0.228515625,
+      "log_p_student": -2.609375,
+      "divergence": 2.380859375,
+      "position": 61
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.00162506103515625,
+      "log_p_student": -3.46875,
+      "divergence": 3.4671249389648438,
+      "position": 62
+    },
+    {
+      "token_id": 3535,
+      "token_text": " understand",
+      "log_p_teacher": -0.001068115234375,
+      "log_p_student": -1.1484375,
+      "divergence": 1.147369384765625,
+      "position": 63
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.000255584716796875,
+      "log_p_student": -0.25390625,
+      "divergence": 0.2536506652832031,
+      "position": 64
+    },
+    {
+      "token_id": 12218,
+      "token_text": " logic",
+      "log_p_teacher": -0.000110626220703125,
+      "log_p_student": -0.0947265625,
+      "divergence": 0.09461593627929688,
+      "position": 65
+    },
+    {
+      "token_id": 1447,
+      "token_text": ":\n\n",
+      "log_p_teacher": -0.050048828125,
+      "log_p_student": -3.203125,
+      "divergence": 3.153076171875,
+      "position": 66
+    },
+    {
+      "token_id": 16,
+      "token_text": "1",
+      "log_p_teacher": -0.0086669921875,
+      "log_p_student": -1.6875,
+      "divergence": 1.6788330078125,
+      "position": 67
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -2.2649765014648438e-06,
+      "log_p_student": -1.9073486328125e-06,
+      "divergence": -3.5762786865234375e-07,
+      "position": 68
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": -1.7881393432617188e-06,
+      "log_p_student": -1.1682510375976562e-05,
+      "divergence": 9.894371032714844e-06,
+      "position": 69
+    },
+    {
+      "token_id": 5800,
+      "token_text": "Part",
+      "log_p_teacher": -0.01397705078125,
+      "log_p_student": -8.25,
+      "divergence": 8.23602294921875,
+      "position": 70
+    },
+    {
+      "token_id": 8442,
+      "token_text": "icip",
+      "log_p_teacher": -1.430511474609375e-06,
+      "log_p_student": -0.2333984375,
+      "divergence": 0.2333970069885254,
+      "position": 71
+    },
+    {
+      "token_id": 642,
+      "token_text": "les",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -0.0234375,
+      "divergence": 0.0234372615814209,
+      "position": 72
+    },
+    {
+      "token_id": 438,
+      "token_text": " as",
+      "log_p_teacher": -6.008148193359375e-05,
+      "log_p_student": -0.5,
+      "divergence": 0.4999399185180664,
+      "position": 73
+    },
+    {
+      "token_id": 8748,
+      "token_text": " Source",
+      "log_p_teacher": -1.5703125,
+      "log_p_student": -8.25,
+      "divergence": 6.6796875,
+      "position": 74
+    },
+    {
+      "token_id": 95518,
+      "token_text": "**:",
+      "log_p_teacher": -0.07080078125,
+      "log_p_student": -7.90625,
+      "divergence": 7.83544921875,
+      "position": 75
+    },
+    {
+      "token_id": 576,
+      "token_text": " The",
+      "log_p_teacher": -0.048095703125,
+      "log_p_student": -2.390625,
+      "divergence": 2.342529296875,
+      "position": 76
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.00579833984375,
+      "log_p_student": -0.87109375,
+      "divergence": 0.86529541015625,
+      "position": 77
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -3.600120544433594e-05,
+      "log_p_student": -0.01495361328125,
+      "divergence": 0.014917612075805664,
+      "position": 78
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": 0.0,
+      "log_p_student": -2.1457672119140625e-06,
+      "divergence": 2.1457672119140625e-06,
+      "position": 79
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.0185546875,
+      "log_p_student": -2.203125,
+      "divergence": 2.1845703125,
+      "position": 80
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -5.960464477539062e-07,
+      "log_p_student": -0.000858306884765625,
+      "divergence": 0.0008577108383178711,
+      "position": 81
+    },
+    {
+      "token_id": 3545,
+      "token_text": " often",
+      "log_p_teacher": -0.1728515625,
+      "log_p_student": -3.15625,
+      "divergence": 2.9833984375,
+      "position": 82
+    },
+    {
+      "token_id": 9482,
+      "token_text": " ended",
+      "log_p_teacher": -0.0206298828125,
+      "log_p_student": -7.96875,
+      "divergence": 7.9481201171875,
+      "position": 83
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -8.487701416015625e-05,
+      "log_p_student": -0.1005859375,
+      "divergence": 0.10050106048583984,
+      "position": 84
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": -2.5625,
+      "log_p_student": -3.71875,
+      "divergence": 1.15625,
+      "position": 85
+    },
+    {
+      "token_id": 12,
+      "token_text": "-",
+      "log_p_teacher": -0.0068359375,
+      "log_p_student": -0.0101318359375,
+      "divergence": 0.0032958984375,
+      "position": 86
+    },
+    {
+      "token_id": 83,
+      "token_text": "t",
+      "log_p_teacher": -6.4373016357421875e-06,
+      "log_p_student": -0.0179443359375,
+      "divergence": 0.017937898635864258,
+      "position": 87
+    },
+    {
+      "token_id": 355,
+      "token_text": "us",
+      "log_p_teacher": -2.658367156982422e-05,
+      "log_p_student": -0.0021209716796875,
+      "divergence": 0.0020943880081176758,
+      "position": 88
+    },
+    {
+      "token_id": 97219,
+      "token_text": "**,",
+      "log_p_teacher": -1.140625,
+      "log_p_student": -1.9140625,
+      "divergence": 0.7734375,
+      "position": 89
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": -6.794929504394531e-06,
+      "log_p_student": -0.000640869140625,
+      "divergence": 0.0006340742111206055,
+      "position": 90
+    },
+    {
+      "token_id": 12,
+      "token_text": "-",
+      "log_p_teacher": -7.271766662597656e-06,
+      "log_p_student": -0.00010204315185546875,
+      "divergence": 9.47713851928711e-05,
+      "position": 91
+    },
+    {
+      "token_id": 2565,
+      "token_text": "ta",
+      "log_p_teacher": 0.0,
+      "log_p_student": -3.528594970703125e-05,
+      "divergence": 3.528594970703125e-05,
+      "position": 92
+    },
+    {
+      "token_id": 97219,
+      "token_text": "**,",
+      "log_p_teacher": -8.940696716308594e-06,
+      "log_p_student": -0.0023040771484375,
+      "divergence": 0.0022951364517211914,
+      "position": 93
+    },
+    {
+      "token_id": 476,
+      "token_text": " or",
+      "log_p_teacher": -0.5234375,
+      "log_p_student": -0.234375,
+      "divergence": -0.2890625,
+      "position": 94
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -1.8477439880371094e-05,
+      "divergence": 1.8358230590820312e-05,
+      "position": 95
+    },
+    {
+      "token_id": 12,
+      "token_text": "-",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 96
+    },
+    {
+      "token_id": 83,
+      "token_text": "t",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -0.000141143798828125,
+      "divergence": 0.00014090538024902344,
+      "position": 97
+    },
+    {
+      "token_id": 372,
+      "token_text": "um",
+      "log_p_teacher": -7.152557373046875e-07,
+      "log_p_student": -2.1457672119140625e-06,
+      "divergence": 1.430511474609375e-06,
+      "position": 98
+    },
+    {
+      "token_id": 334,
+      "token_text": "**",
+      "log_p_teacher": -0.002838134765625,
+      "log_p_student": -0.38671875,
+      "divergence": 0.383880615234375,
+      "position": 99
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -0.31640625,
+      "log_p_student": -4.5,
+      "divergence": 4.18359375,
+      "position": 100
+    },
+    {
+      "token_id": 1156,
+      "token_text": " first",
+      "log_p_teacher": -0.005828857421875,
+      "log_p_student": -6.125,
+      "divergence": 6.119171142578125,
+      "position": 101
+    },
+    {
+      "token_id": 63280,
+      "token_text": " conjug",
+      "log_p_teacher": -0.2265625,
+      "log_p_student": -0.1396484375,
+      "divergence": -0.0869140625,
+      "position": 102
+    },
+    {
+      "token_id": 367,
+      "token_text": "ation",
+      "log_p_teacher": -6.628036499023438e-05,
+      "log_p_student": -0.0181884765625,
+      "divergence": 0.018122196197509766,
+      "position": 103
+    },
+    {
+      "token_id": 61846,
+      "token_text": " verbs",
+      "log_p_teacher": -9.5367431640625e-07,
+      "log_p_student": -0.01202392578125,
+      "divergence": 0.012022972106933594,
+      "position": 104
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.09814453125,
+      "log_p_student": -2.890625,
+      "divergence": 2.79248046875,
+      "position": 105
+    },
+    {
+      "token_id": 10223,
+      "token_text": " served",
+      "log_p_teacher": -0.05908203125,
+      "log_p_student": -7.96875,
+      "divergence": 7.90966796875,
+      "position": 106
+    },
+    {
+      "token_id": 5248,
+      "token_text": " multiple",
+      "log_p_teacher": -0.008544921875,
+      "log_p_student": -3.640625,
+      "divergence": 3.632080078125,
+      "position": 107
+    },
+    {
+      "token_id": 12783,
+      "token_text": " roles",
+      "log_p_teacher": -0.006256103515625,
+      "log_p_student": -4.21875,
+      "divergence": 4.212493896484375,
+      "position": 108
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.009033203125,
+      "log_p_student": -1.3671875,
+      "divergence": 1.358154296875,
+      "position": 109
+    },
+    {
+      "token_id": 2670,
+      "token_text": " including",
+      "log_p_teacher": -2.193450927734375e-05,
+      "log_p_student": -0.416015625,
+      "divergence": 0.41599369049072266,
+      "position": 110
+    },
+    {
+      "token_id": 1660,
+      "token_text": " being",
+      "log_p_teacher": -0.039794921875,
+      "log_p_student": -1.8984375,
+      "divergence": 1.858642578125,
+      "position": 111
+    },
+    {
+      "token_id": 1483,
+      "token_text": " used",
+      "log_p_teacher": -6.29425048828125e-05,
+      "log_p_student": -0.91015625,
+      "divergence": 0.9100933074951172,
+      "position": 112
+    },
+    {
+      "token_id": 438,
+      "token_text": " as",
+      "log_p_teacher": -1.2040138244628906e-05,
+      "log_p_student": -0.63671875,
+      "divergence": 0.6367067098617554,
+      "position": 113
+    },
+    {
+      "token_id": 993,
+      "token_text": " ad",
+      "log_p_teacher": -0.01373291015625,
+      "log_p_student": -2.875,
+      "divergence": 2.86126708984375,
+      "position": 114
+    },
+    {
+      "token_id": 86578,
+      "token_text": "jectives",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -7.534027099609375e-05,
+      "divergence": 7.522106170654297e-05,
+      "position": 115
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00128936767578125,
+      "log_p_student": -1.4765625,
+      "divergence": 1.4752731323242188,
+      "position": 116
+    },
+    {
+      "token_id": 89838,
+      "token_text": " nouns",
+      "log_p_teacher": -1.9073486328125e-06,
+      "log_p_student": -0.283203125,
+      "divergence": 0.2832012176513672,
+      "position": 117
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -7.009506225585938e-05,
+      "log_p_student": -0.025390625,
+      "divergence": 0.02532052993774414,
+      "position": 118
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -2.7418136596679688e-05,
+      "log_p_student": -0.1171875,
+      "divergence": 0.11716008186340332,
+      "position": 119
+    },
+    {
+      "token_id": 438,
+      "token_text": " as",
+      "log_p_teacher": -0.008056640625,
+      "log_p_student": -1.328125,
+      "divergence": 1.320068359375,
+      "position": 120
+    },
+    {
+      "token_id": 949,
+      "token_text": " part",
+      "log_p_teacher": -0.00628662109375,
+      "log_p_student": -1.984375,
+      "divergence": 1.97808837890625,
+      "position": 121
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": 0.0,
+      "log_p_student": -0.0003662109375,
+      "divergence": 0.0003662109375,
+      "position": 122
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.0888671875,
+      "log_p_student": -2.375,
+      "divergence": 2.2861328125,
+      "position": 123
+    },
+    {
+      "token_id": 23628,
+      "token_text": " compound",
+      "log_p_teacher": -5.030632019042969e-05,
+      "log_p_student": -2.3125,
+      "divergence": 2.3124496936798096,
+      "position": 124
+    },
+    {
+      "token_id": 259,
+      "token_text": " t",
+      "log_p_teacher": -1.0609626770019531e-05,
+      "log_p_student": -0.04541015625,
+      "divergence": 0.04539954662322998,
+      "position": 125
+    },
+    {
+      "token_id": 4280,
+      "token_text": "enses",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.1920928955078125e-07,
+      "divergence": 1.1920928955078125e-07,
+      "position": 126
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.00018310546875,
+      "log_p_student": -2.21875,
+      "divergence": 2.21856689453125,
+      "position": 127
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -2.8125,
+      "log_p_student": -0.330078125,
+      "divergence": -2.482421875,
+      "position": 128
+    },
+    {
+      "token_id": 27879,
+      "token_text": " passive",
+      "log_p_teacher": -2.5033950805664062e-05,
+      "log_p_student": -0.1630859375,
+      "divergence": 0.16306090354919434,
+      "position": 129
+    },
+    {
+      "token_id": 7743,
+      "token_text": " voice",
+      "log_p_teacher": -1.1920928955078125e-06,
+      "log_p_student": -0.00135040283203125,
+      "divergence": 0.0013492107391357422,
+      "position": 130
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.0001277923583984375,
+      "log_p_student": -0.050537109375,
+      "divergence": 0.05040931701660156,
+      "position": 131
+    },
+    {
+      "token_id": 9211,
+      "token_text": " Because",
+      "log_p_teacher": -0.0009918212890625,
+      "log_p_student": -1.625,
+      "divergence": 1.6240081787109375,
+      "position": 132
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -1.1920928955078125e-05,
+      "log_p_student": -0.62890625,
+      "divergence": 0.6288943290710449,
+      "position": 133
+    },
+    {
+      "token_id": 1181,
+      "token_text": " its",
+      "log_p_teacher": -0.0031890869140625,
+      "log_p_student": -0.66796875,
+      "divergence": 0.6647796630859375,
+      "position": 134
+    },
+    {
+      "token_id": 61287,
+      "token_text": " multif",
+      "log_p_teacher": -0.005615234375,
+      "log_p_student": -4.03125,
+      "divergence": 4.025634765625,
+      "position": 135
+    },
+    {
+      "token_id": 598,
+      "token_text": "unction",
+      "log_p_teacher": -5.602836608886719e-06,
+      "log_p_student": -0.0162353515625,
+      "divergence": 0.016229748725891113,
+      "position": 136
+    },
+    {
+      "token_id": 278,
+      "token_text": "al",
+      "log_p_teacher": -0.00048828125,
+      "log_p_student": -0.0712890625,
+      "divergence": 0.07080078125,
+      "position": 137
+    },
+    {
+      "token_id": 990,
+      "token_text": " use",
+      "log_p_teacher": -0.0019683837890625,
+      "log_p_student": -3.28125,
+      "divergence": 3.2792816162109375,
+      "position": 138
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00372314453125,
+      "log_p_student": -0.08447265625,
+      "divergence": 0.08074951171875,
+      "position": 139
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.00115203857421875,
+      "log_p_student": -0.357421875,
+      "divergence": 0.35626983642578125,
+      "position": 140
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -0.126953125,
+      "log_p_student": -2.328125,
+      "divergence": 2.201171875,
+      "position": 141
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.00013637542724609375,
+      "log_p_student": -0.2451171875,
+      "divergence": 0.2449808120727539,
+      "position": 142
+    },
+    {
+      "token_id": 19819,
+      "token_text": " logical",
+      "log_p_teacher": -0.0274658203125,
+      "log_p_student": -3.484375,
+      "divergence": 3.4569091796875,
+      "position": 143
+    },
+    {
+      "token_id": 2530,
+      "token_text": " source",
+      "log_p_teacher": -0.0012054443359375,
+      "log_p_student": -0.275390625,
+      "divergence": 0.2741851806640625,
+      "position": 144
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -4.0531158447265625e-06,
+      "log_p_student": -0.04052734375,
+      "divergence": 0.04052329063415527,
+      "position": 145
+    },
+    {
+      "token_id": 3409,
+      "token_text": " word",
+      "log_p_teacher": -0.0028533935546875,
+      "log_p_student": -3.75,
+      "divergence": 3.7471466064453125,
+      "position": 146
+    },
+    {
+      "token_id": 18763,
+      "token_text": " deriv",
+      "log_p_teacher": -0.00018310546875,
+      "log_p_student": -2.4375,
+      "divergence": 2.43731689453125,
+      "position": 147
+    },
+    {
+      "token_id": 804,
+      "token_text": "ations",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.0728836059570312e-05,
+      "divergence": 1.0728836059570312e-05,
+      "position": 148
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.00012493133544921875,
+      "log_p_student": -1.640625,
+      "divergence": 1.6405000686645508,
+      "position": 149
+    },
+    {
+      "token_id": 758,
+      "token_text": " In",
+      "log_p_teacher": -0.00604248046875,
+      "log_p_student": -2.5,
+      "divergence": 2.49395751953125,
+      "position": 150
+    },
+    {
+      "token_id": 1657,
+      "token_text": " many",
+      "log_p_teacher": -0.003753662109375,
+      "log_p_student": -0.78125,
+      "divergence": 0.777496337890625,
+      "position": 151
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.00058746337890625,
+      "log_p_student": -4.375,
+      "divergence": 4.374412536621094,
+      "position": 152
+    },
+    {
+      "token_id": 57514,
+      "token_text": " dictionaries",
+      "log_p_teacher": -4.792213439941406e-05,
+      "log_p_student": -7.46875,
+      "divergence": 7.468702077865601,
+      "position": 153
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.006256103515625,
+      "log_p_student": -0.330078125,
+      "divergence": 0.323822021484375,
+      "position": 154
+    },
+    {
+      "token_id": 498,
+      "token_text": " you",
+      "log_p_teacher": -0.0009918212890625,
+      "log_p_student": -1.5625,
+      "divergence": 1.5615081787109375,
+      "position": 155
+    },
+    {
+      "token_id": 2578,
+      "token_text": " might",
+      "log_p_teacher": -0.00738525390625,
+      "log_p_student": -3.1875,
+      "divergence": 3.18011474609375,
+      "position": 156
+    },
+    {
+      "token_id": 3520,
+      "token_text": " actually",
+      "log_p_teacher": -0.005218505859375,
+      "log_p_student": -7.25,
+      "divergence": 7.244781494140625,
+      "position": 157
+    },
+    {
+      "token_id": 1490,
+      "token_text": " see",
+      "log_p_teacher": -0.0003833770751953125,
+      "log_p_student": -0.6015625,
+      "divergence": 0.6011791229248047,
+      "position": 158
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.00016307830810546875,
+      "log_p_student": -0.99609375,
+      "divergence": 0.9959306716918945,
+      "position": 159
+    },
+    {
+      "token_id": 4727,
+      "token_text": " perfect",
+      "log_p_teacher": -0.21484375,
+      "log_p_student": -6.34375,
+      "divergence": 6.12890625,
+      "position": 160
+    },
+    {
+      "token_id": 27879,
+      "token_text": " passive",
+      "log_p_teacher": -4.76837158203125e-07,
+      "log_p_student": -0.125,
+      "divergence": 0.1249995231628418,
+      "position": 161
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -5.960464477539062e-07,
+      "log_p_student": -0.002227783203125,
+      "divergence": 0.002227187156677246,
+      "position": 162
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": 0.0,
+      "log_p_student": -5.7220458984375e-06,
+      "divergence": 5.7220458984375e-06,
+      "position": 163
+    },
+    {
+      "token_id": 10007,
+      "token_text": " listed",
+      "log_p_teacher": -0.0011749267578125,
+      "log_p_student": -3.4375,
+      "divergence": 3.4363250732421875,
+      "position": 164
+    },
+    {
+      "token_id": 4518,
+      "token_text": " instead",
+      "log_p_teacher": -0.0023956298828125,
+      "log_p_student": -4.40625,
+      "divergence": 4.4038543701171875,
+      "position": 165
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": 0.0,
+      "log_p_student": -0.00080108642578125,
+      "divergence": 0.00080108642578125,
+      "position": 166
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -3.5762786865234375e-07,
+      "log_p_student": -0.0040283203125,
+      "divergence": 0.004027962684631348,
+      "position": 167
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": 0.0,
+      "log_p_student": -0.0018768310546875,
+      "divergence": 0.0018768310546875,
+      "position": 168
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": -2.384185791015625e-07,
+      "divergence": 2.384185791015625e-07,
+      "position": 169
+    },
+    {
+      "token_id": 1576,
+      "token_text": " because",
+      "log_p_teacher": -0.04150390625,
+      "log_p_student": -4.71875,
+      "divergence": 4.67724609375,
+      "position": 170
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -3.5762786865234375e-05,
+      "log_p_student": -1.09375,
+      "divergence": 1.0937142372131348,
+      "position": 171
+    },
+    {
+      "token_id": 1181,
+      "token_text": " its",
+      "log_p_teacher": -0.00016021728515625,
+      "log_p_student": -0.15234375,
+      "divergence": 0.15218353271484375,
+      "position": 172
+    },
+    {
+      "token_id": 59012,
+      "token_text": " versatility",
+      "log_p_teacher": -0.0004177093505859375,
+      "log_p_student": -5.59375,
+      "divergence": 5.593332290649414,
+      "position": 173
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.000659942626953125,
+      "log_p_student": -1.3515625,
+      "divergence": 1.3509025573730469,
+      "position": 174
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.00015544891357421875,
+      "log_p_student": -4.6875,
+      "divergence": 4.687344551086426,
+      "position": 175
+    },
+    {
+      "token_id": 4128,
+      "token_text": " language",
+      "log_p_teacher": -1.9073486328125e-06,
+      "log_p_student": -0.07958984375,
+      "divergence": 0.07958793640136719,
+      "position": 176
+    },
+    {
+      "token_id": 382,
+      "token_text": ".\n\n",
+      "log_p_teacher": -0.2021484375,
+      "log_p_student": -0.0849609375,
+      "divergence": -0.1171875,
+      "position": 177
+    },
+    {
+      "token_id": 17,
+      "token_text": "2",
+      "log_p_teacher": -7.009506225585938e-05,
+      "log_p_student": -0.004241943359375,
+      "divergence": 0.004171848297119141,
+      "position": 178
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -8.344650268554688e-07,
+      "log_p_student": -7.152557373046875e-06,
+      "divergence": 6.318092346191406e-06,
+      "position": 179
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 180
+    },
+    {
+      "token_id": 44576,
+      "token_text": "Concept",
+      "log_p_teacher": -0.00054168701171875,
+      "log_p_student": -7.84375,
+      "divergence": 7.843208312988281,
+      "position": 181
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -8.344650268554688e-07,
+      "log_p_student": -0.3984375,
+      "divergence": 0.39843666553497314,
+      "position": 182
+    },
+    {
+      "token_id": 45494,
+      "token_text": " Completed",
+      "log_p_teacher": -4.0531158447265625e-05,
+      "log_p_student": -9.6875,
+      "divergence": 9.687459468841553,
+      "position": 183
+    },
+    {
+      "token_id": 5586,
+      "token_text": " Action",
+      "log_p_teacher": -4.887580871582031e-06,
+      "log_p_student": -0.019287109375,
+      "divergence": 0.019282221794128418,
+      "position": 184
+    },
+    {
+      "token_id": 95518,
+      "token_text": "**:",
+      "log_p_teacher": -4.3392181396484375e-05,
+      "log_p_student": -0.0108642578125,
+      "divergence": 0.010820865631103516,
+      "position": 185
+    },
+    {
+      "token_id": 576,
+      "token_text": " The",
+      "log_p_teacher": -0.00010156631469726562,
+      "log_p_student": -0.1181640625,
+      "divergence": 0.11806249618530273,
+      "position": 186
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.000331878662109375,
+      "log_p_student": -0.2294921875,
+      "divergence": 0.22916030883789062,
+      "position": 187
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -7.033348083496094e-06,
+      "log_p_student": -0.0022735595703125,
+      "divergence": 0.002266526222229004,
+      "position": 188
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -1.5497207641601562e-06,
+      "divergence": 1.3113021850585938e-06,
+      "position": 189
+    },
+    {
+      "token_id": 390,
+      "token_text": " con",
+      "log_p_teacher": -0.00494384765625,
+      "log_p_student": -3.640625,
+      "divergence": 3.63568115234375,
+      "position": 190
+    },
+    {
+      "token_id": 49269,
+      "token_text": "veys",
+      "log_p_teacher": 0.0,
+      "log_p_student": -0.0233154296875,
+      "divergence": 0.0233154296875,
+      "position": 191
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.0015106201171875,
+      "log_p_student": -0.84375,
+      "divergence": 0.8422393798828125,
+      "position": 192
+    },
+    {
+      "token_id": 5530,
+      "token_text": " sense",
+      "log_p_teacher": -0.0037384033203125,
+      "log_p_student": -0.78515625,
+      "divergence": 0.7814178466796875,
+      "position": 193
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": 0.0,
+      "log_p_student": -8.440017700195312e-05,
+      "divergence": 8.440017700195312e-05,
+      "position": 194
+    },
+    {
+      "token_id": 8145,
+      "token_text": " completed",
+      "log_p_teacher": -0.69921875,
+      "log_p_student": -0.62890625,
+      "divergence": -0.0703125,
+      "position": 195
+    },
+    {
+      "token_id": 1917,
+      "token_text": " action",
+      "log_p_teacher": -1.3232231140136719e-05,
+      "log_p_student": -0.005279541015625,
+      "divergence": 0.005266308784484863,
+      "position": 196
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.01611328125,
+      "log_p_student": -0.1748046875,
+      "divergence": 0.15869140625,
+      "position": 197
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.248046875,
+      "log_p_student": -2.765625,
+      "divergence": 2.517578125,
+      "position": 198
+    },
+    {
+      "token_id": 419,
+      "token_text": " this",
+      "log_p_teacher": -0.0849609375,
+      "log_p_student": -0.8125,
+      "divergence": 0.7275390625,
+      "position": 199
+    },
+    {
+      "token_id": 4522,
+      "token_text": " idea",
+      "log_p_teacher": -2.21875,
+      "log_p_student": -2.84375,
+      "divergence": 0.625,
+      "position": 200
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.212890625,
+      "log_p_student": -1.3515625,
+      "divergence": 1.138671875,
+      "position": 201
+    },
+    {
+      "token_id": 8145,
+      "token_text": " completed",
+      "log_p_teacher": -1.2734375,
+      "log_p_student": -1.4375,
+      "divergence": 0.1640625,
+      "position": 202
+    },
+    {
+      "token_id": 1917,
+      "token_text": " action",
+      "log_p_teacher": -0.345703125,
+      "log_p_student": -0.1552734375,
+      "divergence": -0.1904296875,
+      "position": 203
+    },
+    {
+      "token_id": 374,
+      "token_text": " is",
+      "log_p_teacher": -0.9765625,
+      "log_p_student": -0.5390625,
+      "divergence": -0.4375,
+      "position": 204
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -2.203125,
+      "log_p_student": -2.0,
+      "divergence": -0.203125,
+      "position": 205
+    },
+    {
+      "token_id": 5810,
+      "token_text": " natural",
+      "log_p_teacher": -0.171875,
+      "log_p_student": -0.58984375,
+      "divergence": 0.41796875,
+      "position": 206
+    },
+    {
+      "token_id": 8037,
+      "token_text": " basis",
+      "log_p_teacher": -0.345703125,
+      "log_p_student": -0.64453125,
+      "divergence": 0.298828125,
+      "position": 207
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -4.029273986816406e-05,
+      "log_p_student": -0.0072021484375,
+      "divergence": 0.007161855697631836,
+      "position": 208
+    },
+    {
+      "token_id": 29064,
+      "token_text": " forming",
+      "log_p_teacher": -0.953125,
+      "log_p_student": -0.859375,
+      "divergence": -0.09375,
+      "position": 209
+    },
+    {
+      "token_id": 501,
+      "token_text": " new",
+      "log_p_teacher": -2.234375,
+      "log_p_student": -1.8671875,
+      "divergence": -0.3671875,
+      "position": 210
+    },
+    {
+      "token_id": 4244,
+      "token_text": " words",
+      "log_p_teacher": -0.0179443359375,
+      "log_p_student": -0.1611328125,
+      "divergence": 0.1431884765625,
+      "position": 211
+    },
+    {
+      "token_id": 429,
+      "token_text": " that",
+      "log_p_teacher": -1.34375,
+      "log_p_student": -1.390625,
+      "divergence": 0.046875,
+      "position": 212
+    },
+    {
+      "token_id": 3158,
+      "token_text": " express",
+      "log_p_teacher": -2.453125,
+      "log_p_student": -2.25,
+      "divergence": -0.203125,
+      "position": 213
+    },
+    {
+      "token_id": 5302,
+      "token_text": " states",
+      "log_p_teacher": -0.53125,
+      "log_p_student": -1.2265625,
+      "divergence": 0.6953125,
+      "position": 214
+    },
+    {
+      "token_id": 476,
+      "token_text": " or",
+      "log_p_teacher": -0.482421875,
+      "log_p_student": -0.609375,
+      "divergence": 0.126953125,
+      "position": 215
+    },
+    {
+      "token_id": 3059,
+      "token_text": " results",
+      "log_p_teacher": -0.48046875,
+      "log_p_student": -1.2109375,
+      "divergence": 0.73046875,
+      "position": 216
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.2109375,
+      "log_p_student": -0.62890625,
+      "divergence": 0.41796875,
+      "position": 217
+    },
+    {
+      "token_id": 1752,
+      "token_text": " For",
+      "log_p_teacher": -0.032470703125,
+      "log_p_student": -0.59375,
+      "divergence": 0.561279296875,
+      "position": 218
+    },
+    {
+      "token_id": 3110,
+      "token_text": " example",
+      "log_p_teacher": -0.142578125,
+      "log_p_student": -0.28125,
+      "divergence": 0.138671875,
+      "position": 219
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -2.658367156982422e-05,
+      "log_p_student": -0.00445556640625,
+      "divergence": 0.004428982734680176,
+      "position": 220
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.37890625,
+      "log_p_student": -0.75390625,
+      "divergence": 0.375,
+      "position": 221
+    },
+    {
+      "token_id": 36921,
+      "token_text": " noun",
+      "log_p_teacher": -4.15625,
+      "log_p_student": -3.609375,
+      "divergence": -0.546875,
+      "position": 222
+    },
+    {
+      "token_id": 353,
+      "token_text": " *",
+      "log_p_teacher": -0.68359375,
+      "log_p_student": -1.421875,
+      "divergence": 0.73828125,
+      "position": 223
+    },
+    {
+      "token_id": 2282,
+      "token_text": "script",
+      "log_p_teacher": -0.0301513671875,
+      "log_p_student": -0.216796875,
+      "divergence": 0.1866455078125,
+      "position": 224
+    },
+    {
+      "token_id": 355,
+      "token_text": "us",
+      "log_p_teacher": -0.2412109375,
+      "log_p_student": -0.69921875,
+      "divergence": 0.4580078125,
+      "position": 225
+    },
+    {
+      "token_id": 9,
+      "token_text": "*",
+      "log_p_teacher": -0.000606536865234375,
+      "log_p_student": -0.005859375,
+      "divergence": 0.005252838134765625,
+      "position": 226
+    },
+    {
+      "token_id": 320,
+      "token_text": " (",
+      "log_p_teacher": -0.1474609375,
+      "log_p_student": -0.1494140625,
+      "divergence": 0.001953125,
+      "position": 227
+    },
+    {
+      "token_id": 1499,
+      "token_text": "from",
+      "log_p_teacher": -0.640625,
+      "log_p_student": -0.94140625,
+      "divergence": 0.30078125,
+      "position": 228
+    },
+    {
+      "token_id": 353,
+      "token_text": " *",
+      "log_p_teacher": -0.31640625,
+      "log_p_student": -0.48828125,
+      "divergence": 0.171875,
+      "position": 229
+    },
+    {
+      "token_id": 11592,
+      "token_text": "scri",
+      "log_p_teacher": -0.0303955078125,
+      "log_p_student": -0.033203125,
+      "divergence": 0.0028076171875,
+      "position": 230
+    },
+    {
+      "token_id": 61286,
+      "token_text": "bere",
+      "log_p_teacher": -0.0145263671875,
+      "log_p_student": -0.020751953125,
+      "divergence": 0.0062255859375,
+      "position": 231
+    },
+    {
+      "token_id": 12314,
+      "token_text": "*,",
+      "log_p_teacher": -0.0732421875,
+      "log_p_student": -0.13671875,
+      "divergence": 0.0634765625,
+      "position": 232
+    },
+    {
+      "token_id": 330,
+      "token_text": " \"",
+      "log_p_teacher": -0.1748046875,
+      "log_p_student": -0.455078125,
+      "divergence": 0.2802734375,
+      "position": 233
+    },
+    {
+      "token_id": 983,
+      "token_text": "to",
+      "log_p_teacher": -7.152557373046875e-07,
+      "log_p_student": -6.628036499023438e-05,
+      "divergence": 6.556510925292969e-05,
+      "position": 234
+    },
+    {
+      "token_id": 3270,
+      "token_text": " write",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.1920928955078125e-07,
+      "divergence": 1.1920928955078125e-07,
+      "position": 235
+    },
+    {
+      "token_id": 899,
+      "token_text": "\")",
+      "log_p_teacher": -0.0003147125244140625,
+      "log_p_student": -0.0037689208984375,
+      "divergence": 0.0034542083740234375,
+      "position": 236
+    },
+    {
+      "token_id": 374,
+      "token_text": " is",
+      "log_p_teacher": -2.640625,
+      "log_p_student": -1.84375,
+      "divergence": -0.796875,
+      "position": 237
+    },
+    {
+      "token_id": 14122,
+      "token_text": " formed",
+      "log_p_teacher": -4.46875,
+      "log_p_student": -3.4375,
+      "divergence": -1.03125,
+      "position": 238
+    },
+    {
+      "token_id": 504,
+      "token_text": " from",
+      "log_p_teacher": -0.016357421875,
+      "log_p_student": -0.03125,
+      "divergence": 0.014892578125,
+      "position": 239
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.00052642822265625,
+      "log_p_student": -0.004486083984375,
+      "divergence": 0.00395965576171875,
+      "position": 240
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.10009765625,
+      "log_p_student": -0.1962890625,
+      "divergence": 0.09619140625,
+      "position": 241
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -9.059906005859375e-06,
+      "log_p_student": -0.0001277923583984375,
+      "divergence": 0.00011873245239257812,
+      "position": 242
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -9.5367431640625e-07,
+      "divergence": 7.152557373046875e-07,
+      "position": 243
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.4921875,
+      "log_p_student": -0.8359375,
+      "divergence": 0.34375,
+      "position": 244
+    },
+    {
+      "token_id": 3363,
+      "token_text": " means",
+      "log_p_teacher": -0.59765625,
+      "log_p_student": -0.58203125,
+      "divergence": -0.015625,
+      "position": 245
+    },
+    {
+      "token_id": 330,
+      "token_text": " \"",
+      "log_p_teacher": -0.0216064453125,
+      "log_p_student": -0.031494140625,
+      "divergence": 0.0098876953125,
+      "position": 246
+    },
+    {
+      "token_id": 1782,
+      "token_text": "the",
+      "log_p_teacher": -1.671875,
+      "log_p_student": -2.046875,
+      "divergence": 0.375,
+      "position": 247
+    },
+    {
+      "token_id": 5326,
+      "token_text": " written",
+      "log_p_teacher": -0.1650390625,
+      "log_p_student": -0.189453125,
+      "divergence": 0.0244140625,
+      "position": 248
+    },
+    {
+      "token_id": 3166,
+      "token_text": " thing",
+      "log_p_teacher": -0.0172119140625,
+      "log_p_student": -0.1328125,
+      "divergence": 0.1156005859375,
+      "position": 249
+    },
+    {
+      "token_id": 1,
+      "token_text": "\"",
+      "log_p_teacher": -0.392578125,
+      "log_p_student": -0.55078125,
+      "divergence": 0.158203125,
+      "position": 250
+    },
+    {
+      "token_id": 476,
+      "token_text": " or",
+      "log_p_teacher": -0.00506591796875,
+      "log_p_student": -0.025146484375,
+      "divergence": 0.02008056640625,
+      "position": 251
+    },
+    {
+      "token_id": 330,
+      "token_text": " \"",
+      "log_p_teacher": -0.0118408203125,
+      "log_p_student": -0.0595703125,
+      "divergence": 0.0477294921875,
+      "position": 252
+    },
+    {
+      "token_id": 64,
+      "token_text": "a",
+      "log_p_teacher": -0.1787109375,
+      "log_p_student": -0.376953125,
+      "divergence": 0.1982421875,
+      "position": 253
+    },
+    {
+      "token_id": 4378,
+      "token_text": " writing",
+      "log_p_teacher": -0.1806640625,
+      "log_p_student": -0.3671875,
+      "divergence": 0.1865234375,
+      "position": 254
+    },
+    {
+      "token_id": 1189,
+      "token_text": ".\"",
+      "log_p_teacher": -0.11669921875,
+      "log_p_student": -0.478515625,
+      "divergence": 0.36181640625,
+      "position": 255
+    },
+    {
+      "token_id": 1096,
+      "token_text": " This",
+      "log_p_teacher": -0.1904296875,
+      "log_p_student": -0.4140625,
+      "divergence": 0.2236328125,
+      "position": 256
+    },
+    {
+      "token_id": 3093,
+      "token_text": " kind",
+      "log_p_teacher": -2.53125,
+      "log_p_student": -2.328125,
+      "divergence": -0.203125,
+      "position": 257
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": 0.0,
+      "log_p_student": -3.337860107421875e-06,
+      "divergence": 3.337860107421875e-06,
+      "position": 258
+    },
+    {
+      "token_id": 46755,
+      "token_text": " nominal",
+      "log_p_teacher": -4.90625,
+      "log_p_student": -3.28125,
+      "divergence": -1.625,
+      "position": 259
+    },
+    {
+      "token_id": 2022,
+      "token_text": "ization",
+      "log_p_teacher": -0.01708984375,
+      "log_p_student": -0.0771484375,
+      "divergence": 0.06005859375,
+      "position": 260
+    },
+    {
+      "token_id": 374,
+      "token_text": " is",
+      "log_p_teacher": -1.328125,
+      "log_p_student": -0.5625,
+      "divergence": -0.765625,
+      "position": 261
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -1.6484375,
+      "log_p_student": -1.234375,
+      "divergence": -0.4140625,
+      "position": 262
+    },
+    {
+      "token_id": 4185,
+      "token_text": " common",
+      "log_p_teacher": -0.034423828125,
+      "log_p_student": -0.306640625,
+      "divergence": 0.272216796875,
+      "position": 263
+    },
+    {
+      "token_id": 68125,
+      "token_text": " gramm",
+      "log_p_teacher": -3.546875,
+      "log_p_student": -3.65625,
+      "divergence": 0.109375,
+      "position": 264
+    },
+    {
+      "token_id": 61072,
+      "token_text": "atical",
+      "log_p_teacher": -3.5762786865234375e-07,
+      "log_p_student": -1.2040138244628906e-05,
+      "divergence": 1.1682510375976562e-05,
+      "position": 265
+    },
+    {
+      "token_id": 1882,
+      "token_text": " process",
+      "log_p_teacher": -0.6015625,
+      "log_p_student": -0.69140625,
+      "divergence": 0.08984375,
+      "position": 266
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -2.78125,
+      "log_p_student": -2.90625,
+      "divergence": 0.125,
+      "position": 267
+    },
+    {
+      "token_id": 1496,
+      "token_text": " even",
+      "log_p_teacher": -2.5625,
+      "log_p_student": -2.90625,
+      "divergence": 0.34375,
+      "position": 268
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.06689453125,
+      "log_p_student": -0.107421875,
+      "divergence": 0.04052734375,
+      "position": 269
+    },
+    {
+      "token_id": 6481,
+      "token_text": " modern",
+      "log_p_teacher": -0.1728515625,
+      "log_p_student": -0.50390625,
+      "divergence": 0.3310546875,
+      "position": 270
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -0.00909423828125,
+      "log_p_student": -0.0142822265625,
+      "divergence": 0.00518798828125,
+      "position": 271
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.51171875,
+      "log_p_student": -1.765625,
+      "divergence": 1.25390625,
+      "position": 272
+    },
+    {
+      "token_id": 1380,
+      "token_text": " where",
+      "log_p_teacher": -0.046142578125,
+      "log_p_student": -0.31640625,
+      "divergence": 0.270263671875,
+      "position": 273
+    },
+    {
+      "token_id": 61846,
+      "token_text": " verbs",
+      "log_p_teacher": -0.271484375,
+      "log_p_student": -0.55078125,
+      "divergence": 0.279296875,
+      "position": 274
+    },
+    {
+      "token_id": 646,
+      "token_text": " can",
+      "log_p_teacher": -0.36328125,
+      "log_p_student": -0.412109375,
+      "divergence": 0.048828125,
+      "position": 275
+    },
+    {
+      "token_id": 387,
+      "token_text": " be",
+      "log_p_teacher": -0.55078125,
+      "log_p_student": -0.57421875,
+      "divergence": 0.0234375,
+      "position": 276
+    },
+    {
+      "token_id": 6519,
+      "token_text": " turned",
+      "log_p_teacher": -0.251953125,
+      "log_p_student": -0.470703125,
+      "divergence": 0.21875,
+      "position": 277
+    },
+    {
+      "token_id": 1119,
+      "token_text": " into",
+      "log_p_teacher": -1.5497207641601562e-05,
+      "log_p_student": -0.00018978118896484375,
+      "divergence": 0.0001742839813232422,
+      "position": 278
+    },
+    {
+      "token_id": 89838,
+      "token_text": " nouns",
+      "log_p_teacher": -0.00022125244140625,
+      "log_p_student": -0.00133514404296875,
+      "divergence": 0.0011138916015625,
+      "position": 279
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.8671875,
+      "log_p_student": -1.734375,
+      "divergence": 0.8671875,
+      "position": 280
+    },
+    {
+      "token_id": 3158,
+      "token_text": " express",
+      "log_p_teacher": -1.0390625,
+      "log_p_student": -1.0,
+      "divergence": -0.0390625,
+      "position": 281
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.388671875,
+      "log_p_student": -0.30859375,
+      "divergence": -0.080078125,
+      "position": 282
+    },
+    {
+      "token_id": 1102,
+      "token_text": " result",
+      "log_p_teacher": -0.051025390625,
+      "log_p_student": -0.30859375,
+      "divergence": 0.257568359375,
+      "position": 283
+    },
+    {
+      "token_id": 476,
+      "token_text": " or",
+      "log_p_teacher": -0.5859375,
+      "log_p_student": -0.6015625,
+      "divergence": 0.015625,
+      "position": 284
+    },
+    {
+      "token_id": 1633,
+      "token_text": " object",
+      "log_p_teacher": -0.34765625,
+      "log_p_student": -1.2421875,
+      "divergence": 0.89453125,
+      "position": 285
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.0001430511474609375,
+      "log_p_student": -0.004974365234375,
+      "divergence": 0.0048313140869140625,
+      "position": 286
+    },
+    {
+      "token_id": 458,
+      "token_text": " an",
+      "log_p_teacher": -0.2021484375,
+      "log_p_student": -0.58203125,
+      "divergence": 0.3798828125,
+      "position": 287
+    },
+    {
+      "token_id": 1917,
+      "token_text": " action",
+      "log_p_teacher": -5.4836273193359375e-06,
+      "log_p_student": -0.0002193450927734375,
+      "divergence": 0.00021386146545410156,
+      "position": 288
+    },
+    {
+      "token_id": 382,
+      "token_text": ".\n\n",
+      "log_p_teacher": -0.0206298828125,
+      "log_p_student": -0.01416015625,
+      "divergence": -0.0064697265625,
+      "position": 289
+    },
+    {
+      "token_id": 18,
+      "token_text": "3",
+      "log_p_teacher": -1.2278556823730469e-05,
+      "log_p_student": -3.8623809814453125e-05,
+      "divergence": 2.6345252990722656e-05,
+      "position": 290
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -1.9073486328125e-06,
+      "log_p_student": -2.8848648071289062e-05,
+      "divergence": 2.6941299438476562e-05,
+      "position": 291
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -3.3855438232421875e-05,
+      "divergence": 3.3736228942871094e-05,
+      "position": 292
+    },
+    {
+      "token_id": 10048,
+      "token_text": "Sup",
+      "log_p_teacher": -0.498046875,
+      "log_p_student": -0.79296875,
+      "divergence": 0.294921875,
+      "position": 293
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": -4.4345855712890625e-05,
+      "log_p_student": -0.001007080078125,
+      "divergence": 0.0009627342224121094,
+      "position": 294
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.56640625,
+      "log_p_student": -1.0,
+      "divergence": 0.43359375,
+      "position": 295
+    },
+    {
+      "token_id": 11445,
+      "token_text": " Its",
+      "log_p_teacher": -1.734375,
+      "log_p_student": -2.328125,
+      "divergence": 0.59375,
+      "position": 296
+    },
+    {
+      "token_id": 15404,
+      "token_text": " Role",
+      "log_p_teacher": -1.2578125,
+      "log_p_student": -1.234375,
+      "divergence": -0.0234375,
+      "position": 297
+    },
+    {
+      "token_id": 95518,
+      "token_text": "**:",
+      "log_p_teacher": -0.038818359375,
+      "log_p_student": -0.042724609375,
+      "divergence": 0.00390625,
+      "position": 298
+    },
+    {
+      "token_id": 5976,
+      "token_text": " While",
+      "log_p_teacher": -0.44140625,
+      "log_p_student": -1.5546875,
+      "divergence": 1.11328125,
+      "position": 299
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.000576019287109375,
+      "log_p_student": -0.017578125,
+      "divergence": 0.017002105712890625,
+      "position": 300
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.0130615234375,
+      "log_p_student": -0.0322265625,
+      "divergence": 0.0191650390625,
+      "position": 301
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 302
+    },
+    {
+      "token_id": 374,
+      "token_text": " is",
+      "log_p_teacher": -0.2060546875,
+      "log_p_student": -0.396484375,
+      "divergence": 0.1904296875,
+      "position": 303
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.291015625,
+      "log_p_student": -0.498046875,
+      "divergence": 0.20703125,
+      "position": 304
+    },
+    {
+      "token_id": 35770,
+      "token_text": " verbal",
+      "log_p_teacher": -0.31640625,
+      "log_p_student": -0.421875,
+      "divergence": 0.10546875,
+      "position": 305
+    },
+    {
+      "token_id": 36921,
+      "token_text": " noun",
+      "log_p_teacher": -0.00021076202392578125,
+      "log_p_student": -0.003997802734375,
+      "divergence": 0.0037870407104492188,
+      "position": 306
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -2.0625,
+      "log_p_student": -1.015625,
+      "divergence": -1.046875,
+      "position": 307
+    },
+    {
+      "token_id": 15503,
+      "token_text": " primarily",
+      "log_p_teacher": -3.5,
+      "log_p_student": -4.0625,
+      "divergence": 0.5625,
+      "position": 308
+    },
+    {
+      "token_id": 1483,
+      "token_text": " used",
+      "log_p_teacher": -0.0052490234375,
+      "log_p_student": -0.044677734375,
+      "divergence": 0.0394287109375,
+      "position": 309
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.9921875,
+      "log_p_student": -0.87890625,
+      "divergence": -0.11328125,
+      "position": 310
+    },
+    {
+      "token_id": 23393,
+      "token_text": " expressions",
+      "log_p_teacher": -2.328125,
+      "log_p_student": -2.828125,
+      "divergence": 0.5,
+      "position": 311
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.0010833740234375,
+      "log_p_student": -0.00897216796875,
+      "divergence": 0.0078887939453125,
+      "position": 312
+    },
+    {
+      "token_id": 7428,
+      "token_text": " purpose",
+      "log_p_teacher": -0.0004749298095703125,
+      "log_p_student": -0.00118255615234375,
+      "divergence": 0.0007076263427734375,
+      "position": 313
+    },
+    {
+      "token_id": 320,
+      "token_text": " (",
+      "log_p_teacher": -0.248046875,
+      "log_p_student": -1.109375,
+      "divergence": 0.861328125,
+      "position": 314
+    },
+    {
+      "token_id": 68,
+      "token_text": "e",
+      "log_p_teacher": -0.0693359375,
+      "log_p_student": -0.359375,
+      "divergence": 0.2900390625,
+      "position": 315
+    },
+    {
+      "token_id": 1302,
+      "token_text": ".g",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -7.987022399902344e-06,
+      "divergence": 7.867813110351562e-06,
+      "position": 316
+    },
+    {
+      "token_id": 2572,
+      "token_text": ".,",
+      "log_p_teacher": -0.0011749267578125,
+      "log_p_student": -0.0125732421875,
+      "divergence": 0.0113983154296875,
+      "position": 317
+    },
+    {
+      "token_id": 353,
+      "token_text": " *",
+      "log_p_teacher": -0.038818359375,
+      "log_p_student": -0.126953125,
+      "divergence": 0.088134765625,
+      "position": 318
+    },
+    {
+      "token_id": 332,
+      "token_text": "ut",
+      "log_p_teacher": -0.63671875,
+      "log_p_student": -0.8984375,
+      "divergence": 0.26171875,
+      "position": 319
+    },
+    {
+      "token_id": 67222,
+      "token_text": " scri",
+      "log_p_teacher": -0.21875,
+      "log_p_student": -1.1171875,
+      "divergence": 0.8984375,
+      "position": 320
+    },
+    {
+      "token_id": 652,
+      "token_text": "ber",
+      "log_p_teacher": -0.0064697265625,
+      "log_p_student": -0.006866455078125,
+      "divergence": 0.000396728515625,
+      "position": 321
+    },
+    {
+      "token_id": 336,
+      "token_text": "em",
+      "log_p_teacher": -0.42578125,
+      "log_p_student": -0.61328125,
+      "divergence": 0.1875,
+      "position": 322
+    },
+    {
+      "token_id": 9,
+      "token_text": "*",
+      "log_p_teacher": -0.0181884765625,
+      "log_p_student": -0.05615234375,
+      "divergence": 0.0379638671875,
+      "position": 323
+    },
+    {
+      "token_id": 330,
+      "token_text": " \"",
+      "log_p_teacher": -0.267578125,
+      "log_p_student": -0.58203125,
+      "divergence": 0.314453125,
+      "position": 324
+    },
+    {
+      "token_id": 9033,
+      "token_text": "that",
+      "log_p_teacher": -3.734375,
+      "log_p_student": -3.15625,
+      "divergence": -0.578125,
+      "position": 325
+    },
+    {
+      "token_id": 358,
+      "token_text": " I",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.7881393432617188e-06,
+      "divergence": 1.7881393432617188e-06,
+      "position": 326
+    },
+    {
+      "token_id": 2578,
+      "token_text": " might",
+      "log_p_teacher": -0.00408935546875,
+      "log_p_student": -0.0184326171875,
+      "divergence": 0.01434326171875,
+      "position": 327
+    },
+    {
+      "token_id": 3270,
+      "token_text": " write",
+      "log_p_teacher": 0.0,
+      "log_p_student": -2.2649765014648438e-06,
+      "divergence": 2.2649765014648438e-06,
+      "position": 328
+    },
+    {
+      "token_id": 3975,
+      "token_text": "\"),",
+      "log_p_teacher": -0.8359375,
+      "log_p_student": -1.1875,
+      "divergence": 0.3515625,
+      "position": 329
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.357421875,
+      "log_p_student": -0.251953125,
+      "divergence": -0.10546875,
+      "position": 330
+    },
+    {
+      "token_id": 1083,
+      "token_text": " also",
+      "log_p_teacher": -3.578125,
+      "log_p_student": -3.0625,
+      "divergence": -0.515625,
+      "position": 331
+    },
+    {
+      "token_id": 13248,
+      "token_text": " shares",
+      "log_p_teacher": -0.4375,
+      "log_p_student": -1.90625,
+      "divergence": 1.46875,
+      "position": 332
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.65625,
+      "log_p_student": -1.171875,
+      "divergence": 0.515625,
+      "position": 333
+    },
+    {
+      "token_id": 1352,
+      "token_text": " form",
+      "log_p_teacher": -2.09375,
+      "log_p_student": -1.75,
+      "divergence": -0.34375,
+      "position": 334
+    },
+    {
+      "token_id": 448,
+      "token_text": " with",
+      "log_p_teacher": -0.0033416748046875,
+      "log_p_student": -0.01318359375,
+      "divergence": 0.0098419189453125,
+      "position": 335
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.013427734375,
+      "log_p_student": -0.036376953125,
+      "divergence": 0.02294921875,
+      "position": 336
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.07373046875,
+      "log_p_student": -0.2412109375,
+      "divergence": 0.16748046875,
+      "position": 337
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -0.00010156631469726562,
+      "log_p_student": -0.00116729736328125,
+      "divergence": 0.0010657310485839844,
+      "position": 338
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": -9.5367431640625e-07,
+      "log_p_student": -1.4066696166992188e-05,
+      "divergence": 1.3113021850585938e-05,
+      "position": 339
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -1.71875,
+      "log_p_student": -1.1015625,
+      "divergence": -0.6171875,
+      "position": 340
+    },
+    {
+      "token_id": 1096,
+      "token_text": " This",
+      "log_p_teacher": -0.3671875,
+      "log_p_student": -1.0390625,
+      "divergence": 0.671875,
+      "position": 341
+    },
+    {
+      "token_id": 37623,
+      "token_text": " similarity",
+      "log_p_teacher": -0.83203125,
+      "log_p_student": -0.92578125,
+      "divergence": 0.09375,
+      "position": 342
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -1.1640625,
+      "log_p_student": -1.171875,
+      "divergence": 0.0078125,
+      "position": 343
+    },
+    {
+      "token_id": 1352,
+      "token_text": " form",
+      "log_p_teacher": -0.0771484375,
+      "log_p_student": -0.051513671875,
+      "divergence": -0.025634765625,
+      "position": 344
+    },
+    {
+      "token_id": 16804,
+      "token_text": "\u2014and",
+      "log_p_teacher": -6.40625,
+      "log_p_student": -7.09375,
+      "divergence": 0.6875,
+      "position": 345
+    },
+    {
+      "token_id": 7025,
+      "token_text": " sometimes",
+      "log_p_teacher": -0.296875,
+      "log_p_student": -0.59375,
+      "divergence": 0.296875,
+      "position": 346
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.18359375,
+      "log_p_student": -0.32421875,
+      "divergence": 0.140625,
+      "position": 347
+    },
+    {
+      "token_id": 7290,
+      "token_text": " meaning",
+      "log_p_teacher": -0.369140625,
+      "log_p_student": -0.50390625,
+      "divergence": 0.134765625,
+      "position": 348
+    },
+    {
+      "token_id": 2293,
+      "token_text": "\u2014",
+      "log_p_teacher": -0.00095367431640625,
+      "log_p_student": -0.00732421875,
+      "divergence": 0.00637054443359375,
+      "position": 349
+    },
+    {
+      "token_id": 4814,
+      "token_text": "can",
+      "log_p_teacher": -0.2197265625,
+      "log_p_student": -0.294921875,
+      "divergence": 0.0751953125,
+      "position": 350
+    },
+    {
+      "token_id": 2990,
+      "token_text": " lead",
+      "log_p_teacher": -0.31640625,
+      "log_p_student": -0.392578125,
+      "divergence": 0.076171875,
+      "position": 351
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.000583648681640625,
+      "log_p_student": -0.00848388671875,
+      "divergence": 0.007900238037109375,
+      "position": 352
+    },
+    {
+      "token_id": 21340,
+      "token_text": " confusion",
+      "log_p_teacher": -0.0087890625,
+      "log_p_student": -0.06884765625,
+      "divergence": 0.06005859375,
+      "position": 353
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.1796875,
+      "log_p_student": -0.314453125,
+      "divergence": 0.134765625,
+      "position": 354
+    },
+    {
+      "token_id": 758,
+      "token_text": " In",
+      "log_p_teacher": -1.0546875,
+      "log_p_student": -1.5234375,
+      "divergence": 0.46875,
+      "position": 355
+    },
+    {
+      "token_id": 1657,
+      "token_text": " many",
+      "log_p_teacher": -1.7265625,
+      "log_p_student": -2.25,
+      "divergence": 0.5234375,
+      "position": 356
+    },
+    {
+      "token_id": 5048,
+      "token_text": " cases",
+      "log_p_teacher": -0.03125,
+      "log_p_student": -0.1328125,
+      "divergence": 0.1015625,
+      "position": 357
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00144195556640625,
+      "log_p_student": -0.00653076171875,
+      "divergence": 0.00508880615234375,
+      "position": 358
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.365234375,
+      "log_p_student": -0.365234375,
+      "divergence": 0.0,
+      "position": 359
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.1298828125,
+      "log_p_student": -0.2431640625,
+      "divergence": 0.11328125,
+      "position": 360
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": -6.4373016357421875e-06,
+      "divergence": 6.4373016357421875e-06,
+      "position": 361
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -1.5859375,
+      "log_p_student": -2.328125,
+      "divergence": 0.7421875,
+      "position": 362
+    },
+    {
+      "token_id": 537,
+      "token_text": " not",
+      "log_p_teacher": -1.09375,
+      "log_p_student": -1.4375,
+      "divergence": 0.34375,
+      "position": 363
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -1.8359375,
+      "log_p_student": -1.8828125,
+      "divergence": 0.046875,
+      "position": 364
+    },
+    {
+      "token_id": 2118,
+      "token_text": " direct",
+      "log_p_teacher": -0.27734375,
+      "log_p_student": -1.3515625,
+      "divergence": 1.07421875,
+      "position": 365
+    },
+    {
+      "token_id": 2530,
+      "token_text": " source",
+      "log_p_teacher": -0.01318359375,
+      "log_p_student": -0.05078125,
+      "divergence": 0.03759765625,
+      "position": 366
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.038330078125,
+      "log_p_student": -0.255859375,
+      "divergence": 0.217529296875,
+      "position": 367
+    },
+    {
+      "token_id": 18763,
+      "token_text": " deriv",
+      "log_p_teacher": -0.087890625,
+      "log_p_student": -0.3046875,
+      "divergence": 0.216796875,
+      "position": 368
+    },
+    {
+      "token_id": 804,
+      "token_text": "ations",
+      "log_p_teacher": -0.000911712646484375,
+      "log_p_student": -0.00408935546875,
+      "divergence": 0.003177642822265625,
+      "position": 369
+    },
+    {
+      "token_id": 26,
+      "token_text": ";",
+      "log_p_teacher": -1.59375,
+      "log_p_student": -1.5703125,
+      "divergence": -0.0234375,
+      "position": 370
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -3.796875,
+      "log_p_student": -1.7890625,
+      "divergence": -2.0078125,
+      "position": 371
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.038818359375,
+      "log_p_student": -0.123046875,
+      "divergence": 0.084228515625,
+      "position": 372
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -0.0001087188720703125,
+      "log_p_student": -0.0009307861328125,
+      "divergence": 0.0008220672607421875,
+      "position": 373
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": -7.748603820800781e-06,
+      "log_p_student": -4.291534423828125e-05,
+      "divergence": 3.516674041748047e-05,
+      "position": 374
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -0.291015625,
+      "log_p_student": -0.2255859375,
+      "divergence": -0.0654296875,
+      "position": 375
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.66015625,
+      "log_p_student": -1.4296875,
+      "divergence": 0.76953125,
+      "position": 376
+    },
+    {
+      "token_id": 4354,
+      "token_text": " However",
+      "log_p_teacher": -0.85546875,
+      "log_p_student": -1.34375,
+      "divergence": 0.48828125,
+      "position": 377
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -2.4318695068359375e-05,
+      "divergence": 2.4080276489257812e-05,
+      "position": 378
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.8125,
+      "log_p_student": -1.078125,
+      "divergence": 0.265625,
+      "position": 379
+    },
+    {
+      "token_id": 2097,
+      "token_text": " fact",
+      "log_p_teacher": -5.5,
+      "log_p_student": -4.5625,
+      "divergence": -0.9375,
+      "position": 380
+    },
+    {
+      "token_id": 429,
+      "token_text": " that",
+      "log_p_teacher": -1.0728836059570312e-06,
+      "log_p_student": -0.00010585784912109375,
+      "divergence": 0.00010478496551513672,
+      "position": 381
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.71875,
+      "log_p_student": -0.65625,
+      "divergence": -0.0625,
+      "position": 382
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.017578125,
+      "log_p_student": -0.030029296875,
+      "divergence": 0.012451171875,
+      "position": 383
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -1.5854835510253906e-05,
+      "divergence": 1.5616416931152344e-05,
+      "position": 384
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.5234375,
+      "log_p_student": -0.8984375,
+      "divergence": 0.375,
+      "position": 385
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.4375,
+      "log_p_student": -0.30078125,
+      "divergence": -0.13671875,
+      "position": 386
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.0120849609375,
+      "log_p_student": -0.04248046875,
+      "divergence": 0.0303955078125,
+      "position": 387
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -1.9073486328125e-06,
+      "log_p_student": -1.0609626770019531e-05,
+      "divergence": 8.702278137207031e-06,
+      "position": 388
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -3.814697265625e-06,
+      "divergence": 3.6954879760742188e-06,
+      "position": 389
+    },
+    {
+      "token_id": 3545,
+      "token_text": " often",
+      "log_p_teacher": -0.447265625,
+      "log_p_student": -1.375,
+      "divergence": 0.927734375,
+      "position": 390
+    },
+    {
+      "token_id": 1401,
+      "token_text": " look",
+      "log_p_teacher": -2.6875,
+      "log_p_student": -1.8984375,
+      "divergence": -0.7890625,
+      "position": 391
+    },
+    {
+      "token_id": 25992,
+      "token_text": " alike",
+      "log_p_teacher": -0.546875,
+      "log_p_student": -1.015625,
+      "divergence": 0.46875,
+      "position": 392
+    },
+    {
+      "token_id": 1865,
+      "token_text": " made",
+      "log_p_teacher": -2.40625,
+      "log_p_student": -3.25,
+      "divergence": 0.84375,
+      "position": 393
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.08447265625,
+      "log_p_student": -0.2470703125,
+      "divergence": 0.16259765625,
+      "position": 394
+    },
+    {
+      "token_id": 8661,
+      "token_text": " easier",
+      "log_p_teacher": -0.71484375,
+      "log_p_student": -1.671875,
+      "divergence": 0.95703125,
+      "position": 395
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -0.1337890625,
+      "log_p_student": -0.3203125,
+      "divergence": 0.1865234375,
+      "position": 396
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.6875,
+      "log_p_student": -1.1484375,
+      "divergence": 0.4609375,
+      "position": 397
+    },
+    {
+      "token_id": 16093,
+      "token_text": " writers",
+      "log_p_teacher": -1.515625,
+      "log_p_student": -1.71875,
+      "divergence": 0.203125,
+      "position": 398
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.58203125,
+      "log_p_student": -0.9921875,
+      "divergence": 0.41015625,
+      "position": 399
+    },
+    {
+      "token_id": 21326,
+      "token_text": " speakers",
+      "log_p_teacher": -1.890625,
+      "log_p_student": -1.3125,
+      "divergence": -0.578125,
+      "position": 400
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.001556396484375,
+      "log_p_student": -0.00518798828125,
+      "divergence": 0.003631591796875,
+      "position": 401
+    },
+    {
+      "token_id": 990,
+      "token_text": " use",
+      "log_p_teacher": -0.2578125,
+      "log_p_student": -0.6171875,
+      "divergence": 0.359375,
+      "position": 402
+    },
+    {
+      "token_id": 1105,
+      "token_text": " them",
+      "log_p_teacher": -1.34375,
+      "log_p_student": -1.1171875,
+      "divergence": -0.2265625,
+      "position": 403
+    },
+    {
+      "token_id": 51263,
+      "token_text": " interchange",
+      "log_p_teacher": -0.02587890625,
+      "log_p_student": -0.11376953125,
+      "divergence": 0.087890625,
+      "position": 404
+    },
+    {
+      "token_id": 2845,
+      "token_text": "ably",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -2.7418136596679688e-06,
+      "divergence": 2.6226043701171875e-06,
+      "position": 405
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.0791015625,
+      "log_p_student": -0.2138671875,
+      "divergence": 0.134765625,
+      "position": 406
+    },
+    {
+      "token_id": 1045,
+      "token_text": " some",
+      "log_p_teacher": -1.6171875,
+      "log_p_student": -0.9609375,
+      "divergence": -0.65625,
+      "position": 407
+    },
+    {
+      "token_id": 37597,
+      "token_text": " contexts",
+      "log_p_teacher": -0.0322265625,
+      "log_p_student": -0.1943359375,
+      "divergence": 0.162109375,
+      "position": 408
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.1953125,
+      "log_p_student": -0.50390625,
+      "divergence": 0.30859375,
+      "position": 409
+    },
+    {
+      "token_id": 892,
+      "token_text": " which",
+      "log_p_teacher": -2.328125,
+      "log_p_student": -2.03125,
+      "divergence": -0.296875,
+      "position": 410
+    },
+    {
+      "token_id": 19590,
+      "token_text": " contributed",
+      "log_p_teacher": -1.5,
+      "log_p_student": -2.59375,
+      "divergence": 1.09375,
+      "position": 411
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -2.5510787963867188e-05,
+      "log_p_student": -0.000621795654296875,
+      "divergence": 0.0005962848663330078,
+      "position": 412
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.07763671875,
+      "log_p_student": -0.216796875,
+      "divergence": 0.13916015625,
+      "position": 413
+    },
+    {
+      "token_id": 5530,
+      "token_text": " sense",
+      "log_p_teacher": -6.125,
+      "log_p_student": -5.96875,
+      "divergence": -0.15625,
+      "position": 414
+    },
+    {
+      "token_id": 429,
+      "token_text": " that",
+      "log_p_teacher": -0.2255859375,
+      "log_p_student": -0.251953125,
+      "divergence": 0.0263671875,
+      "position": 415
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.83203125,
+      "log_p_student": -0.8203125,
+      "divergence": -0.01171875,
+      "position": 416
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.0003185272216796875,
+      "log_p_student": -0.0010986328125,
+      "divergence": 0.0007801055908203125,
+      "position": 417
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": -4.76837158203125e-07,
+      "divergence": 4.76837158203125e-07,
+      "position": 418
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -0.1494140625,
+      "log_p_student": -0.44921875,
+      "divergence": 0.2998046875,
+      "position": 419
+    },
+    {
+      "token_id": 1660,
+      "token_text": " being",
+      "log_p_teacher": -0.482421875,
+      "log_p_student": -0.875,
+      "divergence": 0.392578125,
+      "position": 420
+    },
+    {
+      "token_id": 1483,
+      "token_text": " used",
+      "log_p_teacher": -0.007354736328125,
+      "log_p_student": -0.00421142578125,
+      "divergence": -0.003143310546875,
+      "position": 421
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -0.058837890625,
+      "log_p_student": -0.11083984375,
+      "divergence": 0.052001953125,
+      "position": 422
+    },
+    {
+      "token_id": 95254,
+      "token_text": " derivation",
+      "log_p_teacher": -0.875,
+      "log_p_student": -0.92578125,
+      "divergence": 0.05078125,
+      "position": 423
+    },
+    {
+      "token_id": 382,
+      "token_text": ".\n\n",
+      "log_p_teacher": -0.0238037109375,
+      "log_p_student": -0.08056640625,
+      "divergence": 0.0567626953125,
+      "position": 424
+    },
+    {
+      "token_id": 19,
+      "token_text": "4",
+      "log_p_teacher": -5.364418029785156e-06,
+      "log_p_student": -1.4185905456542969e-05,
+      "divergence": 8.821487426757812e-06,
+      "position": 425
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -3.5762786865234375e-07,
+      "log_p_student": -1.9073486328125e-06,
+      "divergence": 1.5497207641601562e-06,
+      "position": 426
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 427
+    },
+    {
+      "token_id": 48983,
+      "token_text": "Histor",
+      "log_p_teacher": -0.443359375,
+      "log_p_student": -1.3984375,
+      "divergence": 0.955078125,
+      "position": 428
+    },
+    {
+      "token_id": 938,
+      "token_text": "ical",
+      "log_p_teacher": -8.96453857421875e-05,
+      "log_p_student": -0.0018768310546875,
+      "divergence": 0.0017871856689453125,
+      "position": 429
+    },
+    {
+      "token_id": 10816,
+      "token_text": " Development",
+      "log_p_teacher": -3.390625,
+      "log_p_student": -2.828125,
+      "divergence": -0.5625,
+      "position": 430
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -1.0,
+      "log_p_student": -1.8046875,
+      "divergence": 0.8046875,
+      "position": 431
+    },
+    {
+      "token_id": 61242,
+      "token_text": " Simpl",
+      "log_p_teacher": -0.251953125,
+      "log_p_student": -1.8671875,
+      "divergence": 1.615234375,
+      "position": 432
+    },
+    {
+      "token_id": 2404,
+      "token_text": "ification",
+      "log_p_teacher": -0.0002994537353515625,
+      "log_p_student": -0.0029449462890625,
+      "divergence": 0.0026454925537109375,
+      "position": 433
+    },
+    {
+      "token_id": 95518,
+      "token_text": "**:",
+      "log_p_teacher": -0.0079345703125,
+      "log_p_student": -0.0238037109375,
+      "divergence": 0.015869140625,
+      "position": 434
+    },
+    {
+      "token_id": 6065,
+      "token_text": " Over",
+      "log_p_teacher": -0.8125,
+      "log_p_student": -1.7109375,
+      "divergence": 0.8984375,
+      "position": 435
+    },
+    {
+      "token_id": 882,
+      "token_text": " time",
+      "log_p_teacher": -0.0022735595703125,
+      "log_p_student": -0.00921630859375,
+      "divergence": 0.0069427490234375,
+      "position": 436
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.000965118408203125,
+      "log_p_student": -0.00946044921875,
+      "divergence": 0.008495330810546875,
+      "position": 437
+    },
+    {
+      "token_id": 438,
+      "token_text": " as",
+      "log_p_teacher": -0.0576171875,
+      "log_p_student": -0.32421875,
+      "divergence": 0.2666015625,
+      "position": 438
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.0012359619140625,
+      "log_p_student": -0.0267333984375,
+      "divergence": 0.0254974365234375,
+      "position": 439
+    },
+    {
+      "token_id": 27895,
+      "token_text": " evolved",
+      "log_p_teacher": -0.003692626953125,
+      "log_p_student": -0.031982421875,
+      "divergence": 0.028289794921875,
+      "position": 440
+    },
+    {
+      "token_id": 1119,
+      "token_text": " into",
+      "log_p_teacher": -0.007171630859375,
+      "log_p_student": -0.04052734375,
+      "divergence": 0.033355712890625,
+      "position": 441
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.00634765625,
+      "log_p_student": -0.0191650390625,
+      "divergence": 0.0128173828125,
+      "position": 442
+    },
+    {
+      "token_id": 51156,
+      "token_text": " Romance",
+      "log_p_teacher": -2.193450927734375e-05,
+      "log_p_student": -0.00084686279296875,
+      "divergence": 0.0008249282836914062,
+      "position": 443
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -1.633167266845703e-05,
+      "log_p_student": -0.0002536773681640625,
+      "divergence": 0.00023734569549560547,
+      "position": 444
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00176239013671875,
+      "log_p_student": -0.006103515625,
+      "divergence": 0.00434112548828125,
+      "position": 445
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.69140625,
+      "log_p_student": -0.67578125,
+      "divergence": -0.015625,
+      "position": 446
+    },
+    {
+      "token_id": 1849,
+      "token_text": " system",
+      "log_p_teacher": -2.0,
+      "log_p_student": -2.109375,
+      "divergence": 0.109375,
+      "position": 447
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.03173828125,
+      "log_p_student": -0.10498046875,
+      "divergence": 0.0732421875,
+      "position": 448
+    },
+    {
+      "token_id": 3409,
+      "token_text": " word",
+      "log_p_teacher": -0.7890625,
+      "log_p_student": -1.125,
+      "divergence": 0.3359375,
+      "position": 449
+    },
+    {
+      "token_id": 18003,
+      "token_text": " formation",
+      "log_p_teacher": -0.314453125,
+      "log_p_student": -0.44140625,
+      "divergence": 0.126953125,
+      "position": 450
+    },
+    {
+      "token_id": 6116,
+      "token_text": " became",
+      "log_p_teacher": -0.35546875,
+      "log_p_student": -1.0859375,
+      "divergence": 0.73046875,
+      "position": 451
+    },
+    {
+      "token_id": 34288,
+      "token_text": " simpler",
+      "log_p_teacher": -0.60546875,
+      "log_p_student": -0.8359375,
+      "divergence": 0.23046875,
+      "position": 452
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.203125,
+      "log_p_student": -0.3359375,
+      "divergence": 0.1328125,
+      "position": 453
+    },
+    {
+      "token_id": 8999,
+      "token_text": " Many",
+      "log_p_teacher": -2.046875,
+      "log_p_student": -2.09375,
+      "divergence": 0.046875,
+      "position": 454
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.275390625,
+      "log_p_student": -0.380859375,
+      "divergence": 0.10546875,
+      "position": 455
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.00311279296875,
+      "log_p_student": -0.01513671875,
+      "divergence": 0.01202392578125,
+      "position": 456
+    },
+    {
+      "token_id": 4132,
+      "token_text": " inf",
+      "log_p_teacher": -0.51171875,
+      "log_p_student": -0.65234375,
+      "divergence": 0.140625,
+      "position": 457
+    },
+    {
+      "token_id": 67679,
+      "token_text": "lections",
+      "log_p_teacher": -1.984375,
+      "log_p_student": -1.4140625,
+      "divergence": -0.5703125,
+      "position": 458
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.341796875,
+      "log_p_student": -0.58984375,
+      "divergence": 0.248046875,
+      "position": 459
+    },
+    {
+      "token_id": 68125,
+      "token_text": " gramm",
+      "log_p_teacher": -1.484375,
+      "log_p_student": -2.078125,
+      "divergence": 0.59375,
+      "position": 460
+    },
+    {
+      "token_id": 61072,
+      "token_text": "atical",
+      "log_p_teacher": -1.0371208190917969e-05,
+      "log_p_student": -0.00012969970703125,
+      "divergence": 0.00011932849884033203,
+      "position": 461
+    },
+    {
+      "token_id": 11059,
+      "token_text": " categories",
+      "log_p_teacher": -2.765625,
+      "log_p_student": -2.703125,
+      "divergence": -0.0625,
+      "position": 462
+    },
+    {
+      "token_id": 429,
+      "token_text": " that",
+      "log_p_teacher": -0.44140625,
+      "log_p_student": -0.78515625,
+      "divergence": 0.34375,
+      "position": 463
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -3.390625,
+      "log_p_student": -2.609375,
+      "divergence": -0.78125,
+      "position": 464
+    },
+    {
+      "token_id": 1030,
+      "token_text": " had",
+      "log_p_teacher": -0.98046875,
+      "log_p_student": -0.3984375,
+      "divergence": -0.58203125,
+      "position": 465
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -1.015625,
+      "log_p_student": -0.8046875,
+      "divergence": -0.2109375,
+      "position": 466
+    },
+    {
+      "token_id": 2670,
+      "token_text": " including",
+      "log_p_teacher": -1.1171875,
+      "log_p_student": -0.84765625,
+      "divergence": -0.26953125,
+      "position": 467
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.062255859375,
+      "log_p_student": -0.1611328125,
+      "divergence": 0.098876953125,
+      "position": 468
+    },
+    {
+      "token_id": 29196,
+      "token_text": " distinction",
+      "log_p_teacher": -0.8515625,
+      "log_p_student": -2.140625,
+      "divergence": 1.2890625,
+      "position": 469
+    },
+    {
+      "token_id": 1948,
+      "token_text": " between",
+      "log_p_teacher": -5.841255187988281e-06,
+      "log_p_student": -0.0003833770751953125,
+      "divergence": 0.0003775358200073242,
+      "position": 470
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.5390625,
+      "log_p_student": -0.67578125,
+      "divergence": 0.13671875,
+      "position": 471
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.0277099609375,
+      "log_p_student": -0.049072265625,
+      "divergence": 0.0213623046875,
+      "position": 472
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 473
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.0024871826171875,
+      "log_p_student": -0.0076904296875,
+      "divergence": 0.0052032470703125,
+      "position": 474
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.0213623046875,
+      "log_p_student": -0.04736328125,
+      "divergence": 0.0260009765625,
+      "position": 475
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.01446533203125,
+      "log_p_student": -0.045166015625,
+      "divergence": 0.03070068359375,
+      "position": 476
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -2.384185791015625e-06,
+      "log_p_student": -3.8623809814453125e-05,
+      "divergence": 3.62396240234375e-05,
+      "position": 477
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": 0.0,
+      "log_p_student": -5.960464477539062e-07,
+      "divergence": 5.960464477539062e-07,
+      "position": 478
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00018405914306640625,
+      "log_p_student": -0.00121307373046875,
+      "divergence": 0.0010290145874023438,
+      "position": 479
+    },
+    {
+      "token_id": 1033,
+      "token_text": " were",
+      "log_p_teacher": -0.01171875,
+      "log_p_student": -0.058349609375,
+      "divergence": 0.046630859375,
+      "position": 480
+    },
+    {
+      "token_id": 2987,
+      "token_text": " either",
+      "log_p_teacher": -0.251953125,
+      "log_p_student": -0.55078125,
+      "divergence": 0.298828125,
+      "position": 481
+    },
+    {
+      "token_id": 5558,
+      "token_text": " lost",
+      "log_p_teacher": -0.2236328125,
+      "log_p_student": -0.443359375,
+      "divergence": 0.2197265625,
+      "position": 482
+    },
+    {
+      "token_id": 476,
+      "token_text": " or",
+      "log_p_teacher": -0.0030975341796875,
+      "log_p_student": -0.01416015625,
+      "divergence": 0.0110626220703125,
+      "position": 483
+    },
+    {
+      "token_id": 26001,
+      "token_text": " merged",
+      "log_p_teacher": -0.10498046875,
+      "log_p_student": -0.5078125,
+      "divergence": 0.40283203125,
+      "position": 484
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.09619140625,
+      "log_p_student": -0.255859375,
+      "divergence": 0.15966796875,
+      "position": 485
+    },
+    {
+      "token_id": 758,
+      "token_text": " In",
+      "log_p_teacher": -0.296875,
+      "log_p_student": -0.392578125,
+      "divergence": 0.095703125,
+      "position": 486
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -1.6875,
+      "log_p_student": -1.4140625,
+      "divergence": -0.2734375,
+      "position": 487
+    },
+    {
+      "token_id": 51156,
+      "token_text": " Romance",
+      "log_p_teacher": -0.009765625,
+      "log_p_student": -0.04248046875,
+      "divergence": 0.03271484375,
+      "position": 488
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -9.489059448242188e-05,
+      "log_p_student": -0.00048828125,
+      "divergence": 0.0003933906555175781,
+      "position": 489
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00634765625,
+      "log_p_student": -0.0164794921875,
+      "divergence": 0.0101318359375,
+      "position": 490
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.111328125,
+      "log_p_student": -0.30859375,
+      "divergence": 0.197265625,
+      "position": 491
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.0966796875,
+      "log_p_student": -0.255859375,
+      "divergence": 0.1591796875,
+      "position": 492
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -0.001953125,
+      "log_p_student": -0.0029449462890625,
+      "divergence": 0.0009918212890625,
+      "position": 493
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": -2.2649765014648438e-06,
+      "log_p_student": -1.2278556823730469e-05,
+      "divergence": 1.0013580322265625e-05,
+      "position": 494
+    },
+    {
+      "token_id": 3545,
+      "token_text": " often",
+      "log_p_teacher": -1.6953125,
+      "log_p_student": -1.40625,
+      "divergence": -0.2890625,
+      "position": 495
+    },
+    {
+      "token_id": 51844,
+      "token_text": " retains",
+      "log_p_teacher": -2.984375,
+      "log_p_student": -3.015625,
+      "divergence": 0.03125,
+      "position": 496
+    },
+    {
+      "token_id": 1181,
+      "token_text": " its",
+      "log_p_teacher": -0.0927734375,
+      "log_p_student": -0.212890625,
+      "divergence": 0.1201171875,
+      "position": 497
+    },
+    {
+      "token_id": 3476,
+      "token_text": " role",
+      "log_p_teacher": -0.140625,
+      "log_p_student": -0.29296875,
+      "divergence": 0.15234375,
+      "position": 498
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.4296875,
+      "log_p_student": -0.49609375,
+      "divergence": 0.06640625,
+      "position": 499
+    },
+    {
+      "token_id": 29064,
+      "token_text": " forming",
+      "log_p_teacher": -0.162109375,
+      "log_p_student": -0.474609375,
+      "divergence": 0.3125,
+      "position": 500
+    },
+    {
+      "token_id": 993,
+      "token_text": " ad",
+      "log_p_teacher": -0.01434326171875,
+      "log_p_student": -0.07568359375,
+      "divergence": 0.06134033203125,
+      "position": 501
+    },
+    {
+      "token_id": 86578,
+      "token_text": "jectives",
+      "log_p_teacher": -3.4570693969726562e-06,
+      "log_p_student": -5.507469177246094e-05,
+      "divergence": 5.161762237548828e-05,
+      "position": 502
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -3.515625,
+      "log_p_student": -3.09375,
+      "divergence": -0.421875,
+      "position": 503
+    },
+    {
+      "token_id": 61846,
+      "token_text": " verbs",
+      "log_p_teacher": -2.59375,
+      "log_p_student": -2.359375,
+      "divergence": -0.234375,
+      "position": 504
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.02685546875,
+      "log_p_student": -0.04150390625,
+      "divergence": 0.0146484375,
+      "position": 505
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.002105712890625,
+      "log_p_student": -0.00994873046875,
+      "divergence": 0.007843017578125,
+      "position": 506
+    },
+    {
+      "token_id": 89838,
+      "token_text": " nouns",
+      "log_p_teacher": -0.0037841796875,
+      "log_p_student": -0.0191650390625,
+      "divergence": 0.015380859375,
+      "position": 507
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.0537109375,
+      "log_p_student": -0.08984375,
+      "divergence": 0.0361328125,
+      "position": 508
+    },
+    {
+      "token_id": 1393,
+      "token_text": " while",
+      "log_p_teacher": -0.423828125,
+      "log_p_student": -1.609375,
+      "divergence": 1.185546875,
+      "position": 509
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.0015411376953125,
+      "log_p_student": -0.01141357421875,
+      "divergence": 0.0098724365234375,
+      "position": 510
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.0113525390625,
+      "log_p_student": -0.03515625,
+      "divergence": 0.0238037109375,
+      "position": 511
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.1920928955078125e-07,
+      "divergence": 1.1920928955078125e-07,
+      "position": 512
+    },
+    {
+      "token_id": 374,
+      "token_text": " is",
+      "log_p_teacher": -1.65625,
+      "log_p_student": -1.2421875,
+      "divergence": -0.4140625,
+      "position": 513
+    },
+    {
+      "token_id": 18521,
+      "token_text": " rarely",
+      "log_p_teacher": -1.984375,
+      "log_p_student": -1.75,
+      "divergence": -0.234375,
+      "position": 514
+    },
+    {
+      "token_id": 1483,
+      "token_text": " used",
+      "log_p_teacher": -0.037109375,
+      "log_p_student": -0.08154296875,
+      "divergence": 0.04443359375,
+      "position": 515
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.318359375,
+      "log_p_student": -1.5,
+      "divergence": 1.181640625,
+      "position": 516
+    },
+    {
+      "token_id": 2055,
+      "token_text": " So",
+      "log_p_teacher": -6.1875,
+      "log_p_student": -3.53125,
+      "divergence": -2.65625,
+      "position": 517
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.07666015625,
+      "log_p_student": -0.2431640625,
+      "divergence": 0.16650390625,
+      "position": 518
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.578125,
+      "log_p_student": -0.56640625,
+      "divergence": -0.01171875,
+      "position": 519
+    },
+    {
+      "token_id": 1882,
+      "token_text": " process",
+      "log_p_teacher": -1.1015625,
+      "log_p_student": -3.25,
+      "divergence": 2.1484375,
+      "position": 520
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.1162109375,
+      "log_p_student": -0.1025390625,
+      "divergence": -0.013671875,
+      "position": 521
+    },
+    {
+      "token_id": 95254,
+      "token_text": " derivation",
+      "log_p_teacher": -0.1298828125,
+      "log_p_student": -0.37890625,
+      "divergence": 0.2490234375,
+      "position": 522
+    },
+    {
+      "token_id": 504,
+      "token_text": " from",
+      "log_p_teacher": -0.474609375,
+      "log_p_student": -0.337890625,
+      "divergence": -0.13671875,
+      "position": 523
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.134765625,
+      "log_p_student": -0.166015625,
+      "divergence": 0.03125,
+      "position": 524
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.041015625,
+      "log_p_student": -0.095703125,
+      "divergence": 0.0546875,
+      "position": 525
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.1920928955078125e-07,
+      "divergence": 1.1920928955078125e-07,
+      "position": 526
+    },
+    {
+      "token_id": 1231,
+      "token_text": " may",
+      "log_p_teacher": -3.140625,
+      "log_p_student": -3.0,
+      "divergence": -0.140625,
+      "position": 527
+    },
+    {
+      "token_id": 2803,
+      "token_text": " seem",
+      "log_p_teacher": -1.3046875,
+      "log_p_student": -1.5703125,
+      "divergence": 0.265625,
+      "position": 528
+    },
+    {
+      "token_id": 95701,
+      "token_text": " obscured",
+      "log_p_teacher": -0.9609375,
+      "log_p_student": -7.96875,
+      "divergence": 7.0078125,
+      "position": 529
+    },
+    {
+      "token_id": 3351,
+      "token_text": " today",
+      "log_p_teacher": -3.921875,
+      "log_p_student": -5.1875,
+      "divergence": 1.265625,
+      "position": 530
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.435546875,
+      "log_p_student": -0.09521484375,
+      "divergence": -0.34033203125,
+      "position": 531
+    },
+    {
+      "token_id": 714,
+      "token_text": " but",
+      "log_p_teacher": -0.138671875,
+      "log_p_student": -0.0517578125,
+      "divergence": -0.0869140625,
+      "position": 532
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.0791015625,
+      "log_p_student": -0.15234375,
+      "divergence": 0.0732421875,
+      "position": 533
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -0.08837890625,
+      "log_p_student": -0.44921875,
+      "divergence": 0.36083984375,
+      "position": 534
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.515625,
+      "log_p_student": -0.66796875,
+      "divergence": 0.15234375,
+      "position": 535
+    },
+    {
+      "token_id": 19819,
+      "token_text": " logical",
+      "log_p_teacher": -1.1875,
+      "log_p_student": -1.375,
+      "divergence": 0.1875,
+      "position": 536
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.478515625,
+      "log_p_student": -1.328125,
+      "divergence": 0.849609375,
+      "position": 537
+    },
+    {
+      "token_id": 15629,
+      "token_text": " functional",
+      "log_p_teacher": -1.0703125,
+      "log_p_student": -1.296875,
+      "divergence": 0.2265625,
+      "position": 538
+    },
+    {
+      "token_id": 949,
+      "token_text": " part",
+      "log_p_teacher": -0.1123046875,
+      "log_p_student": -0.35546875,
+      "divergence": 0.2431640625,
+      "position": 539
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -2.0265579223632812e-06,
+      "log_p_student": -0.0003185272216796875,
+      "divergence": 0.0003165006637573242,
+      "position": 540
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.03759765625,
+      "log_p_student": -0.1416015625,
+      "divergence": 0.10400390625,
+      "position": 541
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -0.734375,
+      "log_p_student": -1.9921875,
+      "divergence": 1.2578125,
+      "position": 542
+    },
+    {
+      "token_id": 31428,
+      "token_text": " grammar",
+      "log_p_teacher": -0.84765625,
+      "log_p_student": -1.015625,
+      "divergence": 0.16796875,
+      "position": 543
+    },
+    {
+      "token_id": 382,
+      "token_text": ".\n\n",
+      "log_p_teacher": -0.423828125,
+      "log_p_student": -0.19921875,
+      "divergence": -0.224609375,
+      "position": 544
+    },
+    {
+      "token_id": 20,
+      "token_text": "5",
+      "log_p_teacher": -0.00023555755615234375,
+      "log_p_student": -0.0004177093505859375,
+      "divergence": 0.00018215179443359375,
+      "position": 545
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -2.384185791015625e-07,
+      "log_p_student": -2.9802322387695312e-06,
+      "divergence": 2.7418136596679688e-06,
+      "position": 546
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 547
+    },
+    {
+      "token_id": 4121,
+      "token_text": "Ob",
+      "log_p_teacher": -4.46875,
+      "log_p_student": -10.3125,
+      "divergence": 5.84375,
+      "position": 548
+    },
+    {
+      "token_id": 51589,
+      "token_text": "fusc",
+      "log_p_teacher": -0.09423828125,
+      "log_p_student": -3.34375,
+      "divergence": 3.24951171875,
+      "position": 549
+    },
+    {
+      "token_id": 367,
+      "token_text": "ation",
+      "log_p_teacher": -0.005279541015625,
+      "log_p_student": -0.1826171875,
+      "divergence": 0.177337646484375,
+      "position": 550
+    },
+    {
+      "token_id": 16904,
+      "token_text": " Through",
+      "log_p_teacher": -1.0546875,
+      "log_p_student": -2.671875,
+      "divergence": 1.6171875,
+      "position": 551
+    },
+    {
+      "token_id": 4120,
+      "token_text": " Time",
+      "log_p_teacher": -0.96484375,
+      "log_p_student": -1.5390625,
+      "divergence": 0.57421875,
+      "position": 552
+    },
+    {
+      "token_id": 95518,
+      "token_text": "**:",
+      "log_p_teacher": -0.0078125,
+      "log_p_student": -0.013671875,
+      "divergence": 0.005859375,
+      "position": 553
+    },
+    {
+      "token_id": 576,
+      "token_text": " The",
+      "log_p_teacher": -0.421875,
+      "log_p_student": -0.88671875,
+      "divergence": 0.46484375,
+      "position": 554
+    },
+    {
+      "token_id": 1882,
+      "token_text": " process",
+      "log_p_teacher": -0.53515625,
+      "log_p_student": -3.03125,
+      "divergence": 2.49609375,
+      "position": 555
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.080078125,
+      "log_p_student": -0.038330078125,
+      "divergence": -0.041748046875,
+      "position": 556
+    },
+    {
+      "token_id": 95254,
+      "token_text": " derivation",
+      "log_p_teacher": -0.0615234375,
+      "log_p_student": -0.7734375,
+      "divergence": 0.7119140625,
+      "position": 557
+    },
+    {
+      "token_id": 504,
+      "token_text": " from",
+      "log_p_teacher": -0.13671875,
+      "log_p_student": -0.46875,
+      "divergence": 0.33203125,
+      "position": 558
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.0057373046875,
+      "log_p_student": -0.0439453125,
+      "divergence": 0.0382080078125,
+      "position": 559
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.00286865234375,
+      "log_p_student": -0.013916015625,
+      "divergence": 0.01104736328125,
+      "position": 560
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": -2.384185791015625e-07,
+      "divergence": 2.384185791015625e-07,
+      "position": 561
+    },
+    {
+      "token_id": 1231,
+      "token_text": " may",
+      "log_p_teacher": -1.4453125,
+      "log_p_student": -1.59375,
+      "divergence": 0.1484375,
+      "position": 562
+    },
+    {
+      "token_id": 4994,
+      "token_text": " appear",
+      "log_p_teacher": -1.4921875,
+      "log_p_student": -1.8203125,
+      "divergence": 0.328125,
+      "position": 563
+    },
+    {
+      "token_id": 95701,
+      "token_text": " obscured",
+      "log_p_teacher": -0.71484375,
+      "log_p_student": -6.125,
+      "divergence": 5.41015625,
+      "position": 564
+    },
+    {
+      "token_id": 476,
+      "token_text": " or",
+      "log_p_teacher": -1.875,
+      "log_p_student": -1.2265625,
+      "divergence": -0.6484375,
+      "position": 565
+    },
+    {
+      "token_id": 24416,
+      "token_text": " unclear",
+      "log_p_teacher": -1.9375,
+      "log_p_student": -3.765625,
+      "divergence": 1.828125,
+      "position": 566
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -1.4765625,
+      "log_p_student": -1.2890625,
+      "divergence": -0.1875,
+      "position": 567
+    },
+    {
+      "token_id": 76553,
+      "token_text": " retrospect",
+      "log_p_teacher": -5.6875,
+      "log_p_student": -7.875,
+      "divergence": 2.1875,
+      "position": 568
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.8515625,
+      "log_p_student": -0.921875,
+      "divergence": 0.0703125,
+      "position": 569
+    },
+    {
+      "token_id": 5310,
+      "token_text": " especially",
+      "log_p_teacher": -0.50390625,
+      "log_p_student": -0.81640625,
+      "divergence": 0.3125,
+      "position": 570
+    },
+    {
+      "token_id": 979,
+      "token_text": " when",
+      "log_p_teacher": -0.5234375,
+      "log_p_student": -1.2578125,
+      "divergence": 0.734375,
+      "position": 571
+    },
+    {
+      "token_id": 582,
+      "token_text": " we",
+      "log_p_teacher": -2.40625,
+      "log_p_student": -1.8828125,
+      "divergence": -0.5234375,
+      "position": 572
+    },
+    {
+      "token_id": 9429,
+      "token_text": " compare",
+      "log_p_teacher": -1.5,
+      "log_p_student": -2.53125,
+      "divergence": 1.03125,
+      "position": 573
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.52734375,
+      "log_p_student": -0.5546875,
+      "divergence": 0.02734375,
+      "position": 574
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.0024871826171875,
+      "log_p_student": -0.0703125,
+      "divergence": 0.0678253173828125,
+      "position": 575
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -2.109375,
+      "log_p_student": -1.09375,
+      "divergence": -1.015625,
+      "position": 576
+    },
+    {
+      "token_id": 34288,
+      "token_text": " simpler",
+      "log_p_teacher": -0.64453125,
+      "log_p_student": -1.1640625,
+      "divergence": 0.51953125,
+      "position": 577
+    },
+    {
+      "token_id": 5942,
+      "token_text": " systems",
+      "log_p_teacher": -0.408203125,
+      "log_p_student": -0.921875,
+      "divergence": 0.513671875,
+      "position": 578
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.134765625,
+      "log_p_student": -0.220703125,
+      "divergence": 0.0859375,
+      "position": 579
+    },
+    {
+      "token_id": 6481,
+      "token_text": " modern",
+      "log_p_teacher": -0.10888671875,
+      "log_p_student": -0.259765625,
+      "divergence": 0.15087890625,
+      "position": 580
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -0.06640625,
+      "log_p_student": -0.09912109375,
+      "divergence": 0.03271484375,
+      "position": 581
+    },
+    {
+      "token_id": 476,
+      "token_text": " or",
+      "log_p_teacher": -2.625,
+      "log_p_student": -2.96875,
+      "divergence": 0.34375,
+      "position": 582
+    },
+    {
+      "token_id": 1496,
+      "token_text": " even",
+      "log_p_teacher": -1.3671875,
+      "log_p_student": -1.5,
+      "divergence": 0.1328125,
+      "position": 583
+    },
+    {
+      "token_id": 1008,
+      "token_text": " other",
+      "log_p_teacher": -1.3828125,
+      "log_p_student": -1.328125,
+      "divergence": -0.0546875,
+      "position": 584
+    },
+    {
+      "token_id": 13833,
+      "token_text": " ancient",
+      "log_p_teacher": -0.5546875,
+      "log_p_student": -0.73828125,
+      "divergence": 0.18359375,
+      "position": 585
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -0.019775390625,
+      "log_p_student": -0.0211181640625,
+      "divergence": 0.0013427734375,
+      "position": 586
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.06640625,
+      "log_p_student": -0.08447265625,
+      "divergence": 0.01806640625,
+      "position": 587
+    },
+    {
+      "token_id": 576,
+      "token_text": " The",
+      "log_p_teacher": -3.359375,
+      "log_p_student": -2.234375,
+      "divergence": -1.125,
+      "position": 588
+    },
+    {
+      "token_id": 23094,
+      "token_text": " complexity",
+      "log_p_teacher": -0.1533203125,
+      "log_p_student": -0.984375,
+      "divergence": 0.8310546875,
+      "position": 589
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.01318359375,
+      "log_p_student": -0.08740234375,
+      "divergence": 0.07421875,
+      "position": 590
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.0040283203125,
+      "log_p_student": -0.08056640625,
+      "divergence": 0.0765380859375,
+      "position": 591
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -0.076171875,
+      "log_p_student": -0.734375,
+      "divergence": 0.658203125,
+      "position": 592
+    },
+    {
+      "token_id": 78512,
+      "token_text": " morphology",
+      "log_p_teacher": -0.30078125,
+      "log_p_student": -0.7265625,
+      "divergence": 0.42578125,
+      "position": 593
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.7578125,
+      "log_p_student": -1.359375,
+      "divergence": 0.6015625,
+      "position": 594
+    },
+    {
+      "token_id": 448,
+      "token_text": " with",
+      "log_p_teacher": -1.546875,
+      "log_p_student": -1.78125,
+      "divergence": 0.234375,
+      "position": 595
+    },
+    {
+      "token_id": 1181,
+      "token_text": " its",
+      "log_p_teacher": -0.00775146484375,
+      "log_p_student": -0.0498046875,
+      "divergence": 0.04205322265625,
+      "position": 596
+    },
+    {
+      "token_id": 5248,
+      "token_text": " multiple",
+      "log_p_teacher": -0.416015625,
+      "log_p_student": -1.109375,
+      "divergence": 0.693359375,
+      "position": 597
+    },
+    {
+      "token_id": 18607,
+      "token_text": " verb",
+      "log_p_teacher": -0.34765625,
+      "log_p_student": -0.7734375,
+      "divergence": 0.42578125,
+      "position": 598
+    },
+    {
+      "token_id": 7586,
+      "token_text": " forms",
+      "log_p_teacher": -0.205078125,
+      "log_p_student": -0.236328125,
+      "divergence": 0.03125,
+      "position": 599
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.03271484375,
+      "log_p_student": -0.1904296875,
+      "divergence": 0.15771484375,
+      "position": 600
+    },
+    {
+      "token_id": 4494,
+      "token_text": " types",
+      "log_p_teacher": -8.5625,
+      "log_p_student": -6.65625,
+      "divergence": -1.90625,
+      "position": 601
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.005279541015625,
+      "log_p_student": -0.0625,
+      "divergence": 0.057220458984375,
+      "position": 602
+    },
+    {
+      "token_id": 5182,
+      "token_text": " particip",
+      "log_p_teacher": -0.028564453125,
+      "log_p_student": -0.12890625,
+      "divergence": 0.100341796875,
+      "position": 603
+    },
+    {
+      "token_id": 642,
+      "token_text": "les",
+      "log_p_teacher": -5.364418029785156e-06,
+      "log_p_student": -2.6702880859375e-05,
+      "divergence": 2.1338462829589844e-05,
+      "position": 604
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.000720977783203125,
+      "log_p_student": -0.00396728515625,
+      "divergence": 0.003246307373046875,
+      "position": 605
+    },
+    {
+      "token_id": 646,
+      "token_text": " can",
+      "log_p_teacher": -0.7890625,
+      "log_p_student": -0.71875,
+      "divergence": -0.0703125,
+      "position": 606
+    },
+    {
+      "token_id": 12824,
+      "token_text": " indeed",
+      "log_p_teacher": -6.03125,
+      "log_p_student": -4.6875,
+      "divergence": -1.34375,
+      "position": 607
+    },
+    {
+      "token_id": 1281,
+      "token_text": " make",
+      "log_p_teacher": -0.1787109375,
+      "log_p_student": -0.75,
+      "divergence": 0.5712890625,
+      "position": 608
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -1.953125,
+      "log_p_student": -1.640625,
+      "divergence": -0.3125,
+      "position": 609
+    },
+    {
+      "token_id": 2588,
+      "token_text": " hard",
+      "log_p_teacher": -5.4375,
+      "log_p_student": -4.5625,
+      "divergence": -0.875,
+      "position": 610
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -2.015625,
+      "log_p_student": -1.5,
+      "divergence": -0.515625,
+      "position": 611
+    },
+    {
+      "token_id": 52143,
+      "token_text": " learners",
+      "log_p_teacher": -0.408203125,
+      "log_p_student": -0.64453125,
+      "divergence": 0.236328125,
+      "position": 612
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.60546875,
+      "log_p_student": -0.1982421875,
+      "divergence": -0.4072265625,
+      "position": 613
+    },
+    {
+      "token_id": 2506,
+      "token_text": " keep",
+      "log_p_teacher": -7.5,
+      "log_p_student": -5.0,
+      "divergence": -2.5,
+      "position": 614
+    },
+    {
+      "token_id": 3754,
+      "token_text": " track",
+      "log_p_teacher": -0.00130462646484375,
+      "log_p_student": -0.027099609375,
+      "divergence": 0.02579498291015625,
+      "position": 615
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.027587890625,
+      "log_p_student": -0.0673828125,
+      "divergence": 0.039794921875,
+      "position": 616
+    },
+    {
+      "token_id": 892,
+      "token_text": " which",
+      "log_p_teacher": -0.267578125,
+      "log_p_student": -0.8515625,
+      "divergence": 0.583984375,
+      "position": 617
+    },
+    {
+      "token_id": 1352,
+      "token_text": " form",
+      "log_p_teacher": -0.146484375,
+      "log_p_student": -0.265625,
+      "divergence": 0.119140625,
+      "position": 618
+    },
+    {
+      "token_id": 374,
+      "token_text": " is",
+      "log_p_teacher": -0.44140625,
+      "log_p_student": -0.384765625,
+      "divergence": -0.056640625,
+      "position": 619
+    },
+    {
+      "token_id": 1660,
+      "token_text": " being",
+      "log_p_teacher": -0.310546875,
+      "log_p_student": -0.5546875,
+      "divergence": 0.244140625,
+      "position": 620
+    },
+    {
+      "token_id": 1483,
+      "token_text": " used",
+      "log_p_teacher": -0.000255584716796875,
+      "log_p_student": -0.0035247802734375,
+      "divergence": 0.003269195556640625,
+      "position": 621
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -0.083984375,
+      "log_p_student": -0.1396484375,
+      "divergence": 0.0556640625,
+      "position": 622
+    },
+    {
+      "token_id": 892,
+      "token_text": " which",
+      "log_p_teacher": -0.302734375,
+      "log_p_student": -0.392578125,
+      "divergence": 0.08984375,
+      "position": 623
+    },
+    {
+      "token_id": 7428,
+      "token_text": " purpose",
+      "log_p_teacher": -0.051025390625,
+      "log_p_student": -0.2197265625,
+      "divergence": 0.168701171875,
+      "position": 624
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.00128936767578125,
+      "log_p_student": -0.5859375,
+      "divergence": 0.5846481323242188,
+      "position": 625
+    },
+    {
+      "token_id": 1988,
+      "token_text": " But",
+      "log_p_teacher": -3.875,
+      "log_p_student": -2.25,
+      "divergence": -1.625,
+      "position": 626
+    },
+    {
+      "token_id": 419,
+      "token_text": " this",
+      "log_p_teacher": -0.1904296875,
+      "log_p_student": -0.85546875,
+      "divergence": 0.6650390625,
+      "position": 627
+    },
+    {
+      "token_id": 23094,
+      "token_text": " complexity",
+      "log_p_teacher": -0.099609375,
+      "log_p_student": -0.1318359375,
+      "divergence": 0.0322265625,
+      "position": 628
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -0.2060546875,
+      "log_p_student": -0.37890625,
+      "divergence": 0.1728515625,
+      "position": 629
+    },
+    {
+      "token_id": 537,
+      "token_text": " not",
+      "log_p_teacher": -0.10107421875,
+      "log_p_student": -0.9921875,
+      "divergence": 0.89111328125,
+      "position": 630
+    },
+    {
+      "token_id": 24168,
+      "token_text": " arbitrary",
+      "log_p_teacher": -0.004180908203125,
+      "log_p_student": -0.0213623046875,
+      "divergence": 0.017181396484375,
+      "position": 631
+    },
+    {
+      "token_id": 43503,
+      "token_text": "\u2014it",
+      "log_p_teacher": -0.0966796875,
+      "log_p_student": -0.47265625,
+      "divergence": 0.3759765625,
+      "position": 632
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -0.265625,
+      "log_p_student": -0.212890625,
+      "divergence": -0.052734375,
+      "position": 633
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.171875,
+      "log_p_student": -0.26953125,
+      "divergence": 0.09765625,
+      "position": 634
+    },
+    {
+      "token_id": 5810,
+      "token_text": " natural",
+      "log_p_teacher": -1.921875,
+      "log_p_student": -1.859375,
+      "divergence": -0.0625,
+      "position": 635
+    },
+    {
+      "token_id": 8894,
+      "token_text": " extension",
+      "log_p_teacher": -1.9375,
+      "log_p_student": -2.640625,
+      "divergence": 0.703125,
+      "position": 636
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -1.7881393432617188e-06,
+      "log_p_student": -0.0002460479736328125,
+      "divergence": 0.0002442598342895508,
+      "position": 637
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -1.140625,
+      "log_p_student": -1.7109375,
+      "divergence": 0.5703125,
+      "position": 638
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -0.0302734375,
+      "log_p_student": -0.291015625,
+      "divergence": 0.2607421875,
+      "position": 639
+    },
+    {
+      "token_id": 4132,
+      "token_text": " inf",
+      "log_p_teacher": -1.984375,
+      "log_p_student": -2.1875,
+      "divergence": 0.203125,
+      "position": 640
+    },
+    {
+      "token_id": 1170,
+      "token_text": "lection",
+      "log_p_teacher": -0.408203125,
+      "log_p_student": -0.279296875,
+      "divergence": -0.12890625,
+      "position": 641
+    },
+    {
+      "token_id": 278,
+      "token_text": "al",
+      "log_p_teacher": -0.00022029876708984375,
+      "log_p_student": -0.00225830078125,
+      "divergence": 0.0020380020141601562,
+      "position": 642
+    },
+    {
+      "token_id": 1849,
+      "token_text": " system",
+      "log_p_teacher": -0.072265625,
+      "log_p_student": -0.205078125,
+      "divergence": 0.1328125,
+      "position": 643
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.6328125,
+      "log_p_student": -2.375,
+      "divergence": 1.7421875,
+      "position": 644
+    },
+    {
+      "token_id": 6188,
+      "token_text": " designed",
+      "log_p_teacher": -1.453125,
+      "log_p_student": -1.875,
+      "divergence": 0.421875,
+      "position": 645
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -0.00103759765625,
+      "log_p_student": -0.0184326171875,
+      "divergence": 0.01739501953125,
+      "position": 646
+    },
+    {
+      "token_id": 3158,
+      "token_text": " express",
+      "log_p_teacher": -0.462890625,
+      "log_p_student": -0.71484375,
+      "divergence": 0.251953125,
+      "position": 647
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.80078125,
+      "log_p_student": -0.359375,
+      "divergence": -0.44140625,
+      "position": 648
+    },
+    {
+      "token_id": 6884,
+      "token_text": " wide",
+      "log_p_teacher": -0.01470947265625,
+      "log_p_student": -0.07666015625,
+      "divergence": 0.06195068359375,
+      "position": 649
+    },
+    {
+      "token_id": 2088,
+      "token_text": " range",
+      "log_p_teacher": -0.006011962890625,
+      "log_p_student": -0.055419921875,
+      "divergence": 0.049407958984375,
+      "position": 650
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": 0.0,
+      "log_p_student": -9.5367431640625e-07,
+      "divergence": 9.5367431640625e-07,
+      "position": 651
+    },
+    {
+      "token_id": 68125,
+      "token_text": " gramm",
+      "log_p_teacher": -0.045654296875,
+      "log_p_student": -0.09326171875,
+      "divergence": 0.047607421875,
+      "position": 652
+    },
+    {
+      "token_id": 61072,
+      "token_text": "atical",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.7881393432617188e-06,
+      "divergence": 1.7881393432617188e-06,
+      "position": 653
+    },
+    {
+      "token_id": 49700,
+      "token_text": " meanings",
+      "log_p_teacher": -1.5703125,
+      "log_p_student": -1.515625,
+      "divergence": -0.0546875,
+      "position": 654
+    },
+    {
+      "token_id": 382,
+      "token_text": ".\n\n",
+      "log_p_teacher": -0.396484375,
+      "log_p_student": -0.349609375,
+      "divergence": -0.046875,
+      "position": 655
+    },
+    {
+      "token_id": 21,
+      "token_text": "6",
+      "log_p_teacher": -1.4140625,
+      "log_p_student": -0.7265625,
+      "divergence": -0.6875,
+      "position": 656
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -1.3113021850585938e-06,
+      "divergence": 1.1920928955078125e-06,
+      "position": 657
+    },
+    {
+      "token_id": 3070,
+      "token_text": " **",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 658
+    },
+    {
+      "token_id": 10234,
+      "token_text": "Why",
+      "log_p_teacher": -2.0625,
+      "log_p_student": -3.21875,
+      "divergence": 1.15625,
+      "position": 659
+    },
+    {
+      "token_id": 1084,
+      "token_text": " It",
+      "log_p_teacher": -0.56640625,
+      "log_p_student": -0.4765625,
+      "divergence": -0.08984375,
+      "position": 660
+    },
+    {
+      "token_id": 57264,
+      "token_text": " Matters",
+      "log_p_teacher": -1.03125,
+      "log_p_student": -0.87109375,
+      "divergence": -0.16015625,
+      "position": 661
+    },
+    {
+      "token_id": 95518,
+      "token_text": "**:",
+      "log_p_teacher": -0.421875,
+      "log_p_student": -0.294921875,
+      "divergence": -0.126953125,
+      "position": 662
+    },
+    {
+      "token_id": 45451,
+      "token_text": " Understanding",
+      "log_p_teacher": -0.08203125,
+      "log_p_student": -0.1982421875,
+      "divergence": 0.1162109375,
+      "position": 663
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.8984375,
+      "log_p_student": -0.578125,
+      "divergence": -0.3203125,
+      "position": 664
+    },
+    {
+      "token_id": 12218,
+      "token_text": " logic",
+      "log_p_teacher": -0.69921875,
+      "log_p_student": -0.49609375,
+      "divergence": -0.203125,
+      "position": 665
+    },
+    {
+      "token_id": 4815,
+      "token_text": " behind",
+      "log_p_teacher": -0.01141357421875,
+      "log_p_student": -0.0966796875,
+      "divergence": 0.08526611328125,
+      "position": 666
+    },
+    {
+      "token_id": 1493,
+      "token_text": " these",
+      "log_p_teacher": -0.31640625,
+      "log_p_student": -0.91015625,
+      "divergence": 0.59375,
+      "position": 667
+    },
+    {
+      "token_id": 18763,
+      "token_text": " deriv",
+      "log_p_teacher": -0.0023651123046875,
+      "log_p_student": -0.01300048828125,
+      "divergence": 0.0106353759765625,
+      "position": 668
+    },
+    {
+      "token_id": 804,
+      "token_text": "ations",
+      "log_p_teacher": -0.00048828125,
+      "log_p_student": -0.00103759765625,
+      "divergence": 0.00054931640625,
+      "position": 669
+    },
+    {
+      "token_id": 8609,
+      "token_text": " helps",
+      "log_p_teacher": -1.1875,
+      "log_p_student": -1.859375,
+      "divergence": 0.671875,
+      "position": 670
+    },
+    {
+      "token_id": 601,
+      "token_text": " us",
+      "log_p_teacher": -1.953125,
+      "log_p_student": -3.1875,
+      "divergence": 1.234375,
+      "position": 671
+    },
+    {
+      "token_id": 15401,
+      "token_text": " appreciate",
+      "log_p_teacher": -0.419921875,
+      "log_p_student": -0.6015625,
+      "divergence": 0.181640625,
+      "position": 672
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.56640625,
+      "log_p_student": -0.375,
+      "divergence": -0.19140625,
+      "position": 673
+    },
+    {
+      "token_id": 88930,
+      "token_text": " richness",
+      "log_p_teacher": -0.421875,
+      "log_p_student": -0.62890625,
+      "divergence": 0.20703125,
+      "position": 674
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.06201171875,
+      "log_p_student": -0.3125,
+      "divergence": 0.25048828125,
+      "position": 675
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.00836181640625,
+      "log_p_student": -0.10791015625,
+      "divergence": 0.09954833984375,
+      "position": 676
+    },
+    {
+      "token_id": 438,
+      "token_text": " as",
+      "log_p_teacher": -3.03125,
+      "log_p_student": -2.40625,
+      "divergence": -0.625,
+      "position": 677
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.00070953369140625,
+      "log_p_student": -0.0032501220703125,
+      "divergence": 0.00254058837890625,
+      "position": 678
+    },
+    {
+      "token_id": 4128,
+      "token_text": " language",
+      "log_p_teacher": -0.0164794921875,
+      "log_p_student": -0.0257568359375,
+      "divergence": 0.00927734375,
+      "position": 679
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.328125,
+      "log_p_student": -0.259765625,
+      "divergence": -0.068359375,
+      "position": 680
+    },
+    {
+      "token_id": 1181,
+      "token_text": " its",
+      "log_p_teacher": -0.515625,
+      "log_p_student": -0.96875,
+      "divergence": 0.453125,
+      "position": 681
+    },
+    {
+      "token_id": 10173,
+      "token_text": " influence",
+      "log_p_teacher": -0.15625,
+      "log_p_student": -0.19921875,
+      "divergence": 0.04296875,
+      "position": 682
+    },
+    {
+      "token_id": 389,
+      "token_text": " on",
+      "log_p_teacher": -4.696846008300781e-05,
+      "log_p_student": -0.00060272216796875,
+      "divergence": 0.0005557537078857422,
+      "position": 683
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.1767578125,
+      "log_p_student": -0.25,
+      "divergence": 0.0732421875,
+      "position": 684
+    },
+    {
+      "token_id": 51156,
+      "token_text": " Romance",
+      "log_p_teacher": -0.0126953125,
+      "log_p_student": -0.11279296875,
+      "divergence": 0.10009765625,
+      "position": 685
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -0.0004596710205078125,
+      "log_p_student": -0.001220703125,
+      "divergence": 0.0007610321044921875,
+      "position": 686
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.00201416015625,
+      "log_p_student": -0.0172119140625,
+      "divergence": 0.01519775390625,
+      "position": 687
+    },
+    {
+      "token_id": 5976,
+      "token_text": " While",
+      "log_p_teacher": -1.25,
+      "log_p_student": -2.984375,
+      "divergence": 1.734375,
+      "position": 688
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.5625,
+      "log_p_student": -1.3125,
+      "divergence": 0.75,
+      "position": 689
+    },
+    {
+      "token_id": 1849,
+      "token_text": " system",
+      "log_p_teacher": -0.7890625,
+      "log_p_student": -0.7734375,
+      "divergence": -0.015625,
+      "position": 690
+    },
+    {
+      "token_id": 1231,
+      "token_text": " may",
+      "log_p_teacher": -0.138671875,
+      "log_p_student": -0.400390625,
+      "divergence": 0.26171875,
+      "position": 691
+    },
+    {
+      "token_id": 2803,
+      "token_text": " seem",
+      "log_p_teacher": -0.052734375,
+      "log_p_student": -0.1865234375,
+      "divergence": 0.1337890625,
+      "position": 692
+    },
+    {
+      "token_id": 30615,
+      "token_text": " confusing",
+      "log_p_teacher": -0.91796875,
+      "log_p_student": -0.98046875,
+      "divergence": 0.0625,
+      "position": 693
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -1.1796875,
+      "log_p_student": -0.8828125,
+      "divergence": -0.296875,
+      "position": 694
+    },
+    {
+      "token_id": 5310,
+      "token_text": " especially",
+      "log_p_teacher": -0.232421875,
+      "log_p_student": -0.5,
+      "divergence": 0.267578125,
+      "position": 695
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -0.47265625,
+      "log_p_student": -0.71875,
+      "divergence": 0.24609375,
+      "position": 696
+    },
+    {
+      "token_id": 21326,
+      "token_text": " speakers",
+      "log_p_teacher": -0.1494140625,
+      "log_p_student": -0.875,
+      "divergence": 0.7255859375,
+      "position": 697
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.00015163421630859375,
+      "log_p_student": -0.0015411376953125,
+      "divergence": 0.0013895034790039062,
+      "position": 698
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -0.05419921875,
+      "log_p_student": -0.28125,
+      "divergence": 0.22705078125,
+      "position": 699
+    },
+    {
+      "token_id": 448,
+      "token_text": " with",
+      "log_p_teacher": -0.0186767578125,
+      "log_p_student": -0.0615234375,
+      "divergence": 0.0428466796875,
+      "position": 700
+    },
+    {
+      "token_id": 34288,
+      "token_text": " simpler",
+      "log_p_teacher": -0.30078125,
+      "log_p_student": -0.4296875,
+      "divergence": 0.12890625,
+      "position": 701
+    },
+    {
+      "token_id": 78512,
+      "token_text": " morphology",
+      "log_p_teacher": -0.65234375,
+      "log_p_student": -0.640625,
+      "divergence": -0.01171875,
+      "position": 702
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.00408935546875,
+      "log_p_student": -0.00994873046875,
+      "divergence": 0.005859375,
+      "position": 703
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.017578125,
+      "log_p_student": -0.053955078125,
+      "divergence": 0.036376953125,
+      "position": 704
+    },
+    {
+      "token_id": 25963,
+      "token_text": " reflects",
+      "log_p_teacher": -0.400390625,
+      "log_p_student": -0.69921875,
+      "divergence": 0.298828125,
+      "position": 705
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -1.421875,
+      "log_p_student": -1.34375,
+      "divergence": -0.078125,
+      "position": 706
+    },
+    {
+      "token_id": 42666,
+      "token_text": " thoughtful",
+      "log_p_teacher": -4.21875,
+      "log_p_student": -4.6875,
+      "divergence": 0.46875,
+      "position": 707
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.06591796875,
+      "log_p_student": -0.134765625,
+      "divergence": 0.06884765625,
+      "position": 708
+    },
+    {
+      "token_id": 36438,
+      "token_text": " systematic",
+      "log_p_teacher": -0.08056640625,
+      "log_p_student": -0.2412109375,
+      "divergence": 0.16064453125,
+      "position": 709
+    },
+    {
+      "token_id": 5486,
+      "token_text": " approach",
+      "log_p_teacher": -0.021240234375,
+      "log_p_student": -0.035400390625,
+      "divergence": 0.01416015625,
+      "position": 710
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": -1.0132789611816406e-05,
+      "log_p_student": -0.0002651214599609375,
+      "divergence": 0.0002549886703491211,
+      "position": 711
+    },
+    {
+      "token_id": 3409,
+      "token_text": " word",
+      "log_p_teacher": -0.16015625,
+      "log_p_student": -0.44140625,
+      "divergence": 0.28125,
+      "position": 712
+    },
+    {
+      "token_id": 18003,
+      "token_text": " formation",
+      "log_p_teacher": -0.0025634765625,
+      "log_p_student": -0.007110595703125,
+      "divergence": 0.004547119140625,
+      "position": 713
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -3.671875,
+      "log_p_student": -2.78125,
+      "divergence": -0.890625,
+      "position": 714
+    },
+    {
+      "token_id": 26271,
+      "token_text": " shaped",
+      "log_p_teacher": -4.78125,
+      "log_p_student": -4.75,
+      "divergence": -0.03125,
+      "position": 715
+    },
+    {
+      "token_id": 553,
+      "token_text": " by",
+      "log_p_teacher": -0.0002651214599609375,
+      "log_p_student": -0.003692626953125,
+      "divergence": 0.0034275054931640625,
+      "position": 716
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.09814453125,
+      "log_p_student": -0.0966796875,
+      "divergence": -0.00146484375,
+      "position": 717
+    },
+    {
+      "token_id": 4128,
+      "token_text": " language",
+      "log_p_teacher": -3.0625,
+      "log_p_student": -2.875,
+      "divergence": -0.1875,
+      "position": 718
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -0.10009765625,
+      "log_p_student": -0.5234375,
+      "divergence": 0.42333984375,
+      "position": 719
+    },
+    {
+      "token_id": 13656,
+      "token_text": " historical",
+      "log_p_teacher": -0.09375,
+      "log_p_student": -0.1884765625,
+      "divergence": 0.0947265625,
+      "position": 720
+    },
+    {
+      "token_id": 4401,
+      "token_text": " development",
+      "log_p_teacher": -0.169921875,
+      "log_p_student": -0.42578125,
+      "divergence": 0.255859375,
+      "position": 721
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.1201171875,
+      "log_p_student": -0.255859375,
+      "divergence": 0.1357421875,
+      "position": 722
+    },
+    {
+      "token_id": 5932,
+      "token_text": " communic",
+      "log_p_teacher": -3.703125,
+      "log_p_student": -3.546875,
+      "divergence": -0.15625,
+      "position": 723
+    },
+    {
+      "token_id": 1388,
+      "token_text": "ative",
+      "log_p_teacher": -1.2993812561035156e-05,
+      "log_p_student": -0.0001583099365234375,
+      "divergence": 0.00014531612396240234,
+      "position": 724
+    },
+    {
+      "token_id": 3880,
+      "token_text": " needs",
+      "log_p_teacher": -2.586841583251953e-05,
+      "log_p_student": -0.00020503997802734375,
+      "divergence": 0.00017917156219482422,
+      "position": 725
+    },
+    {
+      "token_id": 382,
+      "token_text": ".\n\n",
+      "log_p_teacher": -0.009765625,
+      "log_p_student": -0.000934600830078125,
+      "divergence": -0.008831024169921875,
+      "position": 726
+    },
+    {
+      "token_id": 641,
+      "token_text": "In",
+      "log_p_teacher": -0.00347900390625,
+      "log_p_student": -0.244140625,
+      "divergence": 0.24066162109375,
+      "position": 727
+    },
+    {
+      "token_id": 12126,
+      "token_text": " summary",
+      "log_p_teacher": -0.10791015625,
+      "log_p_student": -0.3984375,
+      "divergence": 0.29052734375,
+      "position": 728
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -2.181529998779297e-05,
+      "log_p_student": -0.00147247314453125,
+      "divergence": 0.001450657844543457,
+      "position": 729
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.20703125,
+      "log_p_student": -0.26953125,
+      "divergence": 0.0625,
+      "position": 730
+    },
+    {
+      "token_id": 990,
+      "token_text": " use",
+      "log_p_teacher": -2.953125,
+      "log_p_student": -2.59375,
+      "divergence": -0.359375,
+      "position": 731
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -1.6689300537109375e-05,
+      "log_p_student": -0.0002574920654296875,
+      "divergence": 0.00024080276489257812,
+      "position": 732
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.140625,
+      "log_p_student": -0.1494140625,
+      "divergence": 0.0087890625,
+      "position": 733
+    },
+    {
+      "token_id": 1026,
+      "token_text": " sup",
+      "log_p_teacher": -0.0185546875,
+      "log_p_student": -0.08251953125,
+      "divergence": 0.06396484375,
+      "position": 734
+    },
+    {
+      "token_id": 482,
+      "token_text": "ine",
+      "log_p_teacher": 0.0,
+      "log_p_student": -1.1920928955078125e-07,
+      "divergence": 1.1920928955078125e-07,
+      "position": 735
+    },
+    {
+      "token_id": 2293,
+      "token_text": "\u2014",
+      "log_p_teacher": -5.21875,
+      "log_p_student": -4.53125,
+      "divergence": -0.6875,
+      "position": 736
+    },
+    {
+      "token_id": 60817,
+      "token_text": "often",
+      "log_p_teacher": -0.03076171875,
+      "log_p_student": -0.12890625,
+      "divergence": 0.09814453125,
+      "position": 737
+    },
+    {
+      "token_id": 36004,
+      "token_text": " mistaken",
+      "log_p_teacher": -1.9765625,
+      "log_p_student": -2.34375,
+      "divergence": 0.3671875,
+      "position": 738
+    },
+    {
+      "token_id": 369,
+      "token_text": " for",
+      "log_p_teacher": -0.00182342529296875,
+      "log_p_student": -0.0101318359375,
+      "divergence": 0.00830841064453125,
+      "position": 739
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.0927734375,
+      "log_p_student": -0.119140625,
+      "divergence": 0.0263671875,
+      "position": 740
+    },
+    {
+      "token_id": 3267,
+      "token_text": " past",
+      "log_p_teacher": -0.00732421875,
+      "log_p_student": -0.01397705078125,
+      "divergence": 0.00665283203125,
+      "position": 741
+    },
+    {
+      "token_id": 2536,
+      "token_text": " partic",
+      "log_p_teacher": -1.3709068298339844e-05,
+      "log_p_student": -0.0001068115234375,
+      "divergence": 9.310245513916016e-05,
+      "position": 742
+    },
+    {
+      "token_id": 3778,
+      "token_text": "iple",
+      "log_p_teacher": 0.0,
+      "log_p_student": 0.0,
+      "divergence": 0.0,
+      "position": 743
+    },
+    {
+      "token_id": 71218,
+      "token_text": "\u2014for",
+      "log_p_teacher": -0.92578125,
+      "log_p_student": -0.68359375,
+      "divergence": -0.2421875,
+      "position": 744
+    },
+    {
+      "token_id": 18763,
+      "token_text": " deriv",
+      "log_p_teacher": -0.09375,
+      "log_p_student": -0.166015625,
+      "divergence": 0.072265625,
+      "position": 745
+    },
+    {
+      "token_id": 804,
+      "token_text": "ations",
+      "log_p_teacher": -7.033348083496094e-06,
+      "log_p_student": -4.291534423828125e-05,
+      "divergence": 3.5881996154785156e-05,
+      "position": 746
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.107421875,
+      "log_p_student": -0.263671875,
+      "divergence": 0.15625,
+      "position": 747
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -4.410743713378906e-06,
+      "log_p_student": -6.151199340820312e-05,
+      "divergence": 5.710124969482422e-05,
+      "position": 748
+    },
+    {
+      "token_id": 374,
+      "token_text": " is",
+      "log_p_teacher": -1.1796875,
+      "log_p_student": -0.734375,
+      "divergence": -0.4453125,
+      "position": 749
+    },
+    {
+      "token_id": 40876,
+      "token_text": " rooted",
+      "log_p_teacher": -0.30078125,
+      "log_p_student": -0.365234375,
+      "divergence": 0.064453125,
+      "position": 750
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -1.1920928955078125e-07,
+      "log_p_student": -8.463859558105469e-06,
+      "divergence": 8.344650268554688e-06,
+      "position": 751
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.044189453125,
+      "log_p_student": -0.09765625,
+      "divergence": 0.053466796875,
+      "position": 752
+    },
+    {
+      "token_id": 4128,
+      "token_text": " language",
+      "log_p_teacher": -0.015869140625,
+      "log_p_student": -0.1103515625,
+      "divergence": 0.094482421875,
+      "position": 753
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -0.02978515625,
+      "log_p_student": -0.34765625,
+      "divergence": 0.31787109375,
+      "position": 754
+    },
+    {
+      "token_id": 26351,
+      "token_text": " morph",
+      "log_p_teacher": -0.25,
+      "log_p_student": -0.6875,
+      "divergence": 0.4375,
+      "position": 755
+    },
+    {
+      "token_id": 5729,
+      "token_text": "ological",
+      "log_p_teacher": -4.76837158203125e-06,
+      "log_p_student": -6.031990051269531e-05,
+      "divergence": 5.555152893066406e-05,
+      "position": 756
+    },
+    {
+      "token_id": 5944,
+      "token_text": " structure",
+      "log_p_teacher": -0.03271484375,
+      "log_p_student": -0.1826171875,
+      "divergence": 0.14990234375,
+      "position": 757
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.1708984375,
+      "log_p_student": -0.341796875,
+      "divergence": 0.1708984375,
+      "position": 758
+    },
+    {
+      "token_id": 1181,
+      "token_text": " its",
+      "log_p_teacher": -0.41796875,
+      "log_p_student": -0.71484375,
+      "divergence": 0.296875,
+      "position": 759
+    },
+    {
+      "token_id": 13656,
+      "token_text": " historical",
+      "log_p_teacher": -0.4375,
+      "log_p_student": -0.390625,
+      "divergence": -0.046875,
+      "position": 760
+    },
+    {
+      "token_id": 3476,
+      "token_text": " role",
+      "log_p_teacher": -3.265625,
+      "log_p_student": -3.109375,
+      "divergence": -0.15625,
+      "position": 761
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -0.0054931640625,
+      "log_p_student": -0.02294921875,
+      "divergence": 0.0174560546875,
+      "position": 762
+    },
+    {
+      "token_id": 36710,
+      "token_text": " expressing",
+      "log_p_teacher": -0.05810546875,
+      "log_p_student": -0.1787109375,
+      "divergence": 0.12060546875,
+      "position": 763
+    },
+    {
+      "token_id": 8145,
+      "token_text": " completed",
+      "log_p_teacher": -0.0306396484375,
+      "log_p_student": -0.10888671875,
+      "divergence": 0.0782470703125,
+      "position": 764
+    },
+    {
+      "token_id": 6168,
+      "token_text": " actions",
+      "log_p_teacher": -0.142578125,
+      "log_p_student": -0.228515625,
+      "divergence": 0.0859375,
+      "position": 765
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.27734375,
+      "log_p_student": -0.2734375,
+      "divergence": -0.00390625,
+      "position": 766
+    },
+    {
+      "token_id": 46755,
+      "token_text": " nominal",
+      "log_p_teacher": -2.21875,
+      "log_p_student": -2.671875,
+      "divergence": 0.453125,
+      "position": 767
+    },
+    {
+      "token_id": 8040,
+      "token_text": "izations",
+      "log_p_teacher": -0.8203125,
+      "log_p_student": -0.91015625,
+      "divergence": 0.08984375,
+      "position": 768
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -2.8014183044433594e-05,
+      "log_p_student": -0.00113677978515625,
+      "divergence": 0.0011087656021118164,
+      "position": 769
+    },
+    {
+      "token_id": 5976,
+      "token_text": " While",
+      "log_p_teacher": -0.1455078125,
+      "log_p_student": -0.640625,
+      "divergence": 0.4951171875,
+      "position": 770
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.2578125,
+      "log_p_student": -0.65625,
+      "divergence": 0.3984375,
+      "position": 771
+    },
+    {
+      "token_id": 1882,
+      "token_text": " process",
+      "log_p_teacher": -0.057861328125,
+      "log_p_student": -1.5234375,
+      "divergence": 1.465576171875,
+      "position": 772
+    },
+    {
+      "token_id": 1231,
+      "token_text": " may",
+      "log_p_teacher": -0.041748046875,
+      "log_p_student": -0.29296875,
+      "divergence": 0.251220703125,
+      "position": 773
+    },
+    {
+      "token_id": 2803,
+      "token_text": " seem",
+      "log_p_teacher": -0.47265625,
+      "log_p_student": -0.298828125,
+      "divergence": -0.173828125,
+      "position": 774
+    },
+    {
+      "token_id": 95701,
+      "token_text": " obscured",
+      "log_p_teacher": -0.1591796875,
+      "log_p_student": -5.71875,
+      "divergence": 5.5595703125,
+      "position": 775
+    },
+    {
+      "token_id": 3351,
+      "token_text": " today",
+      "log_p_teacher": -2.40625,
+      "log_p_student": -2.40625,
+      "divergence": 0.0,
+      "position": 776
+    },
+    {
+      "token_id": 4152,
+      "token_text": " due",
+      "log_p_teacher": -0.6953125,
+      "log_p_student": -2.359375,
+      "divergence": 1.6640625,
+      "position": 777
+    },
+    {
+      "token_id": 311,
+      "token_text": " to",
+      "log_p_teacher": 0.0,
+      "log_p_student": -9.5367431640625e-07,
+      "divergence": 9.5367431640625e-07,
+      "position": 778
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.251953125,
+      "log_p_student": -0.375,
+      "divergence": 0.123046875,
+      "position": 779
+    },
+    {
+      "token_id": 15379,
+      "token_text": " evolution",
+      "log_p_teacher": -1.171875,
+      "log_p_student": -0.6484375,
+      "divergence": -0.5234375,
+      "position": 780
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -0.00762939453125,
+      "log_p_student": -0.0162353515625,
+      "divergence": 0.00860595703125,
+      "position": 781
+    },
+    {
+      "token_id": 4128,
+      "token_text": " language",
+      "log_p_teacher": -1.9453125,
+      "log_p_student": -2.125,
+      "divergence": 0.1796875,
+      "position": 782
+    },
+    {
+      "token_id": 11,
+      "token_text": ",",
+      "log_p_teacher": -0.76171875,
+      "log_p_student": -0.28515625,
+      "divergence": -0.4765625,
+      "position": 783
+    },
+    {
+      "token_id": 432,
+      "token_text": " it",
+      "log_p_teacher": -0.05517578125,
+      "log_p_student": -0.1611328125,
+      "divergence": 0.10595703125,
+      "position": 784
+    },
+    {
+      "token_id": 572,
+      "token_text": " was",
+      "log_p_teacher": -0.00372314453125,
+      "log_p_student": -0.035888671875,
+      "divergence": 0.03216552734375,
+      "position": 785
+    },
+    {
+      "token_id": 264,
+      "token_text": " a",
+      "log_p_teacher": -0.11083984375,
+      "log_p_student": -0.080078125,
+      "divergence": -0.03076171875,
+      "position": 786
+    },
+    {
+      "token_id": 2797,
+      "token_text": " clear",
+      "log_p_teacher": -1.8828125,
+      "log_p_student": -4.125,
+      "divergence": 2.2421875,
+      "position": 787
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.0033721923828125,
+      "log_p_student": -0.00933837890625,
+      "divergence": 0.0059661865234375,
+      "position": 788
+    },
+    {
+      "token_id": 15629,
+      "token_text": " functional",
+      "log_p_teacher": -0.37109375,
+      "log_p_student": -0.8828125,
+      "divergence": 0.51171875,
+      "position": 789
+    },
+    {
+      "token_id": 949,
+      "token_text": " part",
+      "log_p_teacher": -0.0888671875,
+      "log_p_student": -0.1748046875,
+      "divergence": 0.0859375,
+      "position": 790
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -1.5497207641601562e-06,
+      "log_p_student": -1.5497207641601562e-05,
+      "divergence": 1.3947486877441406e-05,
+      "position": 791
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.00188446044921875,
+      "log_p_student": -0.01373291015625,
+      "divergence": 0.01184844970703125,
+      "position": 792
+    },
+    {
+      "token_id": 748,
+      "token_text": "\u2019s",
+      "log_p_teacher": -0.248046875,
+      "log_p_student": -0.443359375,
+      "divergence": 0.1953125,
+      "position": 793
+    },
+    {
+      "token_id": 31428,
+      "token_text": " grammar",
+      "log_p_teacher": -0.07666015625,
+      "log_p_student": -0.166015625,
+      "divergence": 0.08935546875,
+      "position": 794
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -0.578125,
+      "log_p_student": -0.97265625,
+      "divergence": 0.39453125,
+      "position": 795
+    },
+    {
+      "token_id": 45451,
+      "token_text": " Understanding",
+      "log_p_teacher": -2.796875,
+      "log_p_student": -0.9765625,
+      "divergence": -1.8203125,
+      "position": 796
+    },
+    {
+      "token_id": 419,
+      "token_text": " this",
+      "log_p_teacher": -0.018798828125,
+      "log_p_student": -0.080078125,
+      "divergence": 0.061279296875,
+      "position": 797
+    },
+    {
+      "token_id": 646,
+      "token_text": " can",
+      "log_p_teacher": -1.4609375,
+      "log_p_student": -1.2578125,
+      "divergence": -0.203125,
+      "position": 798
+    },
+    {
+      "token_id": 1492,
+      "token_text": " help",
+      "log_p_teacher": -0.298828125,
+      "log_p_student": -0.515625,
+      "divergence": 0.216796875,
+      "position": 799
+    },
+    {
+      "token_id": 14164,
+      "token_text": " bridge",
+      "log_p_teacher": -0.67578125,
+      "log_p_student": -1.8203125,
+      "divergence": 1.14453125,
+      "position": 800
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.0013580322265625,
+      "log_p_student": -0.00244140625,
+      "divergence": 0.0010833740234375,
+      "position": 801
+    },
+    {
+      "token_id": 12929,
+      "token_text": " gap",
+      "log_p_teacher": -0.0002231597900390625,
+      "log_p_student": -0.002716064453125,
+      "divergence": 0.0024929046630859375,
+      "position": 802
+    },
+    {
+      "token_id": 1948,
+      "token_text": " between",
+      "log_p_teacher": -6.29425048828125e-05,
+      "log_p_student": -0.00164794921875,
+      "divergence": 0.0015850067138671875,
+      "position": 803
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -1.671875,
+      "log_p_student": -1.1328125,
+      "divergence": -0.5390625,
+      "position": 804
+    },
+    {
+      "token_id": 23094,
+      "token_text": " complexity",
+      "log_p_teacher": -0.4296875,
+      "log_p_student": -0.56640625,
+      "divergence": 0.13671875,
+      "position": 805
+    },
+    {
+      "token_id": 315,
+      "token_text": " of",
+      "log_p_teacher": -2.86102294921875e-05,
+      "log_p_student": -0.000247955322265625,
+      "divergence": 0.0002193450927734375,
+      "position": 806
+    },
+    {
+      "token_id": 19458,
+      "token_text": " Latin",
+      "log_p_teacher": -0.04541015625,
+      "log_p_student": -0.031982421875,
+      "divergence": -0.013427734375,
+      "position": 807
+    },
+    {
+      "token_id": 323,
+      "token_text": " and",
+      "log_p_teacher": -0.00135040283203125,
+      "log_p_student": -0.007293701171875,
+      "divergence": 0.00594329833984375,
+      "position": 808
+    },
+    {
+      "token_id": 279,
+      "token_text": " the",
+      "log_p_teacher": -0.00021076202392578125,
+      "log_p_student": -0.001495361328125,
+      "divergence": 0.0012845993041992188,
+      "position": 809
+    },
+    {
+      "token_id": 34288,
+      "token_text": " simpler",
+      "log_p_teacher": -1.09375,
+      "log_p_student": -1.1484375,
+      "divergence": 0.0546875,
+      "position": 810
+    },
+    {
+      "token_id": 5942,
+      "token_text": " systems",
+      "log_p_teacher": -0.06201171875,
+      "log_p_student": -0.1494140625,
+      "divergence": 0.08740234375,
+      "position": 811
+    },
+    {
+      "token_id": 1730,
+      "token_text": " found",
+      "log_p_teacher": -2.390625,
+      "log_p_student": -1.46875,
+      "divergence": -0.921875,
+      "position": 812
+    },
+    {
+      "token_id": 304,
+      "token_text": " in",
+      "log_p_teacher": -1.0728836059570312e-06,
+      "log_p_student": -7.62939453125e-06,
+      "divergence": 6.556510925292969e-06,
+      "position": 813
+    },
+    {
+      "token_id": 1657,
+      "token_text": " many",
+      "log_p_teacher": -0.53125,
+      "log_p_student": -0.51171875,
+      "divergence": -0.01953125,
+      "position": 814
+    },
+    {
+      "token_id": 6481,
+      "token_text": " modern",
+      "log_p_teacher": -0.0269775390625,
+      "log_p_student": -0.0810546875,
+      "divergence": 0.0540771484375,
+      "position": 815
+    },
+    {
+      "token_id": 15459,
+      "token_text": " languages",
+      "log_p_teacher": -0.01611328125,
+      "log_p_student": -0.023681640625,
+      "divergence": 0.007568359375,
+      "position": 816
+    },
+    {
+      "token_id": 13,
+      "token_text": ".",
+      "log_p_teacher": -1.453125,
+      "log_p_student": -2.109375,
+      "divergence": 0.65625,
+      "position": 817
+    }
+  ]
+}

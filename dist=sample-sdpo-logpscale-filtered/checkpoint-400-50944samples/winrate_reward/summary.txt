@@ -1,0 +1,13 @@
+Checkpoint: checkpoint-400-50944samples
+Judge: Skywork/Skywork-Reward-V2-Llama-3.1-8B
+Examples: 805
+Tie threshold: 0.01
+
+Model wins:        32 (4.0%)
+Reference wins:    17 (2.1%)
+Ties:             756 (93.9%)
+
+Win rate (inc. ties):  4.0%
+Win rate (exc. ties):  65.3%
+Avg model score:       0.9914
+Avg reference score:   0.9908

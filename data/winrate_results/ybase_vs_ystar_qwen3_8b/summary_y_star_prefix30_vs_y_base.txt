@@ -1,0 +1,10 @@
+Comparison: y_star_prefix30 vs y_base
+Judge: Qwen/Qwen3-14B
+Examples: 500
+
+y_star_prefix30 wins:    61 (12.2%)
+y_base wins:   190 (38.0%)
+Ties:             249 (49.8%)
+
+Win rate (inc. ties):  12.2%
+Win rate (exc. ties):  24.3%

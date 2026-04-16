@@ -127,7 +127,7 @@ async def call_judge(
                             {"role": "system", "content": JUDGE_SYSTEM},
                             {"role": "user", "content": user_prompt},
                         ],
-                        max_tokens=10,
+                        max_tokens=3,
                         temperature=0,
                     )
                     choice = resp.choices[0] if resp.choices else None

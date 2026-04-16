@@ -1,0 +1,3002 @@
+[
+  {
+    "index": 0,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 3,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "A"
+  },
+  {
+    "index": 2,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 5,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 4,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 8,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 1,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 6,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 7,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 9,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 16,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 14,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 12,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 11,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 15,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 19,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 26,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 10,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 24,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 23,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 20,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 17,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 18,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 21,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 13,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 25,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 22,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 30,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 29,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 28,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 31,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 27,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 32,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 36,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 33,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 35,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 34,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 37,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 40,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 39,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 38,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 44,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 43,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 41,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "A"
+  },
+  {
+    "index": 47,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 45,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 42,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 46,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 49,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 56,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 53,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 50,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 48,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 51,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 55,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 62,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 63,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 54,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 61,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "A"
+  },
+  {
+    "index": 52,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 60,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 59,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 57,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 58,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 64,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 70,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 69,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 65,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 68,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 71,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 67,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 66,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 72,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 77,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 73,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 78,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 75,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 76,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 74,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 79,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 80,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 81,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 83,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 85,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 90,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 87,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 94,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 93,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 84,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 82,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 88,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 89,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 92,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 86,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 95,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 91,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 103,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 96,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 100,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 98,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 107,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 108,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 97,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 104,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 102,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 106,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 99,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 101,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 105,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 115,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 111,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 113,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 109,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 114,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 112,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 110,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 118,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 117,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 126,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 124,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 119,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 120,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 121,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 123,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 116,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 122,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 125,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 127,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 128,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 129,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 131,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 130,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 132,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 133,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "A"
+  },
+  {
+    "index": 138,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 135,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 139,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 137,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 134,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 136,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 142,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 143,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 140,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 146,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 141,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 145,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 144,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 148,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 150,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 153,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 151,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 155,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 152,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 147,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 149,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 157,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 159,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 158,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 154,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 156,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 162,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 161,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 163,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 164,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 165,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 167,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 160,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 169,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 166,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 177,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 168,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 176,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 172,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 170,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 174,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 173,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 171,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 184,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 185,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 181,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 183,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 178,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 180,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 179,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 182,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 175,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 190,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 186,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 187,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 189,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 191,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 188,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 194,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 193,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 192,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 198,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 200,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 197,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 196,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 199,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 195,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 204,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 205,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 201,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 207,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 208,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 202,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 203,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 206,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 209,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 211,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 214,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 215,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 213,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 216,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 212,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 210,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 220,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 219,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 217,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 221,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 218,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 222,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 223,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 224,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 225,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "C"
+  },
+  {
+    "index": 232,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 226,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 229,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 227,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 230,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 231,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 236,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 233,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 235,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 237,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 234,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 228,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 238,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 240,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 239,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 247,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 243,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 242,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 245,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 246,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 241,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 244,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 251,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 253,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 250,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 249,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 252,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 248,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 255,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 254,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 256,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "C"
+  },
+  {
+    "index": 262,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 258,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 259,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 261,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 257,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 264,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 265,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 263,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 260,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 266,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 272,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 278,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 277,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 270,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 268,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 274,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 267,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 269,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 271,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 282,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 273,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 275,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 284,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 285,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 280,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 281,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 276,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 279,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 283,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 286,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 287,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 288,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 290,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 292,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 293,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 295,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 296,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 294,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 297,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 289,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 291,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 298,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 305,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "A"
+  },
+  {
+    "index": 302,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "C"
+  },
+  {
+    "index": 299,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 301,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 300,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 306,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 303,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 304,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 316,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 313,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 314,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 311,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 310,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 312,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 308,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "B"
+  },
+  {
+    "index": 309,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 317,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 307,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 319,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 318,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 315,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 320,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 321,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 322,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 323,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 324,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 329,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 328,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 325,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 326,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 338,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 331,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 330,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 332,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 335,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "A"
+  },
+  {
+    "index": 327,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 336,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 333,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 340,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 339,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 337,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 334,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 341,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 348,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 342,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 345,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 344,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 343,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 347,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 346,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "C"
+  },
+  {
+    "index": 350,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 351,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 349,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 352,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 355,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 354,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 353,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 359,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 356,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 358,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 361,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 366,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 357,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 360,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 364,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 363,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 365,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 362,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 371,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 372,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 368,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 369,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 370,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 367,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 374,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 378,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 376,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 373,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 377,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 379,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 375,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 381,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 380,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 382,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 383,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 384,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 387,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 385,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 386,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 388,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 390,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 389,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 395,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "A"
+  },
+  {
+    "index": 397,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 393,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 392,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 391,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 396,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 394,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 398,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 404,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 402,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 399,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 403,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 401,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 400,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 405,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 406,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 408,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 407,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 409,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 413,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 411,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 414,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 410,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 412,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 415,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 416,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 418,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 417,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 419,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 420,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 421,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 422,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 428,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 430,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 427,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 425,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 423,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 429,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 426,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 432,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 436,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 434,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 435,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 433,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 431,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 424,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 438,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "C"
+  },
+  {
+    "index": 439,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 437,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 440,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 442,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "B"
+  },
+  {
+    "index": 441,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 446,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 444,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 445,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 447,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 443,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 448,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "B"
+  },
+  {
+    "index": 449,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 451,
+    "winner": "tie",
+    "call1": "B",
+    "call2": "C"
+  },
+  {
+    "index": 450,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 453,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 454,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 456,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 452,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "C"
+  },
+  {
+    "index": 458,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 457,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 459,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 465,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 462,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 455,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 466,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 460,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 464,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 467,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 461,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 468,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 463,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "C"
+  },
+  {
+    "index": 470,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 472,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 469,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 474,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 471,
+    "winner": "tie",
+    "call1": "C",
+    "call2": "C"
+  },
+  {
+    "index": 476,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 473,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 475,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 477,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 481,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 478,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 484,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 482,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 480,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 483,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 479,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 485,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 487,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 486,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 491,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 488,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 489,
+    "winner": "first",
+    "call1": "A",
+    "call2": "B"
+  },
+  {
+    "index": 497,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 492,
+    "winner": "tie",
+    "call1": "A",
+    "call2": "A"
+  },
+  {
+    "index": 490,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 496,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 493,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 499,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 494,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 498,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  },
+  {
+    "index": 495,
+    "winner": "second",
+    "call1": "B",
+    "call2": "A"
+  }
+]

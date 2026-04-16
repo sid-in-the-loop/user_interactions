@@ -1,0 +1,57 @@
+════════════════════════════════════════
+  Method   : fkl
+  Input    : datasets/wildchat/ystar_prefix_wildchat_qwen3_8b.jsonl
+  Output   : /projects/bgtw/ssredharan/checkpoints/fkl_p30
+  Extra    : --pure_kl
+════════════════════════════════════════
+============================================================
+Objective    : fkl
+y* field     : y_star_prefix30
+Model        : Qwen/Qwen3-8B
+LoRA r/alpha : 64/128
+Save every   : 10 steps
+Output       : /projects/bgtw/ssredharan/checkpoints/fkl_p30
+============================================================
+[PrefixDataset] 9629 usable, 137 skipped
+[Info] flash_attn not found, using sdpa
+trainable params: 174,587,904 || all params: 8,365,323,264 || trainable%: 2.0870
+Steps/epoch     : 4815
+Total opt steps : 300
+Effective batch : 64
+Saving every    : 10 steps
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-10
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-20
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-30
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-40
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-50
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-60
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-70
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-80
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-90
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-100
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-110
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-120
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-130
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-140
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-150
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-160
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-170
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-180
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-190
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-200
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-210
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-220
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-230
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-240
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-250
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-260
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-270
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-280
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-290
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/step-300
+[Saved] /projects/bgtw/ssredharan/checkpoints/fkl_p30/final
+Training complete.
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mqwen3_8b_fkl_p30[0m at: [34mhttps://wandb.ai/ssmurali-cmu/distillation-methods/runs/ibl73frp[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260415_032636-ibl73frp/logs[0m
+Done. Checkpoints in /projects/bgtw/ssredharan/checkpoints/fkl_p30/

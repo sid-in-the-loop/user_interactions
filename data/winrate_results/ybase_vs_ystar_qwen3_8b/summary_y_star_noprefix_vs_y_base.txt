@@ -1,0 +1,10 @@
+Comparison: y_star_noprefix vs y_base
+Judge: Qwen/Qwen3-14B
+Examples: 500
+
+y_star_noprefix wins:    15 (3.0%)
+y_base wins:   379 (75.8%)
+Ties:             106 (21.2%)
+
+Win rate (inc. ties):  3.0%
+Win rate (exc. ties):  3.8%
