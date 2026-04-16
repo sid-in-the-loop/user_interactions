@@ -5,3 +5,8 @@ datasets/
 
 checkpoints/
 wandb/
+step-15/
+*.safetensors
+eval_results/
+diagnostics/
+wandb/
