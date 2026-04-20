@@ -10,3 +10,21 @@ step-15/
 eval_results/
 diagnostics/
 wandb/
+
+# logs (large, per-job, regenerable)
+logs/
+
+# python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# experiment data + results — too large, deterministically regenerable
+experiments/*/data/mixtures/
+experiments/*/data/training_inputs/
+experiments/*/data/*.jsonl
+experiments/*/results/generations/
+experiments/*/results/eval_*.csv
+
+# archived experiment runs (frozen data snapshots)
+experiments/*/_archive/

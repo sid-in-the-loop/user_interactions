@@ -107,16 +107,21 @@ def main():
             print(f"  ERROR creating repo: {e}")
             continue
 
-        # Upload entire method directory (all checkpoints at once)
-        try:
-            api.upload_folder(
-                folder_path=str(method_dir),
-                repo_id=repo_id,
-                token=token,
-            )
-            print(f"  Uploaded ✓")
-        except Exception as e:
-            print(f"  ERROR uploading: {e}")
+        # Upload checkpoint by checkpoint to avoid large folder issues
+        uploaded = 0
+        for ckpt in ckpts:
+            try:
+                api.upload_folder(
+                    folder_path=str(ckpt),
+                    path_in_repo=ckpt.name,
+                    repo_id=repo_id,
+                    token=token,
+                )
+                uploaded += 1
+                print(f"    {ckpt.name} ✓ ({uploaded}/{len(ckpts)})")
+            except Exception as e:
+                print(f"    {ckpt.name} ERROR: {e}")
+        print(f"  Done: {uploaded}/{len(ckpts)} checkpoints uploaded")
 
     print(f"\n{'='*50}")
     print(f"Total: {len(method_dirs)} methods, {total_ckpts} checkpoints, {total_size:.0f} MB")

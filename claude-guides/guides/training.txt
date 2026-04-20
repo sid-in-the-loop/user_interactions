@@ -1,0 +1,115 @@
+# TAC-winrates training — how to submit jobs
+
+All paths relative to the repo root (~/user_interactions on DeltaAI).
+
+
+## Prerequisites
+
+- Mixtures built:
+    experiments/tac_winrates/data/mixtures/mix_{DATASET}_teacher_xo_w{WINRATE}.jsonl
+- conda env: skywork (loaded by tac_train.sh automatically)
+- 1 GPU per job, ~2-3h per job at 8,500 rows x 2 epochs x 4 methods
+
+If training inputs (the _for_methods.jsonl / _for_sdpo.jsonl files in
+data/training_inputs/) are missing, tac_train.sh auto-runs
+build_training_inputs.py for you.
+
+
+## Single training job (one dataset, one winrate)
+
+Runs SFT -> JSD -> DPO -> RKL sequentially on a single GPU.
+
+    sbatch --job-name="tac_${DATASET}_w${WINRATE}" \
+           jobs/deltaai/tac_train.sh "$DATASET" "$WINRATE"
+
+Where:
+    DATASET in {wildchat, webinstruct, polaris}
+    WINRATE in {100, 70, 50, 20}
+
+Example:
+
+    sbatch --job-name="tac_wildchat_w50" \
+           jobs/deltaai/tac_train.sh wildchat 50
+
+
+## All 6 training jobs (current study: wc + wi, winrates 100/50/20)
+
+    for ds in wildchat webinstruct; do
+      for w in 100 50 20; do
+        sbatch --job-name="tac_${ds}_w${w}" \
+               jobs/deltaai/tac_train.sh "$ds" "$w"
+      done
+    done
+
+
+## Launcher script variant (9 jobs, 3 datasets x 3 winrates)
+
+For the full grid including polaris:
+
+    bash jobs/deltaai/tac_train_launch.sh [MIXTURE_JOBID]
+
+Passing MIXTURE_JOBID gates all training on `afterok:<JOBID>`
+so nothing starts until mixtures are built.
+
+Edit DATASETS and WINRATES arrays at the top of that script to
+customize the grid.
+
+
+## Monitor
+
+    squeue -u $USER -o '%.12i %.20j %.8T %.10M %R'
+    tail -f logs/tac_train_tac_*_*.out
+    tail -f logs/tac_train_tac_*_*.err
+
+
+## Outputs
+
+Checkpoints land at:
+
+    /work/hdd/bgtw/ssredharan/checkpoints/tac_winrates/${DATASET}_w${WINRATE}/
+        sft/
+        jsd/
+        dpo/
+        rkl/
+
+Each method produces num_ckpts=4 intermediate ckpts
+(checkpoint-XXXX/) + a final_model/ directory.
+
+
+## Weights & Biases
+
+Project:     tac-winrates
+Run names:   {dataset}_w{winrate}_{method}
+
+Example runs you will see:
+    wildchat_w100_sft
+    wildchat_w100_jsd
+    wildchat_w100_dpo
+    wildchat_w100_rkl
+    webinstruct_w50_sft ...
+
+
+## Config knobs (if you need to change them)
+
+Defaults in jobs/deltaai/tac_train.sh:
+    BASE_MODEL    = Qwen/Qwen3-4B
+    epochs        = 2
+    batch_size    = 2
+    grad_accum    = 32          (effective batch = 64)
+    lr            = 2e-6
+    max_length    = 2048
+    num_ckpts     = 4
+    LoRA          = r=16, alpha=32, dropout=0.05, target=all-linear
+
+For RKL (offline SDPO) specific knobs, see train_sdpo_lora.py.
+
+
+## Babel-specific notes
+
+When running on Babel instead of DeltaAI:
+- Module / conda activation lines will differ — update the top of
+  tac_train.sh or make a Babel-flavored variant.
+- Partition / account / time flags (#SBATCH) need to match Babel's
+  L40s partition names (e.g., babel-0-20, general, etc.).
+- Checkpoint root: change CKPT_ROOT away from /work/hdd/bgtw/... to
+  a Babel scratch path.

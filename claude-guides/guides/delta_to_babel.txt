@@ -1,0 +1,88 @@
+# Transferring files from DeltaAI to Babel (CMU LTI)
+
+Use case: ship mixtures / checkpoints / data from DeltaAI -> Babel.
+Tested example: 462 MB batch of 6 tac_winrates mixtures.
+
+
+## Method 1: SSH agent forwarding + rsync (RECOMMENDED)
+
+Uses the SSH key on your local Mac to authenticate DeltaAI -> Babel.
+No new keys need to live on DeltaAI.
+
+--------------------------------------------------------------------
+ONE-TIME LOCAL SETUP (on your Mac)
+--------------------------------------------------------------------
+
+Edit ~/.ssh/config on your Mac. Add "ForwardAgent yes" to the
+deltaai block:
+
+    Host deltaai
+        HostName dtai-login.delta.ncsa.illinois.edu
+        User ssredharan
+        ForwardX11 yes
+        ForwardAgent yes
+
+(The babel block likely already has ForwardAgent yes.)
+
+
+--------------------------------------------------------------------
+PER-SESSION (on your Mac)
+--------------------------------------------------------------------
+
+    ssh-add ~/.ssh/id_ed25519
+    ssh-add -l                       # should list your key
+    ssh deltaai                      # lands on dtai-login
+
+
+--------------------------------------------------------------------
+ON DELTAAI (after ssh deltaai)
+--------------------------------------------------------------------
+
+    mkdir -p ~/.ssh && chmod 700 ~/.ssh
+
+    # Sanity test — should print "ok"
+    ssh -o StrictHostKeyChecking=accept-new \
+        ssmurali@login.babel.cs.cmu.edu echo ok
+
+    # Transfer mixtures
+    cd ~/user_interactions
+    rsync -avz --progress \
+      experiments/tac_winrates/data/mixtures/ \
+      ssmurali@login.babel.cs.cmu.edu:~/tac_winrates_mixtures/
+
+
+--------------------------------------------------------------------
+VERIFY ON BABEL
+--------------------------------------------------------------------
+
+    ssh babel
+    ls -lh ~/tac_winrates_mixtures/
+    # expect 6 jsonl files totalling ~462 MB
+
+
+## Method 2: Globus (FALLBACK)
+
+Use this if SSH outbound from DeltaAI login node is blocked
+(rsync step hangs or returns "Permission denied").
+
+1. Go to https://app.globus.org
+2. Search for endpoints:
+     - "NCSA DeltaAI"
+     - "CMU Babel" (LTI)
+3. Drag-and-drop in the web UI — resumable, handles large files.
+
+
+## Caveats / gotchas
+
+- Run rsync on the LOGIN node (dtai-login), NOT a compute node.
+  Compute nodes usually have restricted outbound networking.
+
+- First ssh to Babel from DeltaAI prompts for host key: type "yes".
+
+- If you get "Could not open a connection to your authentication
+  agent", your agent isn't forwarded — re-check step 1 (ForwardAgent
+  yes) and step 2 (ssh-add on Mac before ssh deltaai).
+
+- For two-way traffic (Babel -> Delta), repeat the pattern in reverse:
+  add ForwardAgent yes to the babel block (probably already there),
+  then from Babel run: rsync ... ssredharan@dtai-login.delta.ncsa.illinois.edu:...
