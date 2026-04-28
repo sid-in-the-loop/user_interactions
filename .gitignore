@@ -13,6 +13,19 @@ wandb/
 
 # logs (large, per-job, regenerable)
 logs/
+*.err
+*.out
+*.log
+
+# top-level regenerable plot dirs
+/plots/
+
+# data dirs inside the new experiments tree (regenerable; large jsonls)
+experiments-for-apr26-may1/*/data/
+
+# misc one-off scratch
+/tmp_check.py
+/22:31
 
 # python bytecode
 __pycache__/
@@ -28,3 +41,4 @@ experiments/*/results/eval_*.csv
 
 # archived experiment runs (frozen data snapshots)
 experiments/*/_archive/
+experiments/tac_winrates/data/

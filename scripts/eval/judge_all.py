@@ -202,6 +202,109 @@ async def judge_pairwise(outputs_path, scores_path, reference_data, instruction_
 # MT-Bench judging (1-10 rating)
 # ─────────────────────────────────────────────────────────────────────────────
 
+WB_TEMPLATE = """Evaluate the following response to the user's query against ONE specific criterion.
+
+User query:
+{query}
+
+Model response:
+{response}
+
+Criterion: {criterion_name}
+Description: {criterion_desc}
+
+Scoring rubric:
+1-2: {band_1_2}
+3-4: {band_3_4}
+5-6: {band_5_6}
+7-8: {band_7_8}
+9-10: {band_9_10}
+
+Rate the response on this criterion on a 1-10 scale. Output ONLY a single integer from 1 to 10."""
+
+
+def parse_int_1_10(text):
+    if not text: return None
+    m = re.search(r"\b(10|[1-9])\b", text.strip())
+    return int(m.group(1)) if m else None
+
+
+async def judge_writingbench(outputs_path, scores_path, concurrent=50, max_queries=200, seed=42):
+    """Rubric-based per-criterion scoring on a 1-10 scale, averaged.
+    Judges a deterministic random subset of max_queries queries (same across ckpts
+    via fixed seed) to keep API costs bounded."""
+    import random
+    client = AsyncOpenAI()
+    sem = asyncio.Semaphore(concurrent)
+
+    # Load outputs and benchmark (for checklist)
+    with open(outputs_path) as f: outputs = json.load(f)
+    # Deterministic subsample: same 200 queries across every ckpt
+    if len(outputs) > max_queries:
+        rng = random.Random(seed)
+        outputs = [outputs[i] for i in sorted(rng.sample(range(len(outputs)), max_queries))]
+    bench = {}
+    with open("data/benchmark_data/writingbench/benchmark_all.jsonl") as f:
+        for line in f:
+            if line.strip():
+                r = json.loads(line)
+                bench[str(r["index"])] = r
+
+    async def score_criterion(out_item, crit):
+        prompt = WB_TEMPLATE.format(
+            query=out_item["query"][:6000],
+            response=out_item["output"][:6000],
+            criterion_name=crit["name"],
+            criterion_desc=crit["criteria_description"],
+            band_1_2=crit.get("1-2",""), band_3_4=crit.get("3-4",""),
+            band_5_6=crit.get("5-6",""), band_7_8=crit.get("7-8",""),
+            band_9_10=crit.get("9-10",""),
+        )
+        async with sem:
+            text = await call_api(client, [{"role":"user","content":prompt}], max_tokens=8)
+        return parse_int_1_10(text)
+
+    per_query = []
+    tasks = []
+    idx_map = []  # (query_index_in_outputs, crit_index)
+    for i, out in enumerate(outputs):
+        q = bench.get(str(out["index"]))
+        if not q: continue
+        for ci, crit in enumerate(q["checklist"]):
+            tasks.append(score_criterion(out, crit))
+            idx_map.append((i, ci))
+
+    results = [None] * len(tasks)
+    done = 0
+    for coro_idx, coro in enumerate(asyncio.as_completed(tasks)):
+        v = await coro
+        results[coro_idx] = v
+        done += 1
+        if done % 200 == 0: print(f"    Judged {done}/{len(tasks)} criteria...")
+
+    # Aggregate per-query averages, then overall
+    per_q_sum = {}  # out_idx -> (sum, count)
+    for (out_i, ci), v in zip(idx_map, results):
+        if v is None: continue
+        s, c = per_q_sum.get(out_i, (0,0))
+        per_q_sum[out_i] = (s+v, c+1)
+
+    per_q_scores = [s/c for (s,c) in per_q_sum.values() if c > 0]
+    overall = sum(per_q_scores)/len(per_q_scores) if per_q_scores else 0
+
+    scores = {
+        "overall_score": overall,          # 1-10 scale, averaged across queries
+        "n_queries": len(per_q_scores),
+        "n_criteria_judged": sum(1 for r in results if r is not None),
+        "n_criteria_total": len(results),
+        "subset_size": max_queries,
+        "subset_seed": seed,
+    }
+    scores_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(scores_path, "w") as f: json.dump(scores, f, indent=2)
+    return scores
+
+
 async def judge_mt_bench(outputs_path, scores_path, concurrent=50):
     client = AsyncOpenAI()
     sem = asyncio.Semaphore(concurrent)
@@ -268,12 +371,50 @@ def judge_benchmark(benchmark_name, outputs_path, scores_path):
         ))
 
     elif benchmark_name == "arena_hard":
-        # TODO: load arena-hard baseline responses
-        with open(outputs_path) as f:
-            outputs = json.load(f)
-        # For now, score based on judge quality rating (similar to MT-Bench)
-        print(f"    Arena-Hard judging not fully implemented yet")
-        return {}
+        # Pairwise vs GPT-4.1 baseline from arena-hard-auto/.../model_answer/gpt-4.1.jsonl
+        # Matched by UID (since the baseline file is in a different order).
+        base_path = Path("arena-hard-auto/data/arena-hard-v2.0/model_answer/gpt-4.1.jsonl")
+        if not base_path.exists():
+            print(f"    arena_hard: GPT-4.1 baseline missing at {base_path}"); return {}
+
+        # Build uid -> answer text map from the baseline jsonl.
+        uid_to_ref = {}
+        with open(base_path) as f:
+            for line in f:
+                if not line.strip(): continue
+                r = json.loads(line)
+                # answer is nested: messages[1]["content"]["answer"]
+                try:
+                    ans = r["messages"][1]["content"]
+                    if isinstance(ans, dict): ans = ans.get("answer", "")
+                except (KeyError, IndexError, TypeError):
+                    ans = ""
+                uid_to_ref[r["uid"]] = ans
+
+        with open(outputs_path) as f: outputs = json.load(f)
+        with open("data/benchmark_data/arena_hard/question.jsonl") as f:
+            questions = [json.loads(l) for l in f if l.strip()]
+
+        # Our outputs.json is in question.jsonl order; pair each with its uid's baseline answer.
+        n = min(len(outputs), len(questions))
+        merged, ref = [], []
+        for i in range(n):
+            uid = questions[i].get("uid","")
+            ref_ans = uid_to_ref.get(uid, "")
+            if not ref_ans: continue
+            merged.append({"index": i, "instruction": questions[i].get("prompt",""),
+                           "output": outputs[i]["output"]})
+            ref.append({"index": i, "output": ref_ans})
+
+        tmp_out = outputs_path.parent / "_tmp_with_instruction.json"
+        with open(tmp_out, "w") as f: json.dump(merged, f)
+        try:
+            return asyncio.run(judge_pairwise(
+                tmp_out, scores_path, ref,
+                instruction_key="index", model_key="output", ref_key="output",
+            ))
+        finally:
+            tmp_out.unlink(missing_ok=True)
 
     elif benchmark_name == "mt_bench":
         return asyncio.run(judge_mt_bench(outputs_path, scores_path))
@@ -305,8 +446,7 @@ def judge_benchmark(benchmark_name, outputs_path, scores_path):
         return b.judge(outputs_path, scores_path)
 
     elif benchmark_name == "writingbench":
-        print(f"    WritingBench rubric judging not implemented yet")
-        return {}
+        return asyncio.run(judge_writingbench(outputs_path, scores_path))
 
     else:
         print(f"    Unknown benchmark: {benchmark_name}")

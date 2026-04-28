@@ -16,6 +16,12 @@ import os
 import sys
 from pathlib import Path
 
+# $REPO/datasets/ is a data dir (3GB of jsonl), not a Python package. With
+# CWD=$REPO it becomes an implicit namespace package and shadows the pip
+# `datasets` pkg. Drop "" and $REPO from sys.path before importing.
+_REPO = "/u/ssredharan/user_interactions"
+sys.path[:] = [p for p in sys.path if p not in ("", _REPO) and Path(p).resolve() != Path(_REPO).resolve()]
+
 # Make the existing sdpo trainer importable
 sys.path.insert(
     0,
@@ -65,15 +71,25 @@ def main():
     print(f"  n_rows = {len(dataset)}", flush=True)
 
     tokenizer = AutoTokenizer.from_pretrained(args.base_model, trust_remote_code=True)
+    try:
+        from transformers.utils import is_flash_attn_2_available
+        attn_impl = "flash_attention_2" if is_flash_attn_2_available() else "sdpa"
+    except ImportError:
+        attn_impl = "sdpa"
     model = AutoModelForCausalLM.from_pretrained(
         args.base_model,
         torch_dtype=torch.bfloat16,
-        attn_implementation="flash_attention_2",
+        attn_implementation=attn_impl,
         trust_remote_code=True,
     )
     model.generation_config.do_sample = True
     model.generation_config.temperature = 1.0
     model.generation_config.top_p = 1.0
+
+    # Required for LoRA + gradient_checkpointing: the base model's input
+    # activations must carry requires_grad for the backward graph to connect
+    # through the (frozen) base to the (trainable) LoRA adapters.
+    model.enable_input_require_grads()
 
     # LoRA wrap
     target_modules = ("all-linear" if args.lora_target == "all-linear"
@@ -110,7 +126,7 @@ def main():
         fp16=False,
         bf16=True,
         gradient_checkpointing=True,
-        optim="adamw_bnb_8bit",
+        optim="adamw_torch",
         logging_steps=10,
         save_strategy="steps",
         save_steps=save_steps,

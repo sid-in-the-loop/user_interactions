@@ -78,7 +78,7 @@ class MATH500Benchmark(Benchmark):
         ]
 
     def sampling_params(self):
-        return SamplingParams(temperature=0.0, max_tokens=2048, skip_special_tokens=True)
+        return SamplingParams(temperature=0.0, max_tokens=8192, skip_special_tokens=True)
 
     def save_outputs(self, vllm_outputs, path: Path):
         records = []
